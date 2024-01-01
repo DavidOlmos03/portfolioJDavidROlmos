@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <head>
+        <title>Play One</title>
+        <link rel="stylesheet" href="./index.css"></link>
+        <link rel="stylesheet" href="../index.css"></link>
+        <script src="./script.js"></script>
+    </head>
+    <body> <!--onload="startTime()"-->
+        
+        <audio id="audioTimeOut">
+            <source src="audio/alarma.mp3" type="audio/mpeg">
+            Sonido no habilitado
+        </audio>
+        <!--questions-->
+        <div class="title">Answer the questios as fast as you can!</div><h1 id="textoCronometro">30</h1>
+        <div class="principalBox"> 
+            <div class="formulary">
+                <div class="questions">
+                    <p>1. What's your name?</p>
+                    <input type="text" id="question1">
+                    <p>2. How old are you?</p>
+                    <input type="text" id="question2">
+                    <p>3. What is your favorite color?</p>
+                    <input type="text" id="question3">
+                    <p>4. Languages speaken in Cánada</p>
+                    <input type="text" id="question4">
+                    <p>5. Do you like the landscapes?</p>
+                    <input type="text" id="question5">
+                </div>
+                <div class="buttonsMenu">
+                    <button onclick="startTime()">START</button><br>
+                    <button onclick="finish()">I FINISHED!!</button><br>
+                    <button onclick="retry()">RETRY</button><br>
+                    <button onclick="returnIndex()">Return</button>
+                </div>
+            </div>
+            <div class = "imageMarkTwain">
+                <img src="./src/Mark_Twain_image.webp" alt="Mark Twain image"></img>
+            </div>
+        </div>               
+        
+
+    </body>
+</html>

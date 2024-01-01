@@ -1,0 +1,47 @@
+.principalBox{
+    display: flex;
+    align-items: flex-start;
+    border: solid;
+    border: 1px solid #ccc;
+}
+/*
+.formulary, .imageMarkTwain{
+    Here we have slyle for both boxes
+}*/
+.formulary{
+    flex: 1;
+    border:1px solid #ccc;
+    padding: 10px;
+}
+.imageMarkTwain{
+    width: 70%;
+    height: 521px;
+}
+.imageMarkTwain img{
+    flex: 0;
+    width: 100%;
+    height:100% ;
+}
+button {
+    width: 100%;
+    background-color: rgb(205, 245, 245);
+    border-radius: 5px;
+}
+.questions {
+    text-align: center;
+    font-style:italic;
+    background-color: rgb(247, 145, 138);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.buttonsMenu{
+    border-radius: 5px;
+}
+.buttonsMenu button{
+    margin-top: 10px;
+}
+
+ 
+

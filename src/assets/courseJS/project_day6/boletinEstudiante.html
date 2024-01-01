@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="./boletinEstudiante.css"></link>
+        <script src="./boletinEstudiante.js"></script>
+    </head>
+    <body onload="listNotes()">
+        <ul>
+            <!--Pedir las 5 notas en una caja de texto y llenar el array con estas notas
+            crear una funcion que cambie el valor de cero al número ingresado(el array esta inicial esta vacio (let array = []))-->
+            <div class="notes">
+                <h3>Notes:</h3>
+                <ul id="ulNotes"></ul>
+            </div>
+            <div class="form">
+                <button id="promedio" onclick="average()">Promedio</button>
+                <button id="notaMasAlta" onclick="bestNote()">NotaMasAlta</button>
+                <button id="aplazoButton" onclick="aplazo()">Aplazo</button>
+                <p id="firstText">Average: <span id="average"></span></p>
+                <p id="secondText">Best note: <span id="bestNote"></span></p>
+                <p id="threeText">Aplazo: <span id="aplazo"></span></p>
+            </div>
+            
+        </ul>
+    </body>
+</html>

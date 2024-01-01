@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <head >
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calculator.css"></link>
+        <script src="calculator.js"></script>
+    </head>
+    <body>
+        <h3 class="tittle">Calculator</h3>
+        <input type="text" id="firstNumber" placeholder="first number">
+        <input type="text" id="secondNumber" placeholder="second number"><br>
+        
+        
+
+        <button id="addition" onclick="addition()">+</button> 
+        <button id="subtraction" onclick="subtraction()">-</button>
+        <button id="multiplication" onclick="multiplication()">*</button>
+        <button id="division" onclick="division()">/</button> <br>
+        <div class="doble" >
+            <button id="square_root" onclick="square_root()">square</button> 
+            <button id="power" onclick="power()">power</button><br>
+            <button id="absolute_value" onclick="absolute_value()">absolute</button> 
+            <button id="random" onclick="random()">random</button><br>
+        </div>
+        <div class="triple">
+            <button id="round" onclick="round()">round</button> 
+            <button id="floor" onclick="floor()">floor</button> 
+            <button id="ceil" onclick="ceil()">ceil</button><br>
+        </div>   
+        <h3>Result:</h3>
+        <input type="text" id="result" placeholder="result">
+        
+
+        
+        <!--Suma, resta, multiplicación, división, raíz cuadrada, potencia, valor absoluto, random, round, floor y ceil.-->
+    </body>
+</html>

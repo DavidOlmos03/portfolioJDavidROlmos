@@ -1,0 +1,240 @@
+/* styles.css */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body{
+  /*background-color: #ffffff;*/
+  background-color: aqua;
+  margin: 20px;
+  background-image: url('src/bg-image1.jpg');
+}
+
+#principalBox1{
+  display: flex;
+  /*align-items: flex-start;*/
+  border: 1px solid #ffffff;
+  margin-top: 5%;
+}
+#carouselExampleCaptions{
+  display: flex;
+  max-height: 500px;
+  max-width: 100%;
+  margin:auto;
+  margin-bottom: 10px;
+}
+#carouselExampleCaptions2{
+  padding-top: 20px;
+  display: flex;
+  max-height: 500px;
+  max-width: 100%;
+  margin:auto;
+  margin-bottom: 10px;
+}
+#carouselExampleCaptions3{
+  padding-top: 20px;
+  display: flex;
+  max-height: 500px;
+  max-width: 100%;
+  margin:auto;
+  margin-bottom: 10px;
+}
+
+.text{
+  font-style:italic;
+  text-align: justify;
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.selfie{
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  /*position:fixed;*/
+
+}
+.selfie img{
+  width: 50%;
+  max-width: 100%;
+  border-radius: 2%;
+  margin-left: 1px;
+}
+.tittle{
+  text-align: center;
+  padding-bottom: 40px;
+}
+.tittle:hover{
+  color: rgb(209, 205, 213);
+}
+.subtittle {
+  background-color: rgb(209, 205, 213);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 2px;
+  font-style:italic;
+  text-align: center;
+  font-size: 30px;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 20%;
+}
+.subtittle:hover{
+  color: white;
+}
+a[href]{
+  color: rgb(9, 8, 8);
+  font-family: monospace;
+  font-size: 12px;
+  text-decoration: none; /* Esto elimina la línea subrayada */
+}
+/*
+a[href*="./career"]:hover{
+  color:rgb(42, 165, 58);
+  font-size: 15px;
+}
+a[href*="./last_years"]:hover{
+  color:rgb(214, 10, 3);
+  font-size: 15px;
+}*/
+
+/*
+  Para el menú desplegable
+*/
+/*
+.nav {
+  margin: 10px;
+  background-color: #434343;
+  min-width: 90%;
+  position: absolute;
+}
+
+ul,ol{
+  list-style: none;
+}
+
+.nav li a:hover{
+  background-color: #a4a4a4;
+}
+
+.nav li a {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 10px;
+  display: block;
+}
+
+.nav > li{
+  float: left;
+}
+
+.nav li ul{
+  display:none;
+  position: absolute;
+  min-width: 140px;
+  right: 0%;
+  left: 75%;
+}
+
+.nav li:hover > ul{
+  display: block;
+}
+*/
+nav {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+/* Cambiar el color del texto a blanco para los elementos de navegación */
+.navbar-nav .nav-item .nav-link {
+  font-size: medium;
+}
+.navbar-nav li a{
+  color: rgb(244, 244, 244);
+}
+.tasks{
+  margin-left: 70%;
+  background-color: #ffffff;
+  display: block;
+}
+#career{
+  margin-top: 5%
+}
+
+#last_years{
+  margin-top: 5%
+}
+/*  PARA SUBMENU/SUBMENU
+  .nav li ul li{
+      position: relative;
+  }
+
+  .nav li ul li ul{
+      right:-140px;
+      top:0px;
+  }
+*/
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+
+body{
+background: rgb(254, 250, 250);
+padding-top: 10px;
+text-align: center;
+}
+
+
+/* Media Query para hacer el diseño más adaptable en pantallas pequeñas */
+@media (max-width: 768px) {
+  #principalBox1 {
+      flex-direction: column; /* Cambio de dirección para apilar los elementos en dispositivos móviles */
+      /*align-items: flex-start;*/
+  }
+  #career {
+      flex-direction: column; /* Cambio de dirección para apilar los elementos en dispositivos móviles */
+      /*align-items: flex-start;*/
+  }
+
+  .selfie,
+  .text {
+      order: 2; /* Cambio de orden para que la imagen aparezca después del texto */
+  }
+  .nav {
+      width: 100%; /* Cambio para ocupar todo el ancho en dispositivos móviles */
+      position: relative; /* Cambio de posición para mantener el flujo en dispositivos móviles */
+
+  }
+  ul,ol{
+      padding: 0;
+  }
+  .nav > li{
+      display: inline-block;
+      position: relative;
+      width: 100%;
+  }
+  .nav li ul {
+      width: auto; /* Ancho automático */
+      right: 0%;
+      left: 0%;
+      text-align: center;
+  }
+
+  .nav li {
+      display: block; /* Cambio para que los elementos del menú se apilen uno sobre otro */
+  }
+  .tasks{
+      margin-left: 0%;
+      background-color: #000;
+      display: block;
+
+  }
+}
+
+
+
+
+
+
