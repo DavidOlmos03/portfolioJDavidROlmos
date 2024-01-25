@@ -1,2 +1,12 @@
+p{
+  text-align:start;
+}
 
+select{
+  background-color: transparent;
+  color:rgb(255, 255, 255);
+}
+select option{
+  color:rgb(0, 0, 0);
+}
 

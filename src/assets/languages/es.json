@@ -1,9 +1,18 @@
 {
-  "home":"Inicio",
-  "about":"Sobre",
-  "resume":"Resumen",
-  "portfolio":"Portafolio",
-  "blog":"Blog",
-  "contact":"Contacto",
-  "language":"Cambiar idioma a:"
+  "home":{
+    "home":"Inicio",
+    "about":"Sobre",
+    "resume":"Resumen",
+    "portfolio":"Portafolio",
+    "blog":"Blog",
+    "contact":"Contacto",
+    "language":"Cambiar idioma a:",
+    "hello":"Hola, soy",
+    "carreer":"Estudiante de Desarrollo de Software"
+  },
+  "about":{
+    "whoIam":"¿Quién soy?",
+    "student":"Un Estudiante de Desarrollo de Software ubicado en nuestra hermosa tierra",
+    "russell":"La buena vida es aquella inspirada por el amor y guiada por el conocimiento."
+  }
 }

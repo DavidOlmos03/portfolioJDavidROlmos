@@ -1,0 +1,13 @@
+
+
+.about-card {
+  padding: 60px;
+  border-right: 1px solid #dee2e6;
+}
+
+.about-card:last-child {
+  border-right: none;
+}
+.about-section {
+  border-bottom: 1px solid #dee2e6;
+}

@@ -1,9 +1,19 @@
 {
-  "home":"Home",
-  "about":"About",
-  "resume":"Resume",
-  "portfolio":"Portfolio",
-  "blog":"Blog",
-  "contact":"Contact",
-  "language":"Change Language to:"
+  "home":{
+    "home":"Home",
+    "about":"About",
+    "resume":"Resume",
+    "portfolio":"Portfolio",
+    "blog":"Blog",
+    "contact":"Contact",
+    "language":"Change Language to:",
+    "hello":"Hello, I am",
+    "carreer":"Software Development Student"
+  },
+  "about":{
+    "whoIam":"Who am I ?",
+    "student":"A Software Development Student located in our lovely earth",
+    "russell":"The good life is one inspired by love and guided by knowledge."
+  }
+
 }

@@ -8,7 +8,7 @@ import { SwitchLanguagesComponent } from './switch-languages/switch-languages.co
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,6 +17,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     TranslateModule.forRoot({
       loader:{
         provide:TranslateLoader,

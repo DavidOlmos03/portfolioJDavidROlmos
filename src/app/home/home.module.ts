@@ -10,10 +10,14 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 import { SharedModule } from '../shared/shared.module';
+import { AboutComponent } from './about/about.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
+    AboutComponent,
+    HeaderComponent,
   ],
   imports: [
     CommonModule,
