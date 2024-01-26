@@ -60,4 +60,31 @@ function ceil(){
     let round = Math.ceil(+document.getElementById("result").value);
     showResult(round);
 }
-
+/**
+ * logaritmo
+ */
+function logaritmo(){
+  let log = Math.log10(+getNumber1());
+  showResult(log);
+}
+/**
+ * Seno
+ */
+function sin(){
+  let sin = Math.sin(getNumber1());
+  showResult(sin);
+}
+/**
+ * coseno
+ */
+function cos(){
+  let cos = Math.cos(getNumber1());
+  showResult(cos);
+}
+/**
+ * tangente
+ */
+function tan(){
+  let tan = Math.tan(getNumber1());
+  showResult(tan)
+}
