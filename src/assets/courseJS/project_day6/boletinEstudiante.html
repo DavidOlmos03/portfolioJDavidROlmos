@@ -1,29 +1,51 @@
 <!DOCTYPE html>
     <head>
         <link rel="stylesheet" href="./boletinEstudiante.css"></link>
-        <script src="./boletinEstudiante.js"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     </head>
-    <body onload="listNotes()">
-        <ul>
+    <body> <!--onload="listNotes()"-->
+      <div class="col-md-2">
+        <a href="http://localhost:4200/course-js" class="btn btn-primary">Home</a>
+      </div>
+        <div class="content">
             <!--Pedir las 5 notas en una caja de texto y llenar el array con estas notas
             crear una funcion que cambie el valor de cero al número ingresado(el array esta inicial esta vacio (let array = []))-->
             <div class="notes">
-                <h3>Notes:</h3>
-                <!--<ul id="ulNotes"></ul>-->
-                <form action="">
-                  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-                    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-                </form>
-            </div>
-            <div class="form">
-                <button id="promedio" onclick="average()">Promedio</button>
-                <button id="notaMasAlta" onclick="bestNote()">NotaMasAlta</button>
-                <button id="aplazoButton" onclick="aplazo()">Aplazo</button>
-                <p id="firstText">Average: <span id="average"></span></p>
-                <p id="secondText">Best note: <span id="bestNote"></span></p>
-                <p id="threeText">Aplazo: <span id="aplazo"></span></p>
-            </div>
+              <h3>Notes:</h3>
+              <!--<ul id="ulNotes"></ul>-->
+              <label>¿Cuantos números desea ingresar?</label>
+              <div class="form-group">
+                <input id="numbersQuantity" type="number" class="form-control" placeholder="Escriba la cantidad de notas">
+              </div>
 
-        </ul>
+              <!--Este formulario se llema desde boletinEstudiante.js-->
+              <form id="formulario">
+
+              </form>
+              <button class="btn btn-success" onclick="generateInputNumbers()">Generar</button>
+          </div>
+          <div class="form">
+              <button class="btn btn-primary" id="promedio" onclick="average()">Promedio</button>
+              <button class="btn btn-primary" id="notaMasAlta" onclick="bestNote()">Nota mas alta</button>
+              <button class="btn btn-primary" id="aplazoButton" onclick="aplazo()">Aplazo</button>
+              <p id="firstText">Average: <span id="average"></span></p>
+              <p id="secondText">Best note: <span id="bestNote"></span></p>
+              <p id="threeText">Aplazo: <span id="aplazo"></span></p>
+          </div>
+        </div>
+
+        <script src="./boletinEstudiante.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+          integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+          crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+          integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+          crossorigin="anonymous"></script>
     </body>
 </html>
