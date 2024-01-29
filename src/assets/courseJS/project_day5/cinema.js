@@ -1,6 +1,8 @@
-function recomendar(genero){
-    var age = document.getElementById("age").value;
 
+function recomendar(genero){
+  let age = document.getElementById("age").value;
+  let recomendation =  document.getElementById("textRecomendation");
+  let img = document.getElementById("imgRecomendation");
     /*
     1. Verificar que se haya ingresado un dato y que este sea valido
     2. Crear funcion generadora de peliculas recomendadas
@@ -10,30 +12,52 @@ function recomendar(genero){
     switch(genero){
         case "comedy":
             //Recomendation about movie
-            typeMovieRecomendation(age);
+            if(age<13){
+              recomendation.textContent = "Los Pingüinos de Madagascar";
+              img.src = "./src/comedy/pinguinos.jpg";
+            }else if(age<16){
+              recomendation.textContent = "Donde están las rubias";
+              img.src = "./src/comedy/rubias.jpg";
+            }else{
+              recomendation.textContent = "No te metas con zohan";
+              img.src = "./src/comedy/zohan.jpg";
+            }
             break;
         case "drama":
-            typeMovieRecomendation(age);
+          if(age<13){
+            recomendation.textContent = "Casablanca";
+            img.src = "./src/drama/casaBlanca.jpg";
+          }else if(age<16){
+            recomendation.textContent = "The Shawshank Redemption";
+            img.src = "./src/drama/shawshank.jpg";
+          }else{
+            recomendation.textContent = "Taxi Driver";
+            img.src = "./src/drama/taxiDriver.jpg";
+          }
             break;
         case "musical":
-            typeMovieRecomendation(age);
+          if(age<13){
+            recomendation.textContent = "La La Land";
+            img.src = "./src/musical/lalaLand.jpg";
+          }else if(age<16){
+            recomendation.textContent = "Les Miserables";
+            img.src = "./src/musical/lesMiserables.jpg";
+          }else{
+            recomendation.textContent = "The Rocky Horror Picture Show";
+            img.src = "./src/musical/theRocky.jpg";
+          }
             break;
         case "crime":
-            typeMovieRecomendation(age);
+          if(age<13){
+            recomendation.textContent = "No hay opciones para esta edad";
+          }else if(age<16){
+            recomendation.textContent = "El Secreto de tus Ojos";
+            img.src = "./src/crime/elSecretoDeTusOjos.webp";
+          }else{
+            recomendation.textContent = "The Godfather";
+            img.src = "./src/crime/theGodfather.jpg";
+          }
             break;
     }
 }
 
-function typeMovieRecomendation(age){
-    if(age<13){
-        alert("Se recomienda pelicula ATP");
-    }else if(age<16){
-        alert("Se recomienda pelicula +13");
-    }else{
-        alert("Se recomienda pelicula +16");
-    }
-}
-
-function chooseMovie(){
-
-}
