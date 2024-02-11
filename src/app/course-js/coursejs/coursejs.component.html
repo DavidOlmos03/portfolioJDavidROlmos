@@ -50,20 +50,22 @@
                           Tasks
                       </a>
                       <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item bg-dark" href="../../../assets/courseJS/project_day3/index.html">Task day 3</a>
-                          <a class="dropdown-item bg-dark" href="../../../assets/courseJS/project_day4/calculator.html">Task day 4</a>
+                          <a class="dropdown-item bg-dark" (click)="selectedTask = 'project_day3'">Task day 3</a>
+                          <a class="dropdown-item bg-dark" (click)="selectedTask = 'project_day4'">Task day 4</a>
                           <a class="dropdown-item bg-dark" href="../../../assets/courseJS/project_day5/cinema.html">Task day 5</a>
                           <a class="dropdown-item bg-dark" href="../../../assets/courseJS/project_day6/boletinEstudiante.html">Task day 6</a>
                           <a class="dropdown-item bg-dark" href="../../../assets/courseJS/project_day7/Versión 6/index.html">Task day 7</a>
+                          <a class="dropdown-item bg-dark" href="../../../assets/courseJS/project_day8/index.html">Task day 8</a>
+
                       </div>
                   </li>
               </ul>
           </div>
       </nav>
-
-
-
-      <div class="row">
+      <app-project-day3 *ngIf="selectedTask === 'project_day3'"></app-project-day3>
+      <app-project-day4 *ngIf="selectedTask === 'project_day4'"></app-project-day4>
+<!--
+  <div class="row">
           <div id="principalBox1" class="col-12">
               <div class="text">
                   <h3 class="subtittle">First steps</h3>
@@ -75,151 +77,154 @@
               </div>
           </div>
       </div>
-          <!--Carousel de boostrap 5.0-->
+          Carousel de boostrap 5.0-
           <div id="carouselExampleCaptions" class="carousel slide col-12" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                      aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                      aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner">
-                  <div class="carousel-item active">
-                      <img src="../../../assets/courseJS/src/mark-zukerberg-work-hard.jpg" class="d-block w-100" alt="src/mark-zukerberg-work-hard.jpg">
-                      <div class="carousel-caption d-none d-md-block">
-                          <h5>First slide label</h5>
-                          <p>Some representative placeholder content for the first slide.</p>
-                      </div>
-                  </div>
-                  <div class="carousel-item">
-                      <img src="../../../assets/courseJS/src/photo2.jpeg" class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                          <h5>Second slide label</h5>
-                          <p>Some representative placeholder content for the second slide.</p>
-                      </div>
-                  </div>
-                  <div class="carousel-item">
-                      <img src="../../../assets/courseJS/src/photo.jpg" class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                          <h5>Third slide label</h5>
-                          <p>Some representative placeholder content for the third slide.</p>
-                      </div>
-                  </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-              </button>
-          </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../../../assets/courseJS/src/mark-zukerberg-work-hard.jpg" class="d-block w-100" alt="src/mark-zukerberg-work-hard.jpg">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../../../assets/courseJS/src/photo2.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../../../assets/courseJS/src/photo.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
 
-      <div class="row">
-          <div id="career">
-              <div class="text">
-                  <h3 class="subtittle subtittle3">Career</h3>
-                  <p>When I finished high school, I was uncertain about which career to pursue. I had an interest in medicine, but studying this field at a public university proved to be quite challenging. Consequently, I decided to start my degree in mathematics, a choice that, in retrospect, I believe was one of the best decisions of my life. This path ignited a deep love for knowledge and personal growth, as I came to appreciate the complexities of life and science in general.</p><br>
-              </div>
+    <div class="row">
+        <div id="career">
+            <div class="text">
+                <h3 class="subtittle subtittle3">Career</h3>
+                <p>When I finished high school, I was uncertain about which career to pursue. I had an interest in medicine, but studying this field at a public university proved to be quite challenging. Consequently, I decided to start my degree in mathematics, a choice that, in retrospect, I believe was one of the best decisions of my life. This path ignited a deep love for knowledge and personal growth, as I came to appreciate the complexities of life and science in general.</p><br>
+            </div>
 
-          </div>
-      </div>
-      <!--Carousel2 de boostrap 5.0-->
-      <div id="carouselExampleCaptions2" class="carousel slide col-12" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../../../assets/courseJS/career/src/Ranking-Times-Higher-Education-2022.jpg" class="d-block w-100"
-              alt="src/mark-zukerberg-work-hard.jpg">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../../../assets/courseJS/career/src/biblioteca-udea.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../../../assets/courseJS/src/photo.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
+    </div>
+    <!-Carousel2 de boostrap 5.0
+    <div id="carouselExampleCaptions2" class="carousel slide col-12" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../../../assets/courseJS/career/src/Ranking-Times-Higher-Education-2022.jpg" class="d-block w-100"
+            alt="src/mark-zukerberg-work-hard.jpg">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="row">
-          <div id="last_years">
-              <div class="text">
-                  <h3 class="subtittle subtittle2">Last years</h3>
-                  <p>Two years later, I made another important decision and started my second degree in <span class="career">systems engineering</span>. Driven by my passion for knowledge, I decided to leave behind my studies in <span class="career">mathematics</span> and embark on this new journey in <span class="career">physics</span>.</p><br>
-              </div>
-          </div>
-      </div>
-      <!--Carousel2 de boostrap 5.0-->
-      <div id="carouselExampleCaptions3" class="carousel slide col-12" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../../../assets/courseJS/last_years/src/Carl_Friedrich_Gauss.jpg" class="d-block w-100"
-              alt="src/mark-zukerberg-work-hard.jpg">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../../../assets/courseJS/last_years/src/Sir_Isaac_Newton.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../../../assets/courseJS/src/photo.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
+        <div class="carousel-item">
+          <img src="../../../assets/courseJS/career/src/biblioteca-udea.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <img src="../../../assets/courseJS/src/photo.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="row">
+        <div id="last_years">
+            <div class="text">
+                <h3 class="subtittle subtittle2">Last years</h3>
+                <p>Two years later, I made another important decision and started my second degree in <span class="career">systems engineering</span>. Driven by my passion for knowledge, I decided to leave behind my studies in <span class="career">mathematics</span> and embark on this new journey in <span class="career">physics</span>.</p><br>
+            </div>
+        </div>
+    </div>
+    <!-Carousel2 de boostrap 5.0--
+    <div id="carouselExampleCaptions3" class="carousel slide col-12" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../../../assets/courseJS/last_years/src/Carl_Friedrich_Gauss.jpg" class="d-block w-100"
+            alt="src/mark-zukerberg-work-hard.jpg">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../../assets/courseJS/last_years/src/Sir_Isaac_Newton.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../../assets/courseJS/src/photo.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+-->
+
 
 
   </body>

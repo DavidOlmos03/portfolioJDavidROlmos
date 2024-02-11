@@ -1,0 +1,51 @@
+
+header{
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+body{
+  background-image: url(../../../assets/courseJS/project_day3/src/landscape1.avif);
+  background-size: cover;
+}
+#textoCronometro{
+  width: 100%;
+  font-weight: bold;
+}
+.row{
+  background-color: rgba(0, 0, 0, 0.471);
+  padding-top: 2%;
+}
+form{
+  margin: auto;
+  padding: auto;
+  width: 80%;
+}
+form label{
+  color: black;
+}
+.formulario{
+  padding: 1% 0% 1% 0%;
+}
+.buttonsMenu{
+    border-radius: 5px;
+}
+.buttonsMenu button{
+    margin-top: 10px;
+}
+.carousel {
+  margin: 30px 20px 10px 20px;
+  width: 90%;
+  height: 300px;
+  overflow: hidden; /*Oculta la parte que se desborde del carousel*/
+  border-radius: 2%;
+}
+.carousel .carousel-item{
+  width: 100%;
+  height: 300px;
+}
+.carousel img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*Ajusta la imagen al carousel*/
+}

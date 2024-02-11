@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--<link rel="stylesheet" href="../../../assets/vendors/themify-icons/css/themify-icons.css">-->
+  </head>
+ <!-- Portfolio Section -->
+ <body>
+  <section class="section bg-custom-gray" id="portfolio">
+    <div class="container">
+        <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+        <div class="portfolio">
+            <div class="filters">
+              <a (click)="selectedSection = 'new';" [class.active]="selectedSection === 'new'">
+                New
+              </a>
+
+
+                <a (click)="selectedSection = 'udemy';" [class.active]="selectedSection === 'udemy'">
+                    Udemy
+                </a>
+                <a (click)="selectedSection = 'coursera'" [class.active]="selectedSection === 'coursera'">
+                    Coursera
+                </a>
+                <a (click)="selectedSection = 'web'" data-filter=".web" [class.active]="selectedSection === 'web'">
+                    Web
+                </a>
+
+            </div>
+            <div class="portfolio-container">
+                <div class="row">
+                  <div class="col-md-6 col-lg-4" id="new udemy" *ngIf="['new', 'udemy'].includes(selectedSection)">
+                      <div class="portfolio-item">
+                          <img src="../assets/imgs/course-2.jpg" class="img-fluid"
+                              alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                          <div class="content-holder">
+                              <a class="img-popup" href="../assets/imgs/course-2.jpg"></a>
+                              <div class="text-holder">
+                                  <h6 class="title">ADVERSTISING</h6>
+                                  <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4" *ngIf="['new', 'udemy', 'web'].includes(selectedSection)">
+                      <div class="portfolio-item">
+                          <img src="../assets/imgs/course-1.png" class="img-fluid"
+                              alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                          <div class="content-holder">
+                              <a class="img-popup" href="../assets/imgs/course-1.png"></a>
+                              <div class="text-holder">
+                                  <h6 class="title">DESCRIPTION</h6>
+                                  <p class="subtitle">Course made on Udemy, click to <a href="course-js"
+                                          class="font-weight-bold text-dark">check it out!!</a></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 web" *ngIf="['web'].includes(selectedSection)">
+                    <div class="portfolio-item">
+                        <img src="../assets/imgs/pasquin-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="../assets/imgs/pasquin-1.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">Web page Jpasquin</h6>
+                                <p class="subtitle">This is a web that I built for share my passion about mathematics, physics and programming, and help to other people interesting in this topics.<br>check it out!</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 udemy new" *ngIf="['new','udemy'].includes(selectedSection)">
+                    <div class="portfolio-item">
+                        <img src="../assets/imgs/course-3.jpg" class="img-fluid"
+                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/course-3.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ADVERSITING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 udemy new" *ngIf="['new','udemy'].includes(selectedSection)">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/course-4.png" class="img-fluid"
+                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="../assets/imgs/course-4.png"></a>
+                            <div class="text-holder">
+                                <h6 class="title">course</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 coursera" *ngIf="['coursera'].includes(selectedSection)">
+                    <div class="portfolio-item">
+                        <img src="../assets/imgs/coursera-1.jpg" class="img-fluid"
+                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="../assets/imgs/coursera-1.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">coursera</h6>
+                                <p class="subtitle">This is a course about SQL,<span class="font-weight-bold text-dark"><a id="download-link" href="https://dl.dropbox.com/scl/fi/o13jdizu5mdgfwrd7qe1h/Coursera-UDW5MEYB6XUE.pdf?rlkey=whtcis7l5qxvmgsmjkn35x3us&dl=0" download>download</a></span> the certificate!</p>
+                                <!--Click for download certificate-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- core  -->
+  <script src="../assets/vendors/jquery/jquery-3.4.1.js"></script>
+  <script src="../assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+  <!-- bootstrap 3 affix -->
+  <script src="../assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+  <!-- Isotope  -->
+  <script src="../assets/vendors/isotope/isotope.pkgd.js"></script>
+
+  <!-- Google mpas -->
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+  <!-- JohnDoe js -->
+  <script src="../assets/js/johndoe.js"></script>
+
+ </body>
+ </html>

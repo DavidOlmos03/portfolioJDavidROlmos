@@ -12,12 +12,20 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { SharedModule } from '../shared/shared.module';
 import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
+import { ResumeComponent } from './resume/resume.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
+import { NewComponent } from './portfolio/new/new.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     AboutComponent,
     HeaderComponent,
+    ResumeComponent,
+    PortfolioComponent,
+    ContactComponent,
+    NewComponent,
   ],
   imports: [
     CommonModule,
