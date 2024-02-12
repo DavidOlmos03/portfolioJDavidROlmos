@@ -1,8 +1,8 @@
 .filters a{
   cursor: pointer;
 }
-.filters a:active {
 
+.filters a:active {
   opacity: 1;
   background: #F85C70;
   color: #fff;

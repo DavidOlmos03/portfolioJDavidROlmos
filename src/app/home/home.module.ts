@@ -15,7 +15,7 @@ import { HeaderComponent } from './header/header.component';
 import { ResumeComponent } from './resume/resume.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
-import { NewComponent } from './portfolio/new/new.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { NewComponent } from './portfolio/new/new.component';
     ResumeComponent,
     PortfolioComponent,
     ContactComponent,
-    NewComponent,
+
   ],
   imports: [
     CommonModule,

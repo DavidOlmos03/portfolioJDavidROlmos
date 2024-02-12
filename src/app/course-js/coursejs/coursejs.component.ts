@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./coursejs.component.css']
 })
 export class CoursejsComponent {
-  selectedTask: string = 'project_day3';
+  selectedPart: string = 'firstSteps';
 }

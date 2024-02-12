@@ -1,5 +1,5 @@
-/* styles.css */
-@import '~bootstrap/dist/css/bootstrap.min.css';
+/* styles.css
+@import '~bootstrap/dist/css/bootstrap.min.css';*/
 
 body{
   /*background-color: #ffffff;*/
@@ -7,33 +7,39 @@ body{
   margin: 20px;
   background-image: url('src/bg-image1.jpg');
 }
+.nav-item a{
+  cursor: pointer;
+}
+.nav-item a:active {
+  background-color: #ffffff;
+}
 
 #principalBox1{
   display: flex;
   /*align-items: flex-start;*/
   border: 1px solid #ffffff;
-  margin-top: 5%;
 }
 #carouselExampleCaptions{
   display: flex;
-  max-height: 500px;
-  max-width: 100%;
+  max-height: 300px;
+  max-width: 70%;
   margin:auto;
   margin-bottom: 10px;
+
 }
 #carouselExampleCaptions2{
   padding-top: 20px;
   display: flex;
-  max-height: 500px;
-  max-width: 100%;
+  max-height: 300px;
+  max-width: 70%;
   margin:auto;
   margin-bottom: 10px;
 }
 #carouselExampleCaptions3{
   padding-top: 20px;
   display: flex;
-  max-height: 500px;
-  max-width: 100%;
+  max-height: 300px;
+  max-width: 70%;
   margin:auto;
   margin-bottom: 10px;
 }
@@ -156,13 +162,6 @@ nav {
   margin-left: 70%;
   background-color: #ffffff;
   display: block;
-}
-#career{
-  margin-top: 5%
-}
-
-#last_years{
-  margin-top: 5%
 }
 /*  PARA SUBMENU/SUBMENU
   .nav li ul li{
