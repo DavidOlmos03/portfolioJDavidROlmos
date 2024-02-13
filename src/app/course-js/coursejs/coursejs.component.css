@@ -1,11 +1,18 @@
 /* styles.css
 @import '~bootstrap/dist/css/bootstrap.min.css';*/
-
+header{
+  padding-top: 20px;
+  font-size: larger;
+  text-align: center;
+  height: 120px;
+  background-color: rgba(255, 242, 0, 0.866);
+}
 body{
   /*background-color: #ffffff;*/
   background-color: aqua;
   margin: 20px;
   background-image: url('src/bg-image1.jpg');
+
 }
 .nav-item a{
   cursor: pointer;
@@ -19,31 +26,20 @@ body{
   /*align-items: flex-start;*/
   border: 1px solid #ffffff;
 }
-#carouselExampleCaptions{
-  display: flex;
-  max-height: 300px;
-  max-width: 70%;
-  margin:auto;
-  margin-bottom: 10px;
 
-}
-#carouselExampleCaptions2{
+.carousel{
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
   padding-top: 20px;
   display: flex;
-  max-height: 300px;
-  max-width: 70%;
-  margin:auto;
-  margin-bottom: 10px;
-}
-#carouselExampleCaptions3{
-  padding-top: 20px;
-  display: flex;
-  max-height: 300px;
-  max-width: 70%;
+  height: 300px;
+  width: 70%;
   margin:auto;
   margin-bottom: 10px;
 }
 
+.carousel:hover{
+  width: 72%;
+}
 .text{
   font-style:italic;
   text-align: justify;
@@ -94,58 +90,21 @@ a[href]{
   font-size: 12px;
   text-decoration: none; /* Esto elimina la línea subrayada */
 }
-/*
-a[href*="./career"]:hover{
-  color:rgb(42, 165, 58);
-  font-size: 15px;
-}
-a[href*="./last_years"]:hover{
-  color:rgb(214, 10, 3);
-  font-size: 15px;
-}*/
 
-/*
-  Para el menú desplegable
-*/
-/*
-.nav {
-  margin: 10px;
-  background-color: #434343;
-  min-width: 90%;
-  position: absolute;
+/**Estilos para el apartado de icons*/
+#icons img {
+  width: 130px;
+  height: 130px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-ul,ol{
-  list-style: none;
+#icons img:hover{
+  width: 140px;
+  height: 130px;
+  box-shadow: 5px 5px 10px 0px rgba(255, 251, 0, 0.3);
 }
 
-.nav li a:hover{
-  background-color: #a4a4a4;
-}
 
-.nav li a {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 10px;
-  display: block;
-}
-
-.nav > li{
-  float: left;
-}
-
-.nav li ul{
-  display:none;
-  position: absolute;
-  min-width: 140px;
-  right: 0%;
-  left: 75%;
-}
-
-.nav li:hover > ul{
-  display: block;
-}
-*/
 nav {
   margin-left: 10px;
   margin-right: 10px;
