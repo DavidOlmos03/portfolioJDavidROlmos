@@ -22,46 +22,54 @@
     <header class="header">
       <app-header></app-header>
     </header>
+
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">{{'home.home'|translate}}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">{{'home.about'|translate}}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#resume" class="nav-link">{{'home.resume'|translate}}</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav brand">
-                    <img src="../assets/imgs/avatar.jpeg" alt="" class="brand-img">
-                    <li class="brand-txt">
-                        <h5 class="brand-title">David Olmos</h5>
-                        <div class="brand-subtitle">Software Development Student</div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">{{'home.portfolio'|translate}}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#blog" class="nav-link">{{'home.blog'|translate}}</a>
-                    </li>
-                    <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">{{'home.contact'|translate}}</a>
-                    </li>
-                </ul>
-            </div>
+
+        <div class="navbar-menu container">
+          <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">{{'home.home'|translate}}</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">{{'home.about'|translate}}</a>
+              </li>
+              <li class="nav-item">
+                <a href="#resume" class="nav-link">{{'home.resume'|translate}}</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav brand">
+              <img src="../assets/imgs/avatar.jpeg" alt="" class="brand-img">
+              <li class="brand-txt">
+                <h5 class="brand-title">David Olmos</h5>
+                <div class="brand-subtitle">Software Development Student</div>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link">{{'home.portfolio'|translate}}</a>
+              </li>
+              <li class="nav-item">
+                <a href="#blog" class="nav-link">{{'home.blog'|translate}}</a>
+              </li>
+              <li class="nav-item last-item">
+                <a href="#contact" class="nav-link">{{'home.contact'|translate}}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12" id="switch-language">
+            <app-switch-languages></app-switch-languages>
+          </div>
         </div>
     </nav>
+
     <!--
       Sección para el about
     -->
@@ -162,6 +170,7 @@
                 <script>document.write(new Date().getFullYear())</script> Created With <i
                     class="ti-heart text-danger"></i> By <a href="http://devcrud.com" target="_blank"><span
                         class="text-danger" title="Bootstrap 4 Themes and Dashboards">DevCRUD</span></a>
+                        and Juan David Ruiz Olmos
             </p>
         </div>
     </footer>

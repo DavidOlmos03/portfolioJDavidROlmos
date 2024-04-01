@@ -13,7 +13,30 @@
   "about":{
     "whoIam":"Who am I ?",
     "student":"A Software Development Student located in our lovely earth",
-    "russell":"The good life is one inspired by love and guided by knowledge."
+    "russell":"The good life is one inspired by love and guided by knowledge.",
+    "personalInfo":{
+      "personalInfo":"Personal info",
+      "birthdate":"Birthdate",
+      "email":"Email",
+      "phone":"Phone",
+      "address":"Address"
+    },
+    "Experience":{
+      "myExperience":"My Experience",
+      "php":"PHP project",
+      "phpProject":"Technology internship project at Echez-group.",
+      "mundoStem":"Website created for scientific dissemination."
+    }
+  },
+  "resume":{
+    "my":"My",
+    "present":"Present",
+    "education":{
+      "education":"Education",
+      "systemEngineer":"Systems engineer",
+      "text1":"I am currently studying Systems Engineering at the Metropolitan Technological Institute (ITM) in the city of Medellín, Colombia. This is a public university that has allowed me to develop solid foundations in Object-Oriented Programming (OOP), in addition to acquiring valuable work experience during my technological internship.",
+      "physics":"Physics",
+      "text2":"Currently, as a second degree, I am studying Pure Physics at the University of Antioquia (UdeA) in the city of Medellín, Colombia. Guided by my passion for mathematics and knowledge, I decided to embark on this career that motivates me every day to improve in different areas. Thanks to this passion for programming and science, the idea of MundoStem arose."
+    }
   }
-
 }
