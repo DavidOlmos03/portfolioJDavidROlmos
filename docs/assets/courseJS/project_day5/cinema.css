@@ -1,0 +1,13 @@
+body{
+  background-image: url(./src/background3.webp);
+  background-size:cover;
+}
+.menu{
+  margin:auto;
+  margin-top: 13%;
+  margin-left: 20%;
+}
+img{
+  width:"150px";
+  height:"150px";
+}

@@ -1,0 +1,21 @@
+body{
+  background-image: url(./backgraund.jpg);
+  background-size: cover;
+}
+.content{
+  margin:5% 30% 2% 2%;
+  padding: 5% 2% 5% 2%;
+  width: 40%;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.297);
+}
+#numbersQuantity {
+  margin-bottom: 20px;
+  width: 50%;
+  margin: auto;
+}
+#formulario input{
+  width: 50%;
+  margin: auto;
+}
+

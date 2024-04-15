@@ -1,0 +1,42 @@
+{
+  "home":{
+    "home":"Inicio",
+    "about":"Sobre",
+    "resume":"Resumen",
+    "portfolio":"Portafolio",
+    "blog":"Blog",
+    "contact":"Contacto",
+    "language":"Cambiar idioma a:",
+    "hello":"Hola, soy",
+    "carreer":"Estudiante de Desarrollo de Software"
+  },
+  "about":{
+    "whoIam":"¿Quién soy?",
+    "student":"Un Estudiante de Desarrollo de Software ubicado en nuestra hermosa tierra",
+    "russell":"La buena vida es aquella inspirada por el amor y guiada por el conocimiento.",
+    "personalInfo":{
+      "personalInfo":"Información personal",
+      "birthdate":"Fecha nacimiento",
+      "email":"correo",
+      "phone":"Teléfono",
+      "address":"Dirección"
+    },
+    "Experience":{
+      "myExperience":"Mi Experiencia",
+      "php":"Proyecto en PHP",
+      "phpProject":"Proyecto practicas de tecnología en Echez-group.",
+      "mundoStem":"Página web creada para divulgación cientifica."
+    }
+  },
+  "resume":{
+    "my":"Mi",
+    "present":"Presente",
+    "education":{
+      "education":"Educación",
+      "systemEngineer":"Ingeniería de sistemas",
+      "text1":"Actualmente me encuentro cursando Ingeniería de Sistemas en el Instituto Tecnológico Metropolitano (ITM) en la ciudad de Medellín, Colombia. Esta es una universidad pública que me ha permitido desarrollar bases sólidas en Programación Orientada a Objetos (POO), además de adquirir una valiosa experiencia laboral durante mis prácticas tecnológicas.",
+      "physics":"Física",
+      "text2":"Actualmente, como segunda carrera, estoy cursando Física Pura en la Universidad de Antioquia (UdeA) en la ciudad de Medellín, Colombia. Guiado por mi pasión por las matemáticas y el conocimiento, decidí embarcarme en esta carrera que me motiva cada día a mejorar en diferentes áreas. Gracias a esta pasión por la programación y la ciencia, surgió la idea de MundoStem."
+    }
+  }
+}
