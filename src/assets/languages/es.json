@@ -1,4 +1,9 @@
 {
+  "general":{
+    "my":"Mi",
+    "resume":"Resumen",
+    "experience":"Experiencia"
+  },
   "home":{
     "home":"Inicio",
     "about":"Sobre",
@@ -8,6 +13,7 @@
     "contact":"Contacto",
     "language":"Cambiar idioma a:",
     "hello":"Hola, soy",
+    "printResume":"Imprimir Resumen",
     "carreer":"Estudiante de Desarrollo de Software"
   },
   "about":{
@@ -22,7 +28,6 @@
       "address":"Dirección"
     },
     "Experience":{
-      "myExperience":"Mi Experiencia",
       "php":"Proyecto en PHP",
       "phpProject":"Proyecto practicas de tecnología en Echez-group.",
       "mundoStem":"Página web creada para divulgación cientifica."
@@ -31,6 +36,20 @@
   "resume":{
     "my":"Mi",
     "present":"Presente",
+    "experience":{
+      "experience":"Experiencia",
+      "present":"Presente",
+      "development":"Desarrollo de Software",
+      "text1":"Inicié mis estudios en Desarrollo de Software en el ITM en el año 2021. Actualmente continúo con mis estudios en esta institución, por la cual siempre estaré agradecido por permitirme desarrollar mi gusto por la programación, en particular, el desarrollo web.",
+      "frontend":"Desarrollo front-end",
+      "text2":"He realizado diversos cursos y proyectos en los que he estudiado y utilizado herramientas como CSS, SCSS, JavaScript y TypeScript en Angular y Vue.js. Estos proyectos y cursos se pueden ver reflejados en el portafolio que se encuentra a continuación de esta sección.",
+      "backend":"Desarrollo back-end",
+      "text3":"He realizado cursos en SQL Server, MongoDB, PostgreSQL, y frameworks como Laravel, además de haber utilizado FastAPI para trabajar con Python en el backend de MundoStem. Los certificados y proyectos realizados con estas herramientas están disponibles a continuación de esta sección."
+    },
+    "skills":{
+      "skills":"Habilidades",
+      "languages":"Idiomas"
+    },
     "education":{
       "education":"Educación",
       "systemEngineer":"Ingeniería de sistemas",

@@ -1,4 +1,9 @@
 {
+  "general":{
+    "my":"My",
+    "resume":"Resume",
+    "experience":"Experience"
+  },
   "home":{
     "home":"Home",
     "about":"About",
@@ -8,6 +13,7 @@
     "contact":"Contact",
     "language":"Change Language to:",
     "hello":"Hello, I am",
+    "printResume":"Print Resume",
     "carreer":"Software Development Student"
   },
   "about":{
@@ -31,6 +37,20 @@
   "resume":{
     "my":"My",
     "present":"Present",
+    "experience":{
+      "experience":"Experience",
+      "present":"Present",
+      "development":"Software development",
+      "text1":"I began my studies in Software Development at ITM in 2021. Currently, I am continuing my studies at this institution, for which I will always be grateful for allowing me to cultivate my passion for programming, particularly web development.",
+      "frontend":"Front-end Developer",
+      "text2":"I have undertaken various courses and projects where I have studied and utilized tools such as CSS, SCSS, JavaScript, and TypeScript in Angular and Vue.js. These projects and courses can be evidenced in the portfolio located below this section.",
+      "backend":"Back-end Developer",
+      "text3":"I have taken courses in SQL Server, MongoDB, PostgreSQL, and frameworks like Laravel, as well as using FastAPI to work with Python on the backend of MundoStem. Certificates and projects completed with these tools are available below this section."
+    },
+    "skills":{
+      "skills":"Skills",
+      "languages":"Languages"
+    },
     "education":{
       "education":"Education",
       "systemEngineer":"Systems engineer",
