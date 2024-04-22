@@ -2,7 +2,8 @@
   "general":{
     "my":"Mi",
     "resume":"Resumen",
-    "experience":"Experiencia"
+    "experience":"Experiencia",
+    "and":"y"
   },
   "home":{
     "home":"Inicio",
@@ -57,5 +58,18 @@
       "physics":"Física",
       "text2":"Actualmente, como segunda carrera, estoy cursando Física Pura en la Universidad de Antioquia (UdeA) en la ciudad de Medellín, Colombia. Guiado por mi pasión por las matemáticas y el conocimiento, decidí embarcarme en esta carrera que me motiva cada día a mejorar en diferentes áreas. Gracias a esta pasión por la programación y la ciencia, surgió la idea de MundoStem."
     }
+  },
+  "portfolio":{
+    "new":"Nuevo",
+    "description":"Descripción",
+    "text1":"Este es un curso sobre",
+    "download":"descarga",
+    "text2":"el certificado!",
+    "or":"o",
+    "checkit":"échale un vistazo!!",
+    "webPage":"Página web",
+    "text3":"Este es un sitio web que construí (con mi compañero y amigo Hernán Sánchez) para compartir nuestra pasión por las matemáticas, la física y la programación, con el fin de ayudar a otras personas interesadas en estos temas.",
+    "text4":"Esta página web fue realizada en mi proceso de prácticas de tecnología, en la empresa Echez Group.",
+    "progress":"En progreso..."
   }
 }
