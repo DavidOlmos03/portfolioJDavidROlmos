@@ -2,7 +2,8 @@
   "general":{
     "my":"My",
     "resume":"Resume",
-    "experience":"Experience"
+    "experience":"Experience",
+    "and":"and"
   },
   "home":{
     "home":"Home",
@@ -58,5 +59,18 @@
       "physics":"Physics",
       "text2":"Currently, as a second degree, I am studying Pure Physics at the University of Antioquia (UdeA) in the city of Medellín, Colombia. Guided by my passion for mathematics and knowledge, I decided to embark on this career that motivates me every day to improve in different areas. Thanks to this passion for programming and science, the idea of MundoStem arose."
     }
+  },
+  "portfolio":{
+    "new":"New",
+    "description":"Description",
+    "text1":"This is a course about",
+    "download":"download",
+    "text2":"the certificate!",
+    "or":"or",
+    "checkit":"check it out!!",
+    "webPage":"Web page",
+    "text3":"This is a website that I built (with my partner and friend Hernán Sánchez) to share our passion for mathematics, physics and programming, in order to help other people interested in these topics.",
+    "text4":"This web page was made in my technology internship process, in the company Echez Group.",
+    "progress":"In progress..."
   }
 }
