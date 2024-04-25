@@ -23,7 +23,12 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/courseJS"
+              "src/courseJS",
+              {
+                "glob": "_redirects",
+                "input": "src",
+                "output": "/"
+              }
             ],
             "styles": [
               "src/styles.css",
