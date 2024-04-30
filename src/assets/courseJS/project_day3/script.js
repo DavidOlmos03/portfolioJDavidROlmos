@@ -1,5 +1,5 @@
 
-function PROJECT_DAY3(){
+// function PROJECT_DAY3(){
   let timeIsUp;
   let timeInterval;
 
@@ -47,5 +47,5 @@ function PROJECT_DAY3(){
   function returnIndex(){
       window.history.back();
   }
-}
+// }
 
