@@ -1,0 +1,13 @@
+.list{
+  padding: 2rem 5rem 5rem 5rem;
+}
+h1{
+  text-align: center;
+}
+h1 span{
+  color: rgb(3, 191, 91);
+}
+li{
+  list-style-type: none;
+  padding-top: 1rem;
+}

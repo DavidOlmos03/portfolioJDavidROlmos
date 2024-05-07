@@ -15,6 +15,7 @@ import { HeaderComponent } from './header/header.component';
 import { ResumeComponent } from './resume/resume.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { VuejsModalComponent } from './portfolio/vuejs-modal/vuejs-modal.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { ContactComponent } from './contact/contact.component';
     ResumeComponent,
     PortfolioComponent,
     ContactComponent,
+    VuejsModalComponent,
 
   ],
   imports: [
