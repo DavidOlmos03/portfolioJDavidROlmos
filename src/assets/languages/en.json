@@ -72,5 +72,11 @@
     "text3":"Built with my partner and friend Hernán Sánchez.",
     "text4":"Made in my technology internship process, in the company Echez Group.",
     "progress":"In progress..."
+  },
+  "contact":{
+    "getInTouch":"Get in touch",
+    "email":"Email",
+    "phone":"Phone",
+    "address":"Address"
   }
 }
