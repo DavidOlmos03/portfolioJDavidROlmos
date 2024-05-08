@@ -114,6 +114,10 @@
   visibility: visible;
 }
 
+#checkit{
+  cursor: pointer;
+}
+
 @media (max-width: 767.98px) {
   .title, .subtitle{
     font-size: small;
@@ -123,7 +127,17 @@
     text-align: start;
   }
   .list-item{
-
     font-size: x-small;
+  }
+  #webSiteEchez, #mundoStem{
+    height: 90% !important;
+    align-items: center;
+  }
+  #webSiteEchez img,
+  #mundoStem img{
+    padding-top: 20%;
+  }
+  .content-holder h6 a{
+    font-size: 1.5rem;
   }
 }

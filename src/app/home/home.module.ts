@@ -16,6 +16,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { VuejsModalComponent } from './portfolio/vuejs-modal/vuejs-modal.component';
+import { WebSiteEchezModalComponent } from './portfolio/web-site-echez-modal/web-site-echez-modal.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { VuejsModalComponent } from './portfolio/vuejs-modal/vuejs-modal.compone
     PortfolioComponent,
     ContactComponent,
     VuejsModalComponent,
+    WebSiteEchezModalComponent,
 
   ],
   imports: [
