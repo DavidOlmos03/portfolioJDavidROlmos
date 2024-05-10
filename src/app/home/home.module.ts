@@ -17,6 +17,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { VuejsModalComponent } from './portfolio/vuejs-modal/vuejs-modal.component';
 import { WebSiteEchezModalComponent } from './portfolio/web-site-echez-modal/web-site-echez-modal.component';
+import { StreamingNetflixModalComponent } from './portfolio/streaming-netflix-modal/streaming-netflix-modal.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { WebSiteEchezModalComponent } from './portfolio/web-site-echez-modal/web
     ContactComponent,
     VuejsModalComponent,
     WebSiteEchezModalComponent,
+    StreamingNetflixModalComponent,
 
   ],
   imports: [

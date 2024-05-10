@@ -86,7 +86,7 @@
                   <div class="text-holder">
                     <h6 class="title">{{'portfolio.webPage'|translate}} <a href="https://github.com/DavidOlmos03/webSiteEchez"
                         class="font-weight-bold text-dark ">webSiteEchez</a></h6>
-                    <p class="subtitle">{{'portfolio.text4'|translate}} <span><a id="checkit" (click)="mostrarModalWebEchez()" class="font-weight-bold text-dark"> {{'portfolio.checkit'|translate}}</a></span></p>
+                    <p class="subtitle">{{'portfolio.text4'|translate}} <span><a id="checkit" (click)="mostrarModal('WebSiteEchezModal')" class="font-weight-bold text-dark"> {{'portfolio.checkit'|translate}}</a></span></p>
 
                   </div>
                 </div>
@@ -152,7 +152,7 @@
 
                         </p>
                         <div class="button">
-                          <button class="btn btn-danger" (click)="mostrarModal()">Mostrar Proyectos</button>
+                          <button class="btn btn-danger" (click)="mostrarModal('VuejsModal')">Mostrar Proyectos</button>
                         </div>
 
 
@@ -171,6 +171,7 @@
                     <p class="subtitle">{{'portfolio.text1'|translate}} Laravel {{'general.and'|translate}} Angular, <span class="font-weight-bold text-dark"><a
                           href="https://github.com/DavidOlmos03/streaming_tipo-netflix"
                           class="font-weight-bold text-dark">{{'portfolio.progress'|translate}}</a></span></p>
+                          <span><a id="checkit" (click)="mostrarModal('StreamingNetflixModal')" class="font-weight-bold text-dark"> {{'portfolio.checkit'|translate}}</a></span>
                     <!--Click for download certificate-->
                   </div>
                 </div>

@@ -1,0 +1,20 @@
+#carouselExampleIndicators{
+  padding: 1rem;
+}
+
+.carousel .carousel-indicators button{
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: black;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  /* color: black; */
+  background-color: black;
+}
+
+@media (max-width:767.98px){
+
+}
