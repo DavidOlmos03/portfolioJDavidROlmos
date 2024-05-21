@@ -114,6 +114,13 @@
   visibility: visible;
 }
 
+.portfolio-item .content-holder .text-holder a{
+  text-decoration: none;
+}
+a:hover{
+  color: #202020;
+}
+
 #checkit{
   cursor: pointer;
 }
