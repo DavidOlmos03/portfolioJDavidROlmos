@@ -19,6 +19,8 @@ import { VuejsModalComponent } from './portfolio/vuejs-modal/vuejs-modal.compone
 import { WebSiteEchezModalComponent } from './portfolio/web-site-echez-modal/web-site-echez-modal.component';
 import { StreamingNetflixModalComponent } from './portfolio/streaming-netflix-modal/streaming-netflix-modal.component';
 
+// Import ng-circle-progress
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
@@ -38,12 +40,25 @@ import { StreamingNetflixModalComponent } from './portfolio/streaming-netflix-mo
     CourseJSModule,
     SharedModule,
     HttpClientModule,
+
+    // Traduction
     TranslateModule.forRoot({
       loader:{
         provide:TranslateLoader,
         useFactory:HttLoaderFactory,
         deps:[HttpClient]
       }
+    }),
+
+    // Specify ng-circle-progress as an import
+    NgCircleProgressModule.forRoot({
+      // set defaults here
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#78C000",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 300,
     })
   ],
 })

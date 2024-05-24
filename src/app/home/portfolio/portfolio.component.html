@@ -175,7 +175,35 @@
                 </div>
               </div>
             </div>
+            <div class="col-6 col-md-6 col-lg-4 new udemy" *ngIf="['new','udemy'].includes(selectedSection)">
+
+              <div class="portfolio-item">
+
+                <img src="assets/imgs/docker-wall-1.jpeg" class="img-fluid"
+                  alt="laravel-angular-course">
+                <div class="content-holder with-circle">
+                  <div class="circle">
+                    <circle-progress
+                    [percent]="11"
+                    [radius]="40"
+                    [outerStrokeWidth]="10"
+                    [innerStrokeWidth]="5"
+                    [outerStrokeColor]="'#FF3131'"
+                    [innerStrokeColor]="'#F85C70'"
+                    [animation]="true"
+                    [animationDuration]="300"
+                    ></circle-progress>
+                  </div>
+                  <div class="text-holder">
+                    <h6 class="title">Docker</h6>
+                    <p class="subtitle">{{'portfolio.text1'|translate}} Docker, <span class="font-weight-bold text-dark">{{'portfolio.progress'|translate}}</span></p>
+                    <!--Click for download certificate-->
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
 
 
 
