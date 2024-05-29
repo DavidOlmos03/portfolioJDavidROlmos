@@ -6,7 +6,13 @@
 
   </div>
 </div> -->
-<div class="contenedor">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<div class="contenedor bg-dark">
+
+  <div class="d-flex">
+    <button class="btn border-0 ms-auto ml-0" (click)="closeModal()"><i class="bi bi-x-octagon-fill" style="color: red;"></i></button>
+  </div>
+
   <div class="circle">
     <circle-progress
     [percent]="58"
@@ -20,7 +26,7 @@
     ></circle-progress>
   </div>
 
-  <h1>Proyectos <br><span>Realizados</span></h1>
+  <h1 class="text-light">Proyectos <br><span>Realizados</span></h1>
   <ul class="row list">
     <div class="col-6 col-md-6">
       <li><h6><a href="https://guitarla-project-vuejs.netlify.app" class="text-uppercase list-item">GuitarLA</a></h6></li>
@@ -37,6 +43,6 @@
 
       <!-- {{ description}} -->
     </div>
-</ul>
+  </ul>
 </div>
 

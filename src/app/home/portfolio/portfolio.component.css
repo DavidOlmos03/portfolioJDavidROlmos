@@ -132,6 +132,43 @@ a:hover{
   position: fixed;
 }
 
+.card .icon-html{
+  background-color: rgb(255, 145, 0);
+  border-color: rgb(255, 119, 0);
+  width: 79px;
+  height: 33px;
+}
+
+.card .icon-html:hover{
+  background-color: rgb(255, 196, 0);
+  cursor: pointer;
+}
+
+.card .icon-css{
+  background-color: rgb(0, 42, 255);
+  border-color: rgb(0, 15, 126);
+  width: 79px;
+  height: 33px
+}
+
+.card .icon-css:hover{
+  background-color: rgb(109, 133, 255);
+  cursor: pointer;
+}
+
+.card .icon-bootstrap{
+  background-color: rgb(129, 0, 199);
+  border-color: rgb(58, 0, 77);
+  width: 95px;
+  height: 33px
+}
+
+.card .icon-bootstrap:hover{
+  background-color: rgb(174, 52, 239);
+  cursor: pointer
+}
+
+
 @media (max-width: 767.98px) {
   .title, .subtitle{
     font-size: small;
