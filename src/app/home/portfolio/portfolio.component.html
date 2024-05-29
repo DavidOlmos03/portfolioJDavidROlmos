@@ -138,119 +138,141 @@
                 </div>
               </div>
             </div>
+            <!-- start portfolio item -->
             <div class="col-6 col-md-6 col-lg-4 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
-              <div class="portfolio-item">
-                <img src="assets/imgs/vuejs-course.jpg" class="img-fluid rounded"
-                  alt="vuejs-course">
-                <div class="content-holder rounded">
-                  <div class="text-holder">
-                    <h6 class="title">Vue js</h6>
-                    <p class="subtitle">{{'portfolio.text1'|translate}} Vue js, <span class="font-weight-bold"><a
-                          href="https://github.com/DavidOlmos03/course-vuejs/tree/main"
-                          class="font-weight-bold">{{'portfolio.progress'|translate}}</a></span>
-
-
-                        </p>
-                        <div class="button">
-                          <button class="btn btn-danger" (click)="mostrarModal('VuejsModal')">Mostrar Proyectos</button>
+              <div class="card shadow py-1 px-1">
+                <div class="portfolio-item">
+                  <img src="assets/imgs/vuejs-course.jpg" class="img-fluid"
+                    alt="vuejs-course">
+                  <div class="content-holder">
+                    <div class="text-holder">
+                      <h6 class="title">Vue js</h6>
+                      <p class="subtitle">{{'portfolio.text1'|translate}} Vue js, <span class="font-weight-bold"><a
+                            href="https://github.com/DavidOlmos03/course-vuejs/tree/main"
+                            class="font-weight-bold">{{'portfolio.progress'|translate}}</a></span>
+                          </p>
+                          <div class="button">
+                            <button class="btn btn-danger" (click)="mostrarModal('VuejsModal')">Mostrar Proyectos</button>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Tecnologías</h5>
+                    <div class="row g-1">
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-vuejs shadow">
+                          <p class="fw-bold text-light"><span><img src="assets/icons/vuejs-icon.png" alt="vuejs"></span>VUEJS</p>
                         </div>
-
-
-                    <!--Click for download certificate-->
-                  </div>
+                      </div>
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-css shadow">
+                          <p class="fw-bold text-light"><span><i class="ti ti-css3 icon-md"></i></span>CSS</p>
+                        </div>
+                      </div>
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-tailwind shadow">
+                          <p class="fw-bold text-light"><span><img src="assets/icons/tailwind-icon.png" alt="tailwild" fw-bold style="padding-bottom: 1px; width: 15px; height: 15px;"></span>Tailwind</p>
+                        </div>
+                      </div>
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-firebase shadow">
+                          <p class="fw-bold text-light"><span><img src="assets/icons/firebase-icon.png" alt="firebase" fw-bold></span>firebase</p>
+                        </div>
+                      </div>
+                    </div>
                 </div>
               </div>
             </div>
+            <!-- end portfolio item -->
+            <!-- start portfolio item -->
             <div class="col-6 col-md-6 col-lg-4 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
-              <div class="portfolio-item">
-                <img src="assets/imgs/laravel-angular-course.jpg" class="img-fluid"
-                  alt="laravel-angular-course">
-                <div class="content-holder">
-                  <div class="text-holder">
-                    <h6 class="title">Laravel & Angular</h6>
-                    <p class="subtitle">{{'portfolio.text1'|translate}} Laravel {{'general.and'|translate}} Angular, <span class="font-weight-bold text-dark">{{'portfolio.progress'|translate}}</span></p>
-                    <span><a id="checkit" (click)="mostrarModal('StreamingNetflixModal')" class="font-weight-bold text-dark"> {{'portfolio.checkit'|translate}}</a></span>
-                    <!--Click for download certificate-->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-4 new udemy" *ngIf="['new','udemy'].includes(selectedSection)">
-
-              <div class="portfolio-item">
-
-                <img src="assets/imgs/docker-wall-1.jpeg" class="img-fluid"
-                  alt="laravel-angular-course">
-                <div class="content-holder with-circle">
-                  <div class="circle">
-                    <circle-progress
-                    [percent]="11"
-                    [radius]="40"
-                    [outerStrokeWidth]="10"
-                    [innerStrokeWidth]="5"
-                    [outerStrokeColor]="'#FF3131'"
-                    [innerStrokeColor]="'#F85C70'"
-                    [animation]="true"
-                    [animationDuration]="300"
-                    ></circle-progress>
-                  </div>
-                  <div class="text-holder">
-                    <h6 class="title">Docker</h6>
-                    <p class="subtitle">{{'portfolio.text1'|translate}} Docker, <span class="font-weight-bold text-dark">{{'portfolio.progress'|translate}}</span></p>
-                    <!--Click for download certificate-->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card col-6 col-md-6 col-lg-4 new shadow" *ngIf="['new'].includes(selectedSection)">
-              <div class="portfolio-item">
-
-                <img src="assets/imgs/docker-wall-1.jpeg" class="img-fluid"
-                  alt="laravel-angular-course">
-                <div class="content-holder with-circle">
-                  <div class="circle">
-                    <circle-progress
-                    [percent]="11"
-                    [radius]="40"
-                    [outerStrokeWidth]="10"
-                    [innerStrokeWidth]="5"
-                    [outerStrokeColor]="'#FF3131'"
-                    [innerStrokeColor]="'#F85C70'"
-                    [animation]="true"
-                    [animationDuration]="300"
-                    ></circle-progress>
-                  </div>
-                  <div class="text-holder">
-                    <h6 class="title">Docker</h6>
-                    <p class="subtitle">{{'portfolio.text1'|translate}} Docker, <span class="font-weight-bold text-dark">{{'portfolio.progress'|translate}}</span></p>
-                    <!--Click for download certificate-->
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Tecnologias</h5>
-                <div class="card-text">
-                  <div class="row g-1">
-                    <div class="col-md">
-                      <div class="card text-center pt-1 d-inline-block icon-html shadow">
-                        <p class="fw-bold text-light"><span><i class="ti ti-html5 icon-md"></i></span>HTML5</p>
-                      </div>
-                    </div>
-                    <div class="col-md">
-                      <div class="card text-center pt-1 d-inline-block icon-css shadow">
-                        <p class="fw-bold text-light"><span><i class="ti ti-css3 icon-md"></i></span>CSS</p>
-                      </div>
-                    </div>
-                    <div class="col-md">
-                      <div class="card text-center pt-1 d-inline-block icon-bootstrap shadow">
-                        <p class="fw-bold text-light"><span><img src="assets/icons/bootstrap-white-icon.png" alt="Bootstrap" fw-bold style="padding-bottom: 1px; width: 15px; height: 15px;"></span>Bootstrap</p>
-                      </div>
+              <div class="card shadow py-1 px-1">
+                <div class="portfolio-item">
+                  <img src="assets/imgs/laravel-angular-course.jpg" class="img-fluid"
+                    alt="laravel-angular-course">
+                  <div class="content-holder">
+                    <div class="text-holder">
+                      <h6 class="title">Laravel & Angular</h6>
+                      <p class="subtitle">{{'portfolio.text1'|translate}} Laravel {{'general.and'|translate}} Angular, <span class="font-weight-bold text-dark">{{'portfolio.progress'|translate}}</span></p>
+                      <span><a id="checkit" (click)="mostrarModal('StreamingNetflixModal')" class="font-weight-bold text-dark"> {{'portfolio.checkit'|translate}}</a></span>
+                      <!--Click for download certificate-->
                     </div>
                   </div>
                 </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Tecnologías</h5>
+                    <div class="row g-1">
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-html shadow">
+                          <p class="fw-bold text-light"><span><i class="ti ti-html5 icon-md"></i></span>HTML5</p>
+                        </div>
+                      </div>
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-css shadow">
+                          <p class="fw-bold text-light"><span><i class="ti ti-css3 icon-md"></i></span>CSS</p>
+                        </div>
+                      </div>
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-bootstrap shadow">
+                          <p class="fw-bold text-light"><span><img src="assets/icons/bootstrap-white-icon.png" alt="Bootstrap" fw-bold style="padding-bottom: 1px; width: 15px; height: 15px;"></span>Bootstrap</p>
+                        </div>
+                      </div>
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-angular shadow">
+                          <p class="fw-bold text-light"><span><img src="assets/icons/angular-icon.png" alt="angular" style="padding-bottom: 1px; width: 15px; height: 15px;"></span>Angular</p>
+                        </div>
+                      </div>
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-laravel shadow">
+                          <p class="fw-bold text-light"><span><img src="assets/icons/laravel-icon.png" alt="laravel" style="padding-bottom: 1px; width: 15px; height: 15px;"></span>Laravel</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
               </div>
             </div>
+            <!-- end portfolio item -->
+            <!-- start portfolio item -->
+            <div class="col-6 col-md-6 col-lg-4 new" *ngIf="['new'].includes(selectedSection)">
+              <div class="card shadow py-1 px-1">
+                <div class="portfolio-item">
+
+                  <img src="assets/imgs/docker-wall-1.jpeg" class="img-fluid"
+                    alt="laravel-angular-course">
+                  <div class="content-holder with-circle">
+                    <div class="circle">
+                      <circle-progress
+                      [percent]="11"
+                      [radius]="40"
+                      [outerStrokeWidth]="10"
+                      [innerStrokeWidth]="5"
+                      [outerStrokeColor]="'#FF3131'"
+                      [innerStrokeColor]="'#F85C70'"
+                      [animation]="true"
+                      [animationDuration]="300"
+                      ></circle-progress>
+                    </div>
+                    <div class="text-holder">
+                      <h6 class="title">Docker</h6>
+                      <p class="subtitle">{{'portfolio.text1'|translate}} Docker, <span class="font-weight-bold text-dark">{{'portfolio.progress'|translate}}</span></p>
+                      <!--Click for download certificate-->
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Tecnologías</h5>
+                    <div class="row g-1">
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-docker shadow">
+                          <p class="fw-bold text-light"><span><img src="assets/icons/docker-icon.png" alt="docker" style="padding-bottom: 1px; width: 20px; height: 20px;"></span>DOCKER</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- end portfolio item -->
           </div>
 
 
