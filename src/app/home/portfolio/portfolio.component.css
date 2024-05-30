@@ -140,7 +140,7 @@ a:hover{
 
 .card .icon-html:hover{
   background-color: rgb(255, 196, 0);
-  cursor: pointer;
+  cursor: default;
 }
 
 .card .icon-css{
@@ -151,7 +151,7 @@ a:hover{
 
 .card .icon-css:hover{
   background-color: rgb(109, 133, 255);
-  cursor: pointer;
+  cursor: default;
 }
 
 .card .icon-bootstrap{
@@ -162,7 +162,7 @@ a:hover{
 
 .card .icon-bootstrap:hover{
   background-color: rgb(174, 52, 239);
-  cursor: pointer
+  cursor: default
 }
 
 .card .icon-vuejs{
@@ -173,7 +173,7 @@ a:hover{
 
 .card .icon-vuejs:hover{
   background-color: rgb(0, 208, 42);
-  cursor: pointer
+  cursor: default
 }
 
 .card .icon-tailwind{
@@ -184,7 +184,7 @@ a:hover{
 
 .card .icon-tailwind:hover{
   background-color: rgb(141, 218, 250);
-  cursor: pointer
+  cursor: default
 }
 
 .card .icon-firebase{
@@ -195,7 +195,7 @@ a:hover{
 
 .card .icon-firebase:hover{
   background-color: rgb(255, 102, 46);
-  cursor: pointer
+  cursor: default
 }
 
 .card .icon-angular{
@@ -206,7 +206,7 @@ a:hover{
 
 .card .icon-angular:hover{
   background-color: rgb(255, 58, 58);
-  cursor: pointer
+  cursor: default
 }
 
 .card .icon-laravel{
@@ -217,7 +217,7 @@ a:hover{
 
 .card .icon-laravel:hover{
   background-color: rgb(251, 92, 34);
-  cursor: pointer
+  cursor: default
 }
 
 .card .icon-docker{
@@ -228,7 +228,29 @@ a:hover{
 
 .card .icon-docker:hover{
   background-color: rgb(5, 126, 255);
-  cursor: pointer
+  cursor: default
+}
+
+.card .icon-js{
+  background-color: rgb(255, 208, 0);
+  width: 95px;
+  height: 33px
+}
+
+.card .icon-js:hover{
+  background-color: rgb(255, 222, 76);
+  cursor: default
+}
+
+.card .icon-php{
+  background-color: rgb(76, 0, 255);
+  width: 79px;
+  height: 33px
+}
+
+.card .icon-php:hover{
+  background-color: rgb(103, 37, 255);
+  cursor: default
 }
 
 @media (max-width: 767.98px) {

@@ -26,73 +26,168 @@
         </div>
         <div class="portfolio-container">
           <div class="row">
-            <div class="col-6 col-md-6 col-lg-4" id="new udemy" *ngIf="['udemy'].includes(selectedSection)">
-              <div class="portfolio-item">
-                <img src="assets/imgs/courseMongodb.jpg" class="img-fluid"
-                  alt="courseMongodb">
-                <div class="content-holder">
-                  <!-- <a class="img-popup" href="assets/imgs/course-2.jpg"></a> -->
-                  <div class="text-holder">
-                    <h6 class="title text-uppercase">{{'portfolio.description'|translate}}</h6>
-                    <p class="subtitle">{{'portfolio.text1'|translate}} mongoDB, <span class="font-weight-bold"><a
-                          id="download-link"
-                          href="assets/docs/certificados/mongoDB.pdf"
-                          download>{{'portfolio.download'|translate}}</a></span> {{'portfolio.text2'|translate}}</p>
+            <!-- start portfolio item -->
+            <div class="col-6 col-md-6 col-lg-3" id="new udemy" *ngIf="['udemy'].includes(selectedSection)">
+              <div class="card shadow py-1 px-1 bg-dark">
+                <div class="portfolio-item">
+                  <img src="assets/imgs/courseMongodb.jpg" class="img-fluid"
+                    alt="courseMongodb">
+                  <div class="content-holder">
+                    <!-- <a class="img-popup" href="assets/imgs/course-2.jpg"></a> -->
+                    <div class="text-holder">
+                      <h6 class="title text-uppercase">{{'portfolio.description'|translate}}</h6>
+                      <p class="subtitle">{{'portfolio.text1'|translate}} mongoDB, <span class="font-weight-bold"><a
+                            id="download-link"
+                            href="assets/docs/certificados/mongoDB.pdf"
+                            download>{{'portfolio.download'|translate}}</a></span> {{'portfolio.text2'|translate}}</p>
+                    </div>
                   </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-light">Tecnologías</h5>
+                      <div class="row g-1">
+                        <div class="col-md">
+                          <div class="text-center pt-1 d-inline-block icon-docker shadow">
+                            <p class="fw-bold text-light"><span><img src="assets/icons/mongodb-icon.png" alt="docker" style="padding-bottom: 1px; width: 18px; height: 18px;"></span>mongoDB</p>
+                          </div>
+                        </div>
+                      </div>
                 </div>
               </div>
             </div>
-            <div class="col-6 col-md-6 col-lg-4" *ngIf="['udemy', 'web'].includes(selectedSection)">
-              <div class="portfolio-item">
-                <img src="assets/imgs/course-1.png" class="img-fluid"
-                  alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                <div class="content-holder">
-                  <div class="text-holder">
-                    <h6 class="title text-uppercase">{{'portfolio.description'|translate}}</h6>
-                    <p class="subtitle">{{'portfolio.text1'|translate}} javaScript,
-                      <span
-                      class="font-weight-bold">
-                      <a
-                      id="download-link"
-                      href="assets/docs/certificados/javaScriptFG.pdf"
-                      download>{{'portfolio.download'|translate}}
-                      </a>
-                      </span>
-                      {{'portfolio.text2'|translate}} {{'portfolio.or'|translate}}
-                      <a href="course-js" class="font-weight-bold"> {{'portfolio.checkit'|translate}}</a>
-                    </p>
+            <!-- end portfolio item -->
+            <!-- start portfolio item -->
+            <div class="col-6 col-md-6 col-lg-3" *ngIf="['udemy', 'web'].includes(selectedSection)">
+              <div class="card shadow py-1 px-1 bg-dark">
+                <div class="portfolio-item">
+                  <img src="assets/imgs/course-1.png" class="img-fluid"
+                    alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                  <div class="content-holder">
+                    <div class="text-holder">
+                      <h6 class="title text-uppercase">{{'portfolio.description'|translate}}</h6>
+                      <p class="subtitle">{{'portfolio.text1'|translate}} javaScript,
+                        <span
+                        class="font-weight-bold">
+                        <a
+                        id="download-link"
+                        href="assets/docs/certificados/javaScriptFG.pdf"
+                        download>{{'portfolio.download'|translate}}
+                        </a>
+                        </span>
+                        {{'portfolio.text2'|translate}} {{'portfolio.or'|translate}}
+                        <a href="course-js" class="font-weight-bold"> {{'portfolio.checkit'|translate}}</a>
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-4 web" *ngIf="['web'].includes(selectedSection)">
-              <div id="mundoStem" class="portfolio-item">
-                <img src="assets/imgs/mundoSteam.png" class="img-fluid"
-                  alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                <div class="content-holder">
-                  <div class="text-holder">
-                    <h6 class="title">{{'portfolio.webPage'|translate}} <a href="https://mundostem.netlify.app/"
-                        class="font-weight-bold">mundoSteam</a></h6>
-                    <p class="subtitle">{{'portfolio.text3'|translate}}</p>
-                  </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-light">Tecnologías</h5>
+                    <div class="row g-1">
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-html shadow">
+                          <p class="fw-bold text-light"><span><i class="ti ti-html5 icon-md"></i></span>HTML5</p>
+                        </div>
+                      </div>
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-css shadow">
+                          <p class="fw-bold text-light"><span><i class="ti ti-css3 icon-md"></i></span>CSS</p>
+                        </div>
+                      </div>
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-js shadow">
+                          <p class="fw-bold text-light"><span><img src="assets/icons/js-icon.png" alt="tailwild" style="padding-bottom: 1px; width: 15px; height: 15px;"></span>javaScript</p>
+                        </div>
+                      </div>
+                    </div>
                 </div>
               </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-4 web" *ngIf="['web'].includes(selectedSection)">
-              <div  id="webSiteEchez" class="portfolio-item">
-                <img src="assets/imgs/webSiteEchez.png" class="img-fluid"
-                  alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                <div class="content-holder">
-                  <div class="text-holder">
-                    <h6 class="title">{{'portfolio.webPage'|translate}} <a href="https://github.com/DavidOlmos03/webSiteEchez"
-                        class="font-weight-bold ">webSiteEchez</a></h6>
-                    <p class="subtitle">{{'portfolio.text4'|translate}} <span><a id="checkit" (click)="mostrarModal('WebSiteEchezModal')" class="font-weight-bold"> {{'portfolio.checkit'|translate}}</a></span></p>
 
+            </div>
+           <!-- end portfolio item -->
+           <!-- start portfolio item -->
+            <div class="col-6 col-md-6 col-lg-3 web" *ngIf="['web'].includes(selectedSection)">
+              <div class="card shadow py-1 px-1 bg-light">
+                <div id="mundoStem" class="portfolio-item">
+                  <img src="assets/imgs/mundoSteam.png" class="img-fluid"
+                    alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                  <div class="content-holder">
+                    <div class="text-holder">
+                      <h6 class="title">{{'portfolio.webPage'|translate}} <a href="https://mundostem.netlify.app/"
+                          class="font-weight-bold">mundoSteam</a></h6>
+                      <p class="subtitle">{{'portfolio.text3'|translate}}</p>
+                    </div>
                   </div>
                 </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Tecnologías</h5>
+                    <div class="row g-1">
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-html shadow">
+                          <p class="fw-bold text-light"><span><i class="ti ti-html5 icon-md"></i></span>HTML5</p>
+                        </div>
+                      </div>
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-css shadow">
+                          <p class="fw-bold text-light"><span><i class="ti ti-css3 icon-md"></i></span>CSS</p>
+                        </div>
+                      </div>
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-js shadow">
+                          <p class="fw-bold text-light"><span><img src="assets/icons/js-icon.png" alt="tailwild" style="padding-bottom: 1px; width: 15px; height: 15px;"></span>javaScript</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
               </div>
+
             </div>
-            <div class="col-6 col-md-6 col-lg-4 udemy" *ngIf="['udemy'].includes(selectedSection)">
+            <!-- end portfolio item -->
+            <!-- start portfolio item -->
+            <div class="col-6 col-md-6 col-lg-3 web" *ngIf="['web'].includes(selectedSection)">
+              <div class="card shadow py-1 px-1 bg-dark">
+                <div  id="webSiteEchez" class="portfolio-item">
+                  <img src="assets/imgs/webSiteEchez.png" class="img-fluid"
+                    alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                  <div class="content-holder">
+                    <div class="text-holder pt-2">
+                      <h6 class="title"><a href="https://github.com/DavidOlmos03/webSiteEchez"
+                          class="font-weight-bold ">webSiteEchez</a></h6>
+                      <p class="subtitle">{{'portfolio.text4'|translate}} <span><a id="checkit" (click)="mostrarModal('WebSiteEchezModal')" class="font-weight-bold"> {{'portfolio.checkit'|translate}}</a></span></p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-body">
+                  <h5 class="card-title fw-bold text-light">Tecnologías</h5>
+                    <div class="row g-1">
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-html shadow">
+                          <p class="fw-bold text-light"><span><i class="ti ti-html5 icon-md"></i></span>HTML5</p>
+                        </div>
+                      </div>
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-css shadow">
+                          <p class="fw-bold text-light"><span><i class="ti ti-css3 icon-md"></i></span>CSS</p>
+                        </div>
+                      </div>
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-js shadow">
+                          <p class="fw-bold text-light"><span><img src="assets/icons/js-icon.png" alt="javaScript" style="padding-bottom: 1px; width: 15px; height: 15px;"></span>javaScript</p>
+                        </div>
+                      </div>
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-php shadow">
+                          <p class="fw-bold text-light"><span><img src="assets/icons/php-icon.png" alt="php" style="padding-bottom: 1px; width: 15px; height: 15px;"></span>PHP</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- end portfolio item -->
+            <!-- start portfolio item -->
+            <div class="col-6 col-md-6 col-lg-3 udemy" *ngIf="['udemy'].includes(selectedSection)">
               <div class="portfolio-item">
                 <img src="assets/imgs/courseSQLServer.jpg" class="img-fluid"
                   alt="courseSQLServer">
@@ -106,7 +201,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-md-6 col-lg-4 udemy" *ngIf="['udemy'].includes(selectedSection)">
+            <!-- end portfolio item -->
+            <!-- start portfolio item -->
+            <div class="col-6 col-md-6 col-lg-3 udemy" *ngIf="['udemy'].includes(selectedSection)">
               <div class="portfolio-item">
                 <img src="assets/imgs/coursePostgreSQL.png" class="img-fluid"
                   alt="coursePostgreSQL">
@@ -122,7 +219,9 @@
               </div>
 
             </div>
-            <div class="col-6 col-md-6 col-lg-4 coursera" *ngIf="['coursera'].includes(selectedSection)">
+            <!-- end portfolio item -->
+            <!-- start portfolio item -->
+            <div class="col-6 col-md-6 col-lg-3 coursera" *ngIf="['coursera'].includes(selectedSection)">
               <div class="portfolio-item">
                 <img src="assets/imgs/courseSQL.jpg" class="img-fluid"
                   alt="courseSQL">
@@ -133,14 +232,14 @@
                           id="download-link"
                           href="assets/docs/certificados/SQL.pdf"
                           download>{{'portfolio.download'|translate}}</a></span> {{'portfolio.text2'|translate}}</p>
-                    <!--Click for download certificate-->
                   </div>
                 </div>
               </div>
             </div>
+            <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-6 col-md-6 col-lg-4 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
-              <div class="card shadow py-1 px-1">
+            <div class="col-6 col-md-6 col-lg-3 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
+              <div class="card shadow py-1 px-1 bg-dark">
                 <div class="portfolio-item">
                   <img src="assets/imgs/vuejs-course.jpg" class="img-fluid"
                     alt="vuejs-course">
@@ -158,7 +257,7 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title fw-bold">Tecnologías</h5>
+                  <h5 class="card-title fw-bold text-light">Tecnologías</h5>
                     <div class="row g-1">
                       <div class="col-md">
                         <div class="text-center pt-1 d-inline-block icon-vuejs shadow">
@@ -186,7 +285,7 @@
             </div>
             <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-6 col-md-6 col-lg-4 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
+            <div class="col-6 col-md-6 col-lg-3 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1">
                 <div class="portfolio-item">
                   <img src="assets/imgs/laravel-angular-course.jpg" class="img-fluid"
@@ -228,14 +327,19 @@
                           <p class="fw-bold text-light"><span><img src="assets/icons/laravel-icon.png" alt="laravel" style="padding-bottom: 1px; width: 15px; height: 15px;"></span>Laravel</p>
                         </div>
                       </div>
+                      <div class="col-md">
+                        <div class="text-center pt-1 d-inline-block icon-php shadow">
+                          <p class="fw-bold text-light"><span><img src="assets/icons/php-icon.png" alt="php" style="padding-bottom: 1px; width: 15px; height: 15px;"></span>PHP</p>
+                        </div>
+                      </div>
                     </div>
                 </div>
               </div>
             </div>
             <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-6 col-md-6 col-lg-4 new" *ngIf="['new'].includes(selectedSection)">
-              <div class="card shadow py-1 px-1">
+            <div class="col-6 col-md-6 col-lg-3 new udemy" *ngIf="['new','udemy'].includes(selectedSection)">
+              <div class="card shadow py-1 px-1 bg-dark">
                 <div class="portfolio-item">
 
                   <img src="assets/imgs/docker-wall-1.jpeg" class="img-fluid"
@@ -261,7 +365,7 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title fw-bold">Tecnologías</h5>
+                  <h5 class="card-title fw-bold text-light">Tecnologías</h5>
                     <div class="row g-1">
                       <div class="col-md">
                         <div class="text-center pt-1 d-inline-block icon-docker shadow">
