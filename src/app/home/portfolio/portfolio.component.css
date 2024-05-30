@@ -253,6 +253,28 @@ a:hover{
   cursor: default
 }
 
+.card .icon-ts{
+  background-color: rgb(24, 174, 255);
+  width: 100px;
+  height: 33px
+}
+
+.card .icon-ts:hover{
+  background-color: rgb(76, 192, 255);
+  cursor: default
+}
+
+.card .icon-python{
+  background-color: rgb(255, 172, 63);
+  width: 79px;
+  height: 33px;
+}
+
+.card .icon-python:hover{
+  background-color: rgb(255, 184, 91);
+  cursor: default;
+}
+
 @media (max-width: 767.98px) {
   .title, .subtitle{
     font-size: small;
