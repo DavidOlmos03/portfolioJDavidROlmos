@@ -27,7 +27,7 @@
         <div class="portfolio-container">
           <div class="row">
             <!-- start portfolio item -->
-            <div class="col-6 col-md-6 col-lg-3" id="new udemy" *ngIf="['udemy'].includes(selectedSection)">
+            <div class="col-12 col-md-6 col-lg-3 mb-2" id="new udemy" *ngIf="['udemy'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-dark">
                 <div class="portfolio-item">
                   <img src="assets/imgs/courseMongodb.jpg" class="img-fluid"
@@ -57,7 +57,7 @@
             </div>
             <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-6 col-md-6 col-lg-3" *ngIf="['udemy', 'web'].includes(selectedSection)">
+            <div class="col-12 col-md-6 col-lg-3 mb-2" *ngIf="['udemy', 'web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-dark">
                 <div class="portfolio-item">
                   <img src="assets/imgs/course-1.png" class="img-fluid"
@@ -82,18 +82,18 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title fw-bold text-light">Tecnologías</h5>
-                    <div class="row g-1">
-                      <div class="col-md">
+                    <div class="row g-1 p-2">
+                      <div class="col-4 col-md-6">
                         <div class="text-center pt-1 d-inline-block icon-html shadow">
                           <p class="fw-bold text-light"><span><i class="ti ti-html5 icon-md"></i></span>HTML5</p>
                         </div>
                       </div>
-                      <div class="col-md">
+                      <div class="col-4 col-md-6">
                         <div class="text-center pt-1 d-inline-block icon-css shadow">
                           <p class="fw-bold text-light"><span><i class="ti ti-css3 icon-md"></i></span>CSS</p>
                         </div>
                       </div>
-                      <div class="col-md">
+                      <div class="col-4 col-md-6">
                         <div class="text-center pt-1 d-inline-block icon-js shadow">
                           <p class="fw-bold text-light"><span><img src="assets/icons/js-icon.png" alt="tailwild" style="padding-bottom: 1px; width: 15px; height: 15px;"></span>javaScript</p>
                         </div>
@@ -105,7 +105,7 @@
             </div>
            <!-- end portfolio item -->
            <!-- start portfolio item -->
-            <div class="col-6 col-md-6 col-lg-3 web" *ngIf="['web'].includes(selectedSection)">
+            <div class="col-12 col-md-6 col-lg-3 mb-2 web" *ngIf="['web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-light">
                 <div id="mundoStem" class="portfolio-item">
                   <img src="assets/imgs/mundoSteam.png" class="img-fluid"
@@ -143,7 +143,7 @@
             </div>
             <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-6 col-md-6 col-lg-3 web" *ngIf="['web'].includes(selectedSection)">
+            <div class="col-12 col-md-6 col-lg-3 mb-2 web" *ngIf="['web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-dark">
                 <div  id="webSiteEchez" class="portfolio-item">
                   <img src="assets/imgs/webSiteEchez.png" class="img-fluid"
@@ -159,23 +159,23 @@
                 </div>
                 <div class="cart-body">
                   <h5 class="card-title fw-bold text-light">Tecnologías</h5>
-                    <div class="row g-1">
-                      <div class="col-md">
+                    <div class="row g-1 p-2">
+                      <div class="col-4 col-md-6">
                         <div class="text-center pt-1 d-inline-block icon-html shadow">
                           <p class="fw-bold text-light"><span><i class="ti ti-html5 icon-md"></i></span>HTML5</p>
                         </div>
                       </div>
-                      <div class="col-md">
+                      <div class="col-4 col-md-6">
                         <div class="text-center pt-1 d-inline-block icon-css shadow">
                           <p class="fw-bold text-light"><span><i class="ti ti-css3 icon-md"></i></span>CSS</p>
                         </div>
                       </div>
-                      <div class="col-md">
+                      <div class="col-4 col-md-6">
                         <div class="text-center pt-1 d-inline-block icon-js shadow">
                           <p class="fw-bold text-light"><span><img src="assets/icons/js-icon.png" alt="javaScript" style="padding-bottom: 1px; width: 15px; height: 15px;"></span>javaScript</p>
                         </div>
                       </div>
-                      <div class="col-md">
+                      <div class="col-4 col-md-6">
                         <div class="text-center pt-1 d-inline-block icon-php shadow">
                           <p class="fw-bold text-light"><span><img src="assets/icons/php-icon.png" alt="php" style="padding-bottom: 1px; width: 15px; height: 15px;"></span>PHP</p>
                         </div>
@@ -187,7 +187,7 @@
             </div>
             <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-6 col-md-6 col-lg-3 udemy" *ngIf="['udemy'].includes(selectedSection)">
+            <div class="col-12 col-md-6 col-lg-3 mb-2 udemy" *ngIf="['udemy'].includes(selectedSection)">
               <div class="portfolio-item">
                 <img src="assets/imgs/courseSQLServer.jpg" class="img-fluid"
                   alt="courseSQLServer">
@@ -203,7 +203,7 @@
             </div>
             <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-6 col-md-6 col-lg-3 udemy" *ngIf="['udemy'].includes(selectedSection)">
+            <div class="col-12 col-md-6 col-lg-3 mb-2 udemy" *ngIf="['udemy'].includes(selectedSection)">
               <div class="portfolio-item">
                 <img src="assets/imgs/coursePostgreSQL.png" class="img-fluid"
                   alt="coursePostgreSQL">
@@ -221,7 +221,7 @@
             </div>
             <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-6 col-md-6 col-lg-3 coursera" *ngIf="['coursera'].includes(selectedSection)">
+            <div class="col-12 col-md-6 col-lg-3 mb-2 coursera" *ngIf="['coursera'].includes(selectedSection)">
               <div class="portfolio-item">
                 <img src="assets/imgs/courseSQL.jpg" class="img-fluid"
                   alt="courseSQL">
@@ -238,7 +238,7 @@
             </div>
             <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-6 col-md-6 col-lg-3 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
+            <div class="col-12 col-md-6 col-lg-3 mb-2 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-dark">
                 <div class="portfolio-item">
                   <img src="assets/imgs/vuejs-course.jpg" class="img-fluid"
@@ -258,23 +258,23 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title fw-bold text-light">Tecnologías</h5>
-                    <div class="row g-1">
-                      <div class="col-md">
+                    <div class="row g-1 p-2">
+                      <div class="col-4 col-md-6">
                         <div class="text-center pt-1 d-inline-block icon-vuejs shadow">
                           <p class="fw-bold text-light"><span><img src="assets/icons/vuejs-icon.png" alt="vuejs"></span>VUEJS</p>
                         </div>
                       </div>
-                      <div class="col-md">
+                      <div class="col-4 col-md-6">
                         <div class="text-center pt-1 d-inline-block icon-css shadow">
                           <p class="fw-bold text-light"><span><i class="ti ti-css3 icon-md"></i></span>CSS</p>
                         </div>
                       </div>
-                      <div class="col-md">
+                      <div class="col-4 col-md-6">
                         <div class="text-center pt-1 d-inline-block icon-tailwind shadow">
                           <p class="fw-bold text-light"><span><img src="assets/icons/tailwind-icon.png" alt="tailwild" fw-bold style="padding-bottom: 1px; width: 15px; height: 15px;"></span>Tailwind</p>
                         </div>
                       </div>
-                      <div class="col-md">
+                      <div class="col-4 col-md-6">
                         <div class="text-center pt-1 d-inline-block icon-firebase shadow">
                           <p class="fw-bold text-light"><span><img src="assets/icons/firebase-icon.png" alt="firebase" fw-bold></span>firebase</p>
                         </div>
@@ -285,7 +285,7 @@
             </div>
             <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-6 col-md-6 col-lg-3 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
+            <div class="col-12 col-md-6 col-lg-3 mb-2 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1">
                 <div class="portfolio-item">
                   <img src="assets/imgs/laravel-angular-course.jpg" class="img-fluid"
@@ -301,33 +301,33 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title fw-bold">Tecnologías</h5>
-                    <div class="row g-1">
-                      <div class="col-md">
+                    <div class="row g-1 p-2">
+                      <div class="col-4 col-md-6">
                         <div class="text-center pt-1 d-inline-block icon-html shadow">
                           <p class="fw-bold text-light"><span><i class="ti ti-html5 icon-md"></i></span>HTML5</p>
                         </div>
                       </div>
-                      <div class="col-md">
+                      <div class="col-4 col-md-6">
                         <div class="text-center pt-1 d-inline-block icon-css shadow">
                           <p class="fw-bold text-light"><span><i class="ti ti-css3 icon-md"></i></span>CSS</p>
                         </div>
                       </div>
-                      <div class="col-md">
+                      <div class="col-4 col-md-6">
                         <div class="text-center pt-1 d-inline-block icon-bootstrap shadow">
                           <p class="fw-bold text-light"><span><img src="assets/icons/bootstrap-white-icon.png" alt="Bootstrap" fw-bold style="padding-bottom: 1px; width: 15px; height: 15px;"></span>Bootstrap</p>
                         </div>
                       </div>
-                      <div class="col-md">
+                      <div class="col-4 col-md-6">
                         <div class="text-center pt-1 d-inline-block icon-angular shadow">
                           <p class="fw-bold text-light"><span><img src="assets/icons/angular-icon.png" alt="angular" style="padding-bottom: 1px; width: 15px; height: 15px;"></span>Angular</p>
                         </div>
                       </div>
-                      <div class="col-md">
+                      <div class="col-4 col-md-6">
                         <div class="text-center pt-1 d-inline-block icon-laravel shadow">
                           <p class="fw-bold text-light"><span><img src="assets/icons/laravel-icon.png" alt="laravel" style="padding-bottom: 1px; width: 15px; height: 15px;"></span>Laravel</p>
                         </div>
                       </div>
-                      <div class="col-md">
+                      <div class="col-4 col-md-6">
                         <div class="text-center pt-1 d-inline-block icon-php shadow">
                           <p class="fw-bold text-light"><span><img src="assets/icons/php-icon.png" alt="php" style="padding-bottom: 1px; width: 15px; height: 15px;"></span>PHP</p>
                         </div>
@@ -338,7 +338,7 @@
             </div>
             <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-6 col-md-6 col-lg-3 new udemy" *ngIf="['new','udemy'].includes(selectedSection)">
+            <div class="col-12 col-md-6 col-lg-3 mb-2 new udemy" *ngIf="['new','udemy'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-dark">
                 <div class="portfolio-item">
 
@@ -366,7 +366,7 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title fw-bold text-light">Tecnologías</h5>
-                    <div class="row g-1">
+                    <div class="row g-1 p-2">
                       <div class="col-md">
                         <div class="text-center pt-1 d-inline-block icon-docker shadow">
                           <p class="fw-bold text-light"><span><img src="assets/icons/docker-icon.png" alt="docker" style="padding-bottom: 1px; width: 20px; height: 20px;"></span>DOCKER</p>
