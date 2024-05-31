@@ -47,8 +47,8 @@
                   <h5 class="card-title fw-bold text-light">Tecnologías</h5>
                       <div class="row g-1">
                         <div class="col-md">
-                          <div class="text-center pt-1 d-inline-block icon-docker shadow">
-                            <p class="fw-bold text-light"><span><img src="assets/icons/mongodb-icon.png" alt="docker" style="padding-bottom: 1px; width: 18px; height: 18px;"></span>mongoDB</p>
+                          <div class="text-center pt-1 d-inline-block icon-mongodb shadow">
+                            <p class="fw-bold text-light"><span><img src="assets/icons/mongodb-icon.png" alt="mongodb" style="padding-bottom: 1px; width: 18px; height: 18px;"></span>mongoDB</p>
                           </div>
                         </div>
                       </div>
@@ -357,7 +357,7 @@
                   <div class="content-holder with-circle">
                     <div class="circle">
                       <circle-progress
-                      [percent]="11"
+                      [percent]="20"
                       [radius]="40"
                       [outerStrokeWidth]="10"
                       [innerStrokeWidth]="5"
@@ -387,6 +387,46 @@
               </div>
             </div>
             <!-- end portfolio item -->
+             <!-- start portfolio item -->
+             <div class="col-12 col-md-6 col-lg-3 mb-2 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
+              <div class="card shadow py-1 px-1">
+                <div class="portfolio-item">
+                  <img src="assets/imgs/python-course.jpg" class="img-fluid"
+                    alt="laravel-angular-course">
+                  <div class="content-holder">
+                    <div class="circle">
+                      <circle-progress
+                      [percent]="15"
+                      [radius]="40"
+                      [outerStrokeWidth]="10"
+                      [innerStrokeWidth]="5"
+                      [outerStrokeColor]="'#FF3131'"
+                      [innerStrokeColor]="'#F85C70'"
+                      [animation]="true"
+                      [animationDuration]="300"
+                      ></circle-progress>
+                    </div>
+                    <div class="text-holder">
+                      <h6 class="title">Python</h6>
+                      <p class="subtitle">{{'portfolio.text1'|translate}} Python, <span class="font-weight-bold text-dark">{{'portfolio.progress'|translate}}</span></p>
+                      <span><a id="checkit" href="https://github.com/DavidOlmos03/cursoPythonHectorC" class="font-weight-bold text-dark"> {{'portfolio.checkit'|translate}}</a></span>
+                      <!--Click for download certificate-->
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Tecnologías</h5>
+                    <div class="row g-1 p-2">
+                      <div class="col-4 col-md-6">
+                        <div class="text-center pt-1 d-inline-block icon-python shadow">
+                          <p class="fw-bold text-light"><span><img src="assets/icons/python-color-icon.png" alt="python" style="padding-bottom: 1px; width: 20px; height: 20px;"></span>Python</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- end portfolio item -->
           </div>
 
 
@@ -398,6 +438,9 @@
       </div>
     </div>
   </section>
+
+
+
   <!-- core  -->
   <script src="../assets/vendors/jquery/jquery-3.4.1.js"></script>
   <script src="../assets/vendors/bootstrap/bootstrap.bundle.js"></script>
@@ -414,6 +457,5 @@
 
   <!-- JohnDoe js -->
   <script src="../assets/js/johndoe.js"></script>
-
  </body>
  </html>

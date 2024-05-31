@@ -231,6 +231,17 @@ a:hover{
   cursor: default
 }
 
+.card .icon-mongodb{
+  background-color: rgb(0, 189, 41);
+  width: 95px;
+  height: 33px
+}
+
+.card .icon-mongodb:hover{
+  background-color: rgb(0, 224, 49);
+  cursor: default
+}
+
 .card .icon-js{
   background-color: rgb(255, 208, 0);
   width: 95px;
