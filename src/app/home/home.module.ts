@@ -21,6 +21,9 @@ import { StreamingNetflixModalComponent } from './portfolio/streaming-netflix-mo
 
 // Import ng-circle-progress
 import { NgCircleProgressModule } from 'ng-circle-progress';
+// import { DevNotesComponent } from './portfolio/dev-notes/dev-notes.component';
+
+import { HighlightModule } from 'ngx-highlightjs';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     VuejsModalComponent,
     WebSiteEchezModalComponent,
     StreamingNetflixModalComponent,
+    // DevNotesComponent,
 
   ],
   imports: [
@@ -40,7 +44,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     CourseJSModule,
     SharedModule,
     HttpClientModule,
-
+    HighlightModule,
     // Traduction
     TranslateModule.forRoot({
       loader:{

@@ -29,7 +29,7 @@
             <!-- start portfolio item -->
             <div class="col-12 col-md-6 col-lg-3 mb-2" id="new udemy" *ngIf="['udemy'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-dark">
-                <div class="portfolio-item">
+                <div class="portfolio-item px-1">
                   <img src="assets/imgs/courseMongodb.jpg" class="img-fluid"
                     alt="courseMongodb">
                   <div class="content-holder">
@@ -59,7 +59,7 @@
             <!-- start portfolio item -->
             <div class="col-12 col-md-6 col-lg-3 mb-2" *ngIf="['udemy', 'web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-dark">
-                <div class="portfolio-item">
+                <div class="portfolio-item px-1">
                   <img src="assets/imgs/course-1.png" class="img-fluid"
                     alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                   <div class="content-holder">
@@ -107,13 +107,13 @@
            <!-- start portfolio item -->
             <div class="col-12 col-md-6 col-lg-3 mb-2 web" *ngIf="['web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-light">
-                <div id="mundoStem" class="portfolio-item">
+                <div id="mundoStem" class="portfolio-item px-1">
                   <img src="assets/imgs/mundoSteam.png" class="img-fluid"
                     alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                   <div class="content-holder">
                     <div class="text-holder">
                       <h6 class="title">{{'portfolio.webPage'|translate}} <a href="https://mundostem.netlify.app/"
-                          class="font-weight-bold">mundoSteam</a></h6>
+                          class="font-weight-bold">mundoSteam</a></h6><span class="font-weight-bold text-dark">{{'portfolio.progress'|translate}}</span>
                       <p class="subtitle">{{'portfolio.text3'|translate}}</p>
                     </div>
                   </div>
@@ -155,7 +155,7 @@
             <!-- start portfolio item -->
             <div class="col-12 col-md-6 col-lg-3 mb-2 web" *ngIf="['web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-dark">
-                <div  id="webSiteEchez" class="portfolio-item">
+                <div  id="webSiteEchez" class="portfolio-item px-1">
                   <img src="assets/imgs/webSiteEchez.png" class="img-fluid"
                     alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                   <div class="content-holder">
@@ -198,7 +198,7 @@
             <!-- end portfolio item -->
             <!-- start portfolio item -->
             <div class="col-12 col-md-6 col-lg-3 mb-2 udemy" *ngIf="['udemy'].includes(selectedSection)">
-              <div class="portfolio-item">
+              <div class="portfolio-item px-1">
                 <img src="assets/imgs/courseSQLServer.jpg" class="img-fluid"
                   alt="courseSQLServer">
                 <div class="content-holder">
@@ -214,7 +214,7 @@
             <!-- end portfolio item -->
             <!-- start portfolio item -->
             <div class="col-12 col-md-6 col-lg-3 mb-2 udemy" *ngIf="['udemy'].includes(selectedSection)">
-              <div class="portfolio-item">
+              <div class="portfolio-item px-1">
                 <img src="assets/imgs/coursePostgreSQL.png" class="img-fluid"
                   alt="coursePostgreSQL">
                 <div class="content-holder">
@@ -232,7 +232,7 @@
             <!-- end portfolio item -->
             <!-- start portfolio item -->
             <div class="col-12 col-md-6 col-lg-3 mb-2 coursera" *ngIf="['coursera'].includes(selectedSection)">
-              <div class="portfolio-item">
+              <div class="portfolio-item px-1">
                 <img src="assets/imgs/courseSQL.jpg" class="img-fluid"
                   alt="courseSQL">
                 <div class="content-holder">
@@ -250,7 +250,7 @@
             <!-- start portfolio item -->
             <div class="col-12 col-md-6 col-lg-3 mb-2 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-dark">
-                <div class="portfolio-item">
+                <div class="portfolio-item px-1">
                   <img src="assets/imgs/vuejs-course.jpg" class="img-fluid"
                     alt="vuejs-course">
                   <div class="content-holder">
@@ -297,7 +297,7 @@
             <!-- start portfolio item -->
             <div class="col-12 col-md-6 col-lg-3 mb-2 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1">
-                <div class="portfolio-item">
+                <div class="portfolio-item px-1">
                   <img src="assets/imgs/laravel-angular-course.jpg" class="img-fluid"
                     alt="laravel-angular-course">
                   <div class="content-holder">
@@ -347,10 +347,53 @@
               </div>
             </div>
             <!-- end portfolio item -->
+             <!-- start portfolio item -->
+            <div class="col-12 col-md-6 col-lg-3 mb-2 new web" *ngIf="['new','udemy','web'].includes(selectedSection)">
+              <div class="card shadow py-1 px-1">
+                <div class="portfolio-item px-1">
+                  <img src="assets/imgs/imgDevNotes/devNotes.png" class="img-fluid"
+                    alt="devNotes">
+                  <div class="content-holder">
+                    <div class="text-holder">
+                      <h6 class="title">DevNotes</h6>
+                      <p class="subtitle">{{'portfolio.devNotesDescription'|translate}} <span class="font-weight-bold text-dark">{{'portfolio.progress'|translate}}</span></p>
+                      <span><a id="checkit" href="dev-notes" class="font-weight-bold text-dark"> {{'portfolio.checkit'|translate}}</a></span>
+                      <!--Click for download certificate-->
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Tecnologías</h5>
+                    <div class="row g-1 p-2">
+                      <div class="col-4 col-md-6">
+                        <div class="text-center pt-1 d-inline-block icon-html shadow">
+                          <p class="fw-bold text-light"><span><i class="ti ti-html5 icon-md"></i></span>HTML5</p>
+                        </div>
+                      </div>
+                      <div class="col-4 col-md-6">
+                        <div class="text-center pt-1 d-inline-block icon-css shadow">
+                          <p class="fw-bold text-light"><span><i class="ti ti-css3 icon-md"></i></span>CSS</p>
+                        </div>
+                      </div>
+                      <div class="col-4 col-md-6">
+                        <div class="text-center pt-1 d-inline-block icon-bootstrap shadow">
+                          <p class="fw-bold text-light"><span><img src="assets/icons/bootstrap-white-icon.png" alt="Bootstrap" fw-bold style="padding-bottom: 1px; width: 15px; height: 15px;"></span>Bootstrap</p>
+                        </div>
+                      </div>
+                      <div class="col-4 col-md-6">
+                        <div class="text-center pt-1 d-inline-block icon-angular shadow">
+                          <p class="fw-bold text-light"><span><img src="assets/icons/angular-icon.png" alt="angular" style="padding-bottom: 1px; width: 15px; height: 15px;"></span>Angular</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- end portfolio item -->
             <!-- start portfolio item -->
             <div class="col-12 col-md-6 col-lg-3 mb-2 new udemy" *ngIf="['new','udemy'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-dark">
-                <div class="portfolio-item">
+                <div class="portfolio-item px-1">
 
                   <img src="assets/imgs/docker-wall-1.jpeg" class="img-fluid"
                     alt="laravel-angular-course">
@@ -390,13 +433,13 @@
              <!-- start portfolio item -->
              <div class="col-12 col-md-6 col-lg-3 mb-2 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1">
-                <div class="portfolio-item">
+                <div class="portfolio-item px-1">
                   <img src="assets/imgs/python-course.jpg" class="img-fluid"
                     alt="laravel-angular-course">
                   <div class="content-holder">
                     <div class="circle">
                       <circle-progress
-                      [percent]="15"
+                      [percent]="30"
                       [radius]="40"
                       [outerStrokeWidth]="10"
                       [innerStrokeWidth]="5"

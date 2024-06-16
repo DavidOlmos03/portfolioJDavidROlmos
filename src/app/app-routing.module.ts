@@ -4,10 +4,21 @@ import { CoursejsComponent } from './course-js/coursejs/coursejs.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home/home.component';
 import { HomeModule } from './home/home.module';
-const routes: Routes = [
-  { path: '', component: HomeComponent},
-  { path: 'course-js', component: CoursejsComponent},
+import { DevNotesComponent } from './home/portfolio/dev-notes/dev-notes.component';
 
+const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'course-js',
+    component: CoursejsComponent
+  },
+  {
+    path: 'dev-notes',
+    component: DevNotesComponent
+  }
 
 ];
 
@@ -15,4 +26,9 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule,HomeModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+
+
+}
+
+

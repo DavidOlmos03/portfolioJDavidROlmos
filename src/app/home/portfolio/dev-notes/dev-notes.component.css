@@ -1,0 +1,18 @@
+body::before{
+  display: block;
+  content: '';
+  height: 70px;
+}
+
+.highlight {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+@media (min-width: 768px){
+  .news-input{
+      width: 50%;
+  }
+}

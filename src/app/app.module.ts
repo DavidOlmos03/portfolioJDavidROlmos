@@ -16,6 +16,10 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
+
+// Importaciones para Highlightjs
+import { HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +38,14 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
       }
     })
   ],
-  providers: [TranslateService],
+  providers: [TranslateService,
+    {
+      provide: HIGHLIGHT_OPTIONS,
+      useValue: {
+        fullLibraryLoader: () => import('highlight.js')
+      }
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

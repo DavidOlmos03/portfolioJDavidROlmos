@@ -3,6 +3,8 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { VuejsModalComponent } from './vuejs-modal/vuejs-modal.component';
 import { WebSiteEchezModalComponent } from './web-site-echez-modal/web-site-echez-modal.component';
 import { StreamingNetflixModalComponent } from './streaming-netflix-modal/streaming-netflix-modal.component';
+
+
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',

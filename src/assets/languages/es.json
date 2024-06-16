@@ -70,7 +70,8 @@
     "webPage":"Página web",
     "text3":"Costruido con mi compañero y amigo Hernán Sánchez.",
     "text4":"Realizada en mi proceso de prácticas de tecnología, en la empresa Echez Group.",
-    "progress":"En progreso..."
+    "progress":"En progreso...",
+    "devNotesDescription":"Este es un proyecto para compartir notas y código"
   },
   "contact":{
     "getInTouch":"Ponte en contacto",
