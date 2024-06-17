@@ -21,8 +21,10 @@ import { StreamingNetflixModalComponent } from './portfolio/streaming-netflix-mo
 
 // Import ng-circle-progress
 import { NgCircleProgressModule } from 'ng-circle-progress';
-// import { DevNotesComponent } from './portfolio/dev-notes/dev-notes.component';
+import { DevNotesComponent } from './portfolio/dev-notes/dev-notes.component';
 
+// Importaciones para Highlightjs
+import { HIGHLIGHT_OPTIONS, HighlightOptions } from 'ngx-highlightjs';
 import { HighlightModule } from 'ngx-highlightjs';
 
 @NgModule({
@@ -36,7 +38,7 @@ import { HighlightModule } from 'ngx-highlightjs';
     VuejsModalComponent,
     WebSiteEchezModalComponent,
     StreamingNetflixModalComponent,
-    // DevNotesComponent,
+    DevNotesComponent
 
   ],
   imports: [
@@ -64,6 +66,17 @@ import { HighlightModule } from 'ngx-highlightjs';
       innerStrokeColor: "#C7E596",
       animationDuration: 300,
     })
+  ],
+  providers: [
+    {
+      provide: HIGHLIGHT_OPTIONS,
+      useValue: <HighlightOptions>{
+        fullLibraryLoader: () => import('highlight.js'),
+        lineNumbersLoader: () => import('ngx-highlightjs/line-numbers'), // verifica si realmente es necesario
+        lineNumbers: true
+      }
+    },
+
   ],
 })
 export class HomeModule { }

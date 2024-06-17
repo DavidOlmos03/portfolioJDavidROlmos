@@ -350,18 +350,25 @@
 
     <div class="container">
         <p>El siguiente código CSS cambiará el color del texto:</p>
-        <pre><code [highlight]="code" language="css" class="highlight">
-        </code></pre>
+        <!-- <pre><code [highlight]="code" language="css" class="highlight"> -->
+        <!-- </code></pre> -->
 
         <p>Para imprimir un mensaje en JavaScript, utiliza el comando <code>console.log("Mensaje");</code></p>
     </div>
 
     <div class="container">
-            <h1 style="color: blue;">Ejemplo de uso de <code>&lt;pre&gt;&lt;code&gt;</code> en HTML con Highlight.js</h1>
+            <h1>Ejemplo de uso de <code>&lt;pre&gt;&lt;code&gt;</code> en HTML con Highlight.js</h1>
 
-            <pre><code [highlight]="codehtml" language="html">
+            <pre><code [highlight]="codehtml" language="html" [lineNumbers]="true">
 
-                </code></pre>
+            </code></pre>
+            <pre>
+              <code [highlight]="codeForHighlight"
+                    language="ts"
+                    [lineNumbers]="true"
+                    >
+                  </code>
+            </pre>
     </div>
 
     <div class="container">

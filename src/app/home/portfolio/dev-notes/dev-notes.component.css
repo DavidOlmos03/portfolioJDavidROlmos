@@ -4,12 +4,14 @@ body::before{
   height: 70px;
 }
 
-.highlight {
+/* .highlight {
   background-color: #f1f1f1;
   border: 1px solid #ddd;
   padding: 5px;
   border-radius: 3px;
-}
+} */
+
+
 
 @media (min-width: 768px){
   .news-input{
