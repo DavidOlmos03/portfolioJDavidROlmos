@@ -11,6 +11,23 @@ body::before{
   border-radius: 3px;
 } */
 
+pre code {
+  position: relative;
+  padding-left: 3em; /* Ajusta según sea necesario */
+}
+
+pre code::before {
+  content: attr(data-line-numbers);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0.5em;
+  background: #91919155; /* Fondo oscuro para los números */
+  text-align: right;
+  white-space: pre;
+  user-select: none;
+}
 
 
 @media (min-width: 768px){

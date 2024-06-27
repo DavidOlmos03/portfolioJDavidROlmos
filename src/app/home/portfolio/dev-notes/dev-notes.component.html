@@ -24,22 +24,32 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand">Frontend Bootcamp</a>
+            <a href="#" class="navbar-brand">MS</a>
+            <a href="dev-notes" class="navbar-brand">DevNotes</a>
             <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navmenu"
+            data-bs-target="#navbarSupportedContent"
             ><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
-                    <a href="#learn" class="nav-link ms-auto">What you'll Learn</a>
+                    <a href="dev-notes#angular" class="nav-link ms-auto">Angular</a>
                 </ul>
                 <ul class="navbar-nav">
-                    <a href="#questions" class="nav-link ms-auto">Questions</a>
+                    <a href="dev-notes#vuejs" class="nav-link ms-auto">Vuejs</a>
                 </ul>
                 <ul class="navbar-nav">
-                    <a href="#instructors" class="nav-link ms-auto">Instructors</a>
+                    <a href="dev-notes#php" class="nav-link ms-auto">PHP</a>
+                </ul>
+                <ul class="navbar-nav">
+                    <a href="dev-notes#python" class="nav-link ms-auto">Python</a>
+                </ul>
+                <ul class="navbar-nav">
+                    <a href="dev-notes#docker" class="nav-link ms-auto">Docker</a>
+                </ul>
+                <ul class="navbar-nav">
+                    <a href="dev-notes#html&css" class="nav-link ms-auto">HTML/CSS</a>
                 </ul>
             </div>
         </div>
@@ -49,15 +59,20 @@
     <section class="bg-dark text-light p-5 pt-lg-0 text-center text-sm-start">
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-center">
-                <div>
-                    <h1>Become a <span class="text-danger">Web Developer</span></h1>
+                <div class="me-5">
+                    <h1>Bienvenido a <span class="text-danger">Dev Notes</span></h1>
+                    <!-- Wellcome to Dev Notes -->
                     <p class="lead my-4">
-                        This project is designed to study the basic concepts of Bootstrap 5, a popular front-end framework used for developing responsive and mobile-first websites.
-                        Bootstrap provides a collection of CSS and JavaScript tools that facilitate the creation of modern and consistent web pages.
-                    </p>
-                    <button class="btn btn-primary btn-lg">Start The Enrollment</button>
+                      Este sitio web es para compartir mis notas sobre diferentes tecnologías que he aprendido en mi viaje en el desarrollo de software. Es sólo una pequeña sección de mi portafolio.
+                      <!-- This website is for sharing my notes about different technologies that I have learned on my journey in software development. It is only a small section of my portfolio.
+                       -->
+                      </p>
+                      <button class="btn btn-primary btn-lg" onclick="location.href=''">
+                        Dale un vistazo!!
+                        <!-- Check it out!! -->
+                      </button>
                 </div>
-                <img class="img-fluid w-50 d-none d-sm-block" src="assets/imgs/imgDevNotes/showcase.svg" alt="">
+                <img class="img-fluid w-25 d-none d-sm-block" src="assets/imgs/imgDevNotes/code-notes-logo.png" alt="">
             </div>
         </div>
     </section>
@@ -81,90 +96,94 @@
         </div>
     </section>
 
-    <!-- Boxes -->
-    <section class="p-5" id="learn">
+    <!-- start section Angular -->
+    <section class="p-5" id="angular">
         <div class="container">
-            <div class="row text-center g-4">
-                <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-laptop"></i>
-                            </div>
-                            <h3 class="card-title mb-3">
-                                Virtual
-                            </h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, eos amet numquam autem totam saepe.
-                            </p>
-                            <a href="#" class="btn btn-danger">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-secondary text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-person-square"></i>
-                            </div>
-                            <h3 class="card-title mb-3">
-                                Hybrid
-                            </h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, eos amet numquam autem totam saepe.
-                            </p>
-                            <a href="#" class="btn btn-dark">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-people"></i>
-                            </div>
-                            <h3 class="card-title mb-3">
-                                In Person
-                            </h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, eos amet numquam autem totam saepe.
-                            </p>
-                            <a href="#" class="btn btn-danger">Read More</a>
-                        </div>
-                    </div>
-                </div>
+          <h1 class="text-center"><code class="w-50">&lt;&gt;</code>Angular<code>&lt;&gt;</code></h1>
+          <div class="row">
+            <div class="col-md-4 pb-5">
+              <h6>Nuevo proyecto</h6>
+              <pre><code [highlight]="newProjectAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
             </div>
+            <div class="col-md-4 pb-5">
+              <h6>Nuevo módulo</h6>
+              <pre><code [highlight]="newModuleAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+            </div>
+            <div class="col-md-4 pb-5">
+              <h6>Nuevo componente</h6>
+              <pre><code [highlight]="newComponentAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+            </div>
+          </div>
+          <div class="row">
+            <h1>Errores</h1>
+            <h6>Error de firma</h6>
+            <p>ng : No se puede cargar el archivo C:\Users\juand\AppData\Roaming\npm\ng.ps1.
+              El archivo C:\Users\juand\AppData\Roaming\npm\ng.ps1 no está firmado
+              digitalmente. No se puede ejecutar este script en el sistema actual. Para
+              obtener más información acerca de la ejecución de scripts y la configuración
+              de la directiva de ejecución, consulta about_Execution_Policies en
+              https:/go.microsoft.com/fwlink/?LinkID=135170.
+              En línea: 1 Carácter: 1</p>
+            <h6>Solución</h6>
+            <pre class="pb-5"><code [highlight]="signErrorAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+          </div>
+
+          <div class="row">
+            <h1>Deployment</h1>
+            <h4>Gratis</h4>
+            <div class="col-md-6 pb-5">
+              <h6>GitHub Pages</h6>
+              <pre><code [highlight]="deployGitHubAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+            </div>
+            <div class="col-md-6 pb-5">
+              <h6>Netlify</h6>
+              <pre><code [highlight]="deployNetlifyAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+              <p>Sirve para todo proyecto con <span><b>node</b></span></p>
+              <div class="card pt-2 w-50 mx-auto">
+                <img src="assets/imgs/imgDevNotes/distFile.png" class="card-img-top mx-auto"  alt="distFile">
+                <div class="card-body">
+                  <p class="card-text text-center">Se crea el archivo dist, este archivo se sube a Netlify</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
+    <!-- End Section -->
+    <!-- <hr> -->
 
     <!-- Learn Sections -->
-    <section id="learn" class="p-5 border-top">
+    <section id="vuejs" class="p-5 border-top bg-dark text-light">
         <div class="container">
-
-        </div>
-        <div class="row align-items-center justify-content-between">
-            <div class="col-md d-none d-sm-block">
-                <img src="assets/imgs/imgDevNotes/fundamentals.svg" class="img-fluid" alt="">
+          <h1 class="text-center"><code class="w-50">&lt;&gt;</code>Vue js<code>&lt;&gt;</code></h1>
+          <div class="row">
+            <div class="col-md-4 pb-5">
+              <h6>Nuevo proyecto</h6>
+              <pre><code [highlight]="newProjectVuejs" language="html" [lineNumbers]="true"> </code></pre>
             </div>
-            <div class="col-md p-5">
-                <h2>Learn The Fundamentals</h2>
-                <p class="lead">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, magnam.
-                </p>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati fugiat numquam, autem vitae et magnam quod delectus saepe deserunt
-                    neque nulla hic minima
-                    exercitationem natus omnis ducimus? Quas, cupiditate harum!
-                </p>
-                <a href="#" class="btn btn-light mt-3">
-                    <i class="bi bi-chevron-right"></i>Read More
-                </a>
+            <div class="col-md-4 pb-5">
+              <h6>FormKit</h6>
+              <pre><code [highlight]="formKit" language="html" [lineNumbers]="true"> </code></pre>
             </div>
-
+            <div class="col-md-4 pb-5">
+              <h6>Tailwindcss para forms</h6>
+              <pre><code [highlight]="tailwindforms" language="html" [lineNumbers]="true"> </code></pre>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 pb-5">
+              <h6>Firebase</h6>
+              <pre><code [highlight]="firebase" language="html" [lineNumbers]="true"> </code></pre>
+            </div>
+            <div class="col-md-4 pb-5">
+              <h6>Nombre unico</h6>
+              <pre><code [highlight]="randomName" language="html" [lineNumbers]="true"> </code></pre>
+            </div>
+          </div>
         </div>
     </section>
 
-    <section id="learn" class="p-5 bg-dark">
+    <section id="php" class="p-5 bg-dark">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md p-5 text-light">
@@ -189,7 +208,7 @@
     </section>
 
     <!-- Question Accordion -->
-    <section id="questions" class="p-5">
+    <section id="python" class="p-5">
             <div class="container">
                 <h2 class="text-center mb-4">
                     Frequently Asked Questions
@@ -244,7 +263,7 @@
     </section>
 
     <!-- Instructors -->
-    <section id="instructors" class="p-5 bg-primary">
+    <section id="docker" class="p-5 bg-primary">
         <div class="container">
             <h2 class="text-center text-white">
                 Our Instructors
@@ -319,7 +338,7 @@
     </section>
 
     <!-- Contact & map -->
-    <section class="p-5">
+    <section id="html&css" class="p-5">
         <div class="container">
             <div class="row g-4">
                 <div class="col-md">
@@ -362,6 +381,7 @@
             <pre><code [highlight]="codehtml" language="html" [lineNumbers]="true">
 
             </code></pre>
+            <hr>
             <pre>
               <code [highlight]="codeForHighlight"
                     language="ts"

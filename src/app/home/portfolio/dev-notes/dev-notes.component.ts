@@ -36,6 +36,33 @@ export class DevNotesComponent {
     }
   }`;
 
+  // Angular
+  newProjectAngular = `ng new project_name`
+  newModuleAngular = `ng generate module name_module`
+  newComponentAngular = `ng generate component name_module/name_component`
+  signErrorAngular = `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`
+  deployGitHubAngular = `ng build --output-path docs --base-href=https://example.github.io/project_name/`
+  deployNetlifyAngular = `npm run build`
+
+  // Vuejs
+  newProjectVuejs = `  npm create vite@latest name_project
+  cd project_name
+  npm install
+  npm run dev `
+
+  formKit = `  npm i @formkit/vue
+  npm i @formkit/themes`
+
+  tailwindforms = `npm i -D @tailwindcss/forms`
+
+  firebase = `npm install firebase vuefire`
+
+  randomName = `npm i uid`
+
+  // PHP
+  // Python
+  // Docker
+  // HTML/CSS
   ngOnInit(){
     this.code = "body: {color: red;}"
     this.codehtml = "!DOCTYPE html\n"+
