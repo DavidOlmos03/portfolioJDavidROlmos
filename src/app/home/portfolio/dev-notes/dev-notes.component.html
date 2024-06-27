@@ -24,7 +24,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand">MS</a>
+            <a href="https://mundostem.netlify.app/" class="navbar-brand">MS</a>
             <a href="dev-notes" class="navbar-brand">DevNotes</a>
             <button
             class="navbar-toggler"
@@ -78,7 +78,7 @@
     </section>
 
     <!-- News letter -->
-    <section class="bg-primary text-light p-5">
+    <!-- <section class="bg-primary text-light p-5">
         <div class="container">
             <div class="d-md-flex justify-content-between">
                 <h3 class="mb-3 mb-md-0">
@@ -94,12 +94,112 @@
                   </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- start section Angular -->
-    <section class="p-5" id="angular">
+    <section id="angular" class="p-5">
         <div class="container">
-          <h1 class="text-center"><code class="w-50">&lt;&gt;</code>Angular<code>&lt;&gt;</code></h1>
+          <div class="title-section d-flex jusify-content-start">
+            <h1 class="text-center flex">Angular</h1>
+
+            <img src="assets/imgs/imgDevNotes/angular.svg" class="img-fluid" alt="" style="width: 60px;">
+
+          </div>
+          <div class="row">
+            <div class="col-md-4 pb-5">
+              <h6>Nuevo proyecto</h6>
+              <pre><code [highlight]="newProjectAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+            </div>
+            <div class="col-md-4 pb-5">
+              <h6>Nuevo módulo</h6>
+              <pre><code [highlight]="newModuleAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+            </div>
+            <div class="col-md-4 pb-5">
+              <h6>Nuevo componente</h6>
+              <pre><code [highlight]="newComponentAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+            </div>
+          </div>
+          <div class="row">
+            <h1>Errores</h1>
+            <h6>Error de firma</h6>
+            <p>ng : No se puede cargar el archivo C:\Users\juand\AppData\Roaming\npm\ng.ps1.
+              El archivo C:\Users\juand\AppData\Roaming\npm\ng.ps1 no está firmado
+              digitalmente. No se puede ejecutar este script en el sistema actual. Para
+              obtener más información acerca de la ejecución de scripts y la configuración
+              de la directiva de ejecución, consulta about_Execution_Policies en
+              https:/go.microsoft.com/fwlink/?LinkID=135170.
+              En línea: 1 Carácter: 1</p>
+            <h6>Solución</h6>
+            <pre class="pb-5"><code [highlight]="signErrorAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+          </div>
+
+          <div class="row">
+            <h1>Deployment</h1>
+            <h4>Gratis</h4>
+            <div class="col-md-6 pb-5">
+              <h6>GitHub Pages</h6>
+              <pre><code [highlight]="deployGitHubAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+            </div>
+            <div class="col-md-6 pb-5">
+              <h6>Netlify</h6>
+              <pre><code [highlight]="deployNetlifyAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+              <p>Sirve para todo proyecto con <span><b>node</b></span></p>
+              <div class="card pt-2 w-50 mx-auto">
+                <img src="assets/imgs/imgDevNotes/distFile.png" class="card-img-top mx-auto"  alt="distFile">
+                <div class="card-body">
+                  <p class="card-text text-center">Se crea el archivo dist, este archivo se sube a Netlify</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </section>
+    <!-- end section -->
+
+    <!-- start section Vuejs -->
+    <section id="vuejs" class="p-5 bg-dark text-light">
+        <div class="container">
+          <div class="title-section d-flex justify-content-end">
+            <img src="assets/imgs/imgDevNotes/iconVuejs.png" class="img-fluid" alt="" style="width: 60px;">
+            <h1 class="text-center">Vuejs</h1>
+          </div>
+          <!-- <h1 class="text-center"><code class="w-50">&lt;&gt;</code>Vue js<code>&lt;&gt;</code></h1> -->
+          <div class="row">
+            <div class="col-md-4 pb-5">
+              <h6>Nuevo proyecto</h6>
+              <pre><code [highlight]="newProjectVuejs" language="html" [lineNumbers]="true"> </code></pre>
+            </div>
+            <div class="col-md-4 pb-5">
+              <h6>FormKit</h6>
+              <pre><code [highlight]="formKit" language="html" [lineNumbers]="true"> </code></pre>
+            </div>
+            <div class="col-md-4 pb-5">
+              <h6>Tailwindcss para forms</h6>
+              <pre><code [highlight]="tailwindforms" language="html" [lineNumbers]="true"> </code></pre>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 pb-5">
+              <h6>Firebase</h6>
+              <pre><code [highlight]="firebase" language="html" [lineNumbers]="true"> </code></pre>
+            </div>
+            <div class="col-md-4 pb-5">
+              <h6>Nombre único</h6>
+              <pre><code [highlight]="randomName" language="html" [lineNumbers]="true"> </code></pre>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- end section -->
+
+    <!-- start section PHP -->
+    <section id="php" class="p-5">
+        <div class="container">
+          <div class="title-section d-flex jusify-content-start">
+            <h1 class="text-center flex">Laravel</h1>
+            <img src="assets/imgs/imgDevNotes/iconLaravel.png" class="img-fluid" alt="" style="width: 60px;">
+          </div>
           <div class="row">
             <div class="col-md-4 pb-5">
               <h6>Nuevo proyecto</h6>
@@ -149,246 +249,152 @@
           </div>
         </div>
     </section>
-    <!-- End Section -->
-    <!-- <hr> -->
+    <!-- end section -->
 
-    <!-- Learn Sections -->
-    <section id="vuejs" class="p-5 border-top bg-dark text-light">
-        <div class="container">
-          <h1 class="text-center"><code class="w-50">&lt;&gt;</code>Vue js<code>&lt;&gt;</code></h1>
-          <div class="row">
-            <div class="col-md-4 pb-5">
-              <h6>Nuevo proyecto</h6>
-              <pre><code [highlight]="newProjectVuejs" language="html" [lineNumbers]="true"> </code></pre>
-            </div>
-            <div class="col-md-4 pb-5">
-              <h6>FormKit</h6>
-              <pre><code [highlight]="formKit" language="html" [lineNumbers]="true"> </code></pre>
-            </div>
-            <div class="col-md-4 pb-5">
-              <h6>Tailwindcss para forms</h6>
-              <pre><code [highlight]="tailwindforms" language="html" [lineNumbers]="true"> </code></pre>
-            </div>
+    <!-- start section python -->
+    <section id="python" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="title-section d-flex justify-content-end">
+          <img src="assets/imgs/imgDevNotes/iconPython.png" class="img-fluid" alt="" style="width: 60px;">
+          <h1 class="text-center">Python</h1>
+        </div>
+        <!-- <h1 class="text-center"><code class="w-50">&lt;&gt;</code>Vue js<code>&lt;&gt;</code></h1> -->
+        <div class="row">
+          <div class="col-md-4 pb-5">
+            <h6>Nuevo proyecto</h6>
+            <pre><code [highlight]="newProjectVuejs" language="html" [lineNumbers]="true"> </code></pre>
           </div>
-          <div class="row">
-            <div class="col-md-4 pb-5">
-              <h6>Firebase</h6>
-              <pre><code [highlight]="firebase" language="html" [lineNumbers]="true"> </code></pre>
-            </div>
-            <div class="col-md-4 pb-5">
-              <h6>Nombre unico</h6>
-              <pre><code [highlight]="randomName" language="html" [lineNumbers]="true"> </code></pre>
-            </div>
+          <div class="col-md-4 pb-5">
+            <h6>FormKit</h6>
+            <pre><code [highlight]="formKit" language="html" [lineNumbers]="true"> </code></pre>
+          </div>
+          <div class="col-md-4 pb-5">
+            <h6>Tailwindcss para forms</h6>
+            <pre><code [highlight]="tailwindforms" language="html" [lineNumbers]="true"> </code></pre>
           </div>
         </div>
-    </section>
-
-    <section id="php" class="p-5 bg-dark">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md p-5 text-light">
-                    <h2>Learn Angular</h2>
-                    <p class="lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, magnam.
-                    </p>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati fugiat numquam, autem vitae et magnam quod delectus saepe deserunt
-                        neque nulla hic minima
-                        exercitationem natus omnis ducimus? Quas, cupiditate harum!
-                    </p>
-                    <a href="#" class="btn btn-light mt-3">
-                        <i class="bi bi-chevron-right"></i>Read More
-                    </a>
-                </div>
-                <div class="col-md d-none d-sm-block">
-                    <img src="assets/imgs/imgDevNotes/angular.svg" class="img-fluid" alt="">
-                </div>
-            </div>
+        <div class="row">
+          <div class="col-md-4 pb-5">
+            <h6>Firebase</h6>
+            <pre><code [highlight]="firebase" language="html" [lineNumbers]="true"> </code></pre>
+          </div>
+          <div class="col-md-4 pb-5">
+            <h6>Nombre único</h6>
+            <pre><code [highlight]="randomName" language="html" [lineNumbers]="true"> </code></pre>
+          </div>
         </div>
+      </div>
     </section>
+    <!-- end section -->
 
-    <!-- Question Accordion -->
-    <section id="python" class="p-5">
-            <div class="container">
-                <h2 class="text-center mb-4">
-                    Frequently Asked Questions
-                </h2>
-                <div class="accordion accordion-flush" id="questions">
-                    <!-- item -->
-                    <div class="accordion-item ">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
-                          Accordion Item #1
-                        </button>
-                      </h2>
-                      <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum nesciunt debitis, cupiditate cumque laudantium ipsam omnis repellendus aut odit delectus!</div>
-                      </div>
-                    </div>
-                    <!-- item -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
-                          Accordion Item #2
-                        </button>
-                      </h2>
-                      <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                      </div>
-                    </div>
-                    <!-- item -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
-                          Accordion Item #3
-                        </button>
-                      </h2>
-                      <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                      </div>
-                    </div>
-                     <!-- item -->
-                     <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
-                            Accordion Item #4
-                          </button>
-                        </h2>
-                        <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
-                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                        </div>
-                      </div>
-                  </div>
-            </div>
-    </section>
+    <!-- start section docker -->
+    <section id="docker" class="p-5">
+      <div class="container">
+        <div class="title-section d-flex jusify-content-start">
+          <h1 class="text-center flex">Docker</h1>
 
-    <!-- Instructors -->
-    <section id="docker" class="p-5 bg-primary">
-        <div class="container">
-            <h2 class="text-center text-white">
-                Our Instructors
-            </h2>
-            <p class="lead text-center text-white mb-5">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi repellendus excepturi numquam!
-            </p>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="http://randomuser.me/api/portraits/men/11.jpg" alt="" class="rounded-circle mb-3">
-                            <h3 class="card-title mb-3">John Doe</h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa neque nesciunt quis dolorem temporibus, autem nulla cumque pariatur iste.
-                            </p>
-                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="http://randomuser.me/api/portraits/men/12.jpg" alt="" class="rounded-circle mb-3">
-                            <h3 class="card-title mb-3">Steve Dory</h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa neque nesciunt quis dolorem temporibus, autem nulla cumque pariatur iste.
-                            </p>
-                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="http://randomuser.me/api/portraits/women/2.jpg" alt="" class="rounded-circle mb-3">
-                            <h3 class="card-title mb-3">Sara Smit</h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa neque nesciunt quis dolorem temporibus, autem nulla cumque pariatur iste.
-                            </p>
-                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="http://randomuser.me/api/portraits/men/20.jpg" alt="" class="rounded-circle mb-3">
-                            <h3 class="card-title mb-3">Sant Holmes</h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa neque nesciunt quis dolorem temporibus, autem nulla cumque pariatur iste.
-                            </p>
-                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <img src="assets/imgs/imgDevNotes/iconDocker.png" class="img-fluid" alt="" style="width: 60px;">
+
+        </div>
+        <div class="row">
+          <div class="col-md-4 pb-5">
+            <h6>Nuevo proyecto</h6>
+            <pre><code [highlight]="newProjectAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+          </div>
+          <div class="col-md-4 pb-5">
+            <h6>Nuevo módulo</h6>
+            <pre><code [highlight]="newModuleAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+          </div>
+          <div class="col-md-4 pb-5">
+            <h6>Nuevo componente</h6>
+            <pre><code [highlight]="newComponentAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+          </div>
+        </div>
+        <div class="row">
+          <h1>Errores</h1>
+          <h6>Error de firma</h6>
+          <p>ng : No se puede cargar el archivo C:\Users\juand\AppData\Roaming\npm\ng.ps1.
+            El archivo C:\Users\juand\AppData\Roaming\npm\ng.ps1 no está firmado
+            digitalmente. No se puede ejecutar este script en el sistema actual. Para
+            obtener más información acerca de la ejecución de scripts y la configuración
+            de la directiva de ejecución, consulta about_Execution_Policies en
+            https:/go.microsoft.com/fwlink/?LinkID=135170.
+            En línea: 1 Carácter: 1</p>
+          <h6>Solución</h6>
+          <pre class="pb-5"><code [highlight]="signErrorAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
         </div>
 
-    </section>
-
-    <!-- Contact & map -->
-    <section id="html&css" class="p-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md">
-                    <h2 class="text-center mb-4">Contact Info</h2>
-                    <ul class="list-group list-group-flush lead">
-                        <li class="list-group-item">
-                            <span class="fw-bold">Main Location:</span> 50 Main st Boston
-                        </li>
-                        <li class="list-group-item">
-                            <span class="fw-bold">Main Location:</span> 50 Main st Boston
-                        </li>
-                        <li class="list-group-item">
-                            <span class="fw-bold">Main Location:</span> 50 Main st Boston
-                        </li>
-                        <li class="list-group-item">
-                            <span class="fw-bold">Main Location:</span> 50 Main st Boston
-                        </li>
-                        <li class="list-group-item">
-                            <span class="fw-bold">Main Location:</span> 50 Main st Boston
-                        </li>
-                    </ul>
-                </div>
-
+        <div class="row">
+          <h1>Deployment</h1>
+          <h4>Gratis</h4>
+          <div class="col-md-6 pb-5">
+            <h6>GitHub Pages</h6>
+            <pre><code [highlight]="deployGitHubAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+          </div>
+          <div class="col-md-6 pb-5">
+            <h6>Netlify</h6>
+            <pre><code [highlight]="deployNetlifyAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+            <p>Sirve para todo proyecto con <span><b>node</b></span></p>
+            <div class="card pt-2 w-50 mx-auto">
+              <img src="assets/imgs/imgDevNotes/distFile.png" class="card-img-top mx-auto"  alt="distFile">
+              <div class="card-body">
+                <p class="card-text text-center">Se crea el archivo dist, este archivo se sube a Netlify</p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
+    <!-- end section docker -->
 
+    <!-- start section html&css -->
+    <section id="html&css" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="title-section d-flex justify-content-end">
+          <img src="assets/imgs/imgDevNotes/iconTags.png" class="img-fluid" alt="" style="width: 60px;">
+          <h1 class="text-center">HTML y CSS</h1>
+        </div>
+        <!-- <h1 class="text-center"><code class="w-50">&lt;&gt;</code>Vue js<code>&lt;&gt;</code></h1> -->
+        <div class="row">
+          <div class="col-md-4 pb-5">
+            <h6>Nuevo proyecto</h6>
+            <pre><code [highlight]="newProjectVuejs" language="html" [lineNumbers]="true"> </code></pre>
+          </div>
+          <div class="col-md-4 pb-5">
+            <h6>FormKit</h6>
+            <pre><code [highlight]="formKit" language="html" [lineNumbers]="true"> </code></pre>
+          </div>
+          <div class="col-md-4 pb-5">
+            <h6>Tailwindcss para forms</h6>
+            <pre><code [highlight]="tailwindforms" language="html" [lineNumbers]="true"> </code></pre>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 pb-5">
+            <h6>Firebase</h6>
+            <pre><code [highlight]="firebase" language="html" [lineNumbers]="true"> </code></pre>
+          </div>
+          <div class="col-md-4 pb-5">
+            <h6>Nombre único</h6>
+            <pre><code [highlight]="randomName" language="html" [lineNumbers]="true"> </code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section -->
 
     <div class="container">
-        <p>El siguiente código CSS cambiará el color del texto:</p>
-        <!-- <pre><code [highlight]="code" language="css" class="highlight"> -->
-        <!-- </code></pre> -->
+            <!-- <h1>Ejemplo de uso de <code>&lt;pre&gt;&lt;code&gt;</code> en HTML con Highlight.js</h1> -->
 
-        <p>Para imprimir un mensaje en JavaScript, utiliza el comando <code>console.log("Mensaje");</code></p>
-    </div>
 
-    <div class="container">
-            <h1>Ejemplo de uso de <code>&lt;pre&gt;&lt;code&gt;</code> en HTML con Highlight.js</h1>
 
-            <pre><code [highlight]="codehtml" language="html" [lineNumbers]="true">
-
-            </code></pre>
-            <hr>
-            <pre>
+            <!-- <pre>
               <code [highlight]="codeForHighlight"
                     language="ts"
                     [lineNumbers]="true"
                     >
                   </code>
-            </pre>
+            </pre> -->
     </div>
 
     <div class="container">
