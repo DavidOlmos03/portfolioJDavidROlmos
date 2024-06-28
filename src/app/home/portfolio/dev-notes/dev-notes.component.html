@@ -49,7 +49,7 @@
                     <a href="dev-notes#docker" class="nav-link ms-auto">Docker</a>
                 </ul>
                 <ul class="navbar-nav">
-                    <a href="dev-notes#html&css" class="nav-link ms-auto">HTML/CSS</a>
+                    <a href="dev-notes#venv" class="nav-link ms-auto">Entorno Virtual</a>
                 </ul>
             </div>
         </div>
@@ -276,28 +276,18 @@
           <h1 class="text-center">Python</h1>
         </div>
         <!-- <h1 class="text-center"><code class="w-50">&lt;&gt;</code>Vue js<code>&lt;&gt;</code></h1> -->
+         <div class="d-flex content-justify-start">
+          <h2>Flask</h2>
+          <img src="assets/imgs/imgDevNotes/iconFlask.png" class="img-fluid" alt="" style="width: 60px;">
+         </div>
         <div class="row">
-          <div class="col-md-4 pb-5">
-            <h6>Nuevo proyecto</h6>
-            <pre><code [highlight]="newProjectVuejs" language="html" [lineNumbers]="true"> </code></pre>
+          <div class="col-12 col-md-6 pb-5 pe-5">
+            <h6>Iniciar proyecto en modo debug</h6>
+            <pre><code [highlight]="newProjectFlask" language="html" [lineNumbers]="true"> </code></pre>
           </div>
-          <div class="col-md-4 pb-5">
-            <h6>FormKit</h6>
-            <pre><code [highlight]="formKit" language="html" [lineNumbers]="true"> </code></pre>
-          </div>
-          <div class="col-md-4 pb-5">
-            <h6>Tailwindcss para forms</h6>
-            <pre><code [highlight]="tailwindforms" language="html" [lineNumbers]="true"> </code></pre>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 pb-5">
-            <h6>Firebase</h6>
-            <pre><code [highlight]="firebase" language="html" [lineNumbers]="true"> </code></pre>
-          </div>
-          <div class="col-md-4 pb-5">
-            <h6>Nombre único</h6>
-            <pre><code [highlight]="randomName" language="html" [lineNumbers]="true"> </code></pre>
+          <div class="col-12 col-md-6">
+            <h6>Videos en español</h6>
+            <iframe src="https://www.youtube.com/embed/W-SfC_V7P6o" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -315,33 +305,40 @@
         </div>
         <div class="row">
           <div class="col-md-4 pb-5">
-            <h6>Nuevo proyecto</h6>
-            <pre><code [highlight]="newProjectAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+            <h6>Crear Network</h6>
+            <pre><code [highlight]="createNetwork" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
           </div>
           <div class="col-md-4 pb-5">
-            <h6>Nuevo módulo</h6>
-            <pre><code [highlight]="newModuleAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+            <h6>Subir compose</h6>
+            <pre><code [highlight]="dockerComposeUp" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
           </div>
           <div class="col-md-4 pb-5">
-            <h6>Nuevo componente</h6>
-            <pre><code [highlight]="newComponentAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+            <h6>Bajar compose</h6>
+            <pre><code [highlight]="dockerComposeDown" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
           </div>
         </div>
         <div class="row">
-          <h1>Errores</h1>
-          <h6>Error de firma</h6>
-          <p>ng : No se puede cargar el archivo C:\Users\juand\AppData\Roaming\npm\ng.ps1.
-            El archivo C:\Users\juand\AppData\Roaming\npm\ng.ps1 no está firmado
-            digitalmente. No se puede ejecutar este script en el sistema actual. Para
-            obtener más información acerca de la ejecución de scripts y la configuración
-            de la directiva de ejecución, consulta about_Execution_Policies en
-            https:/go.microsoft.com/fwlink/?LinkID=135170.
-            En línea: 1 Carácter: 1</p>
-          <h6>Solución</h6>
-          <pre class="pb-5"><code [highlight]="signErrorAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+          <div class="col-md-4 pb-5">
+            <h6>Ver el tamaño de un volumen</h6>
+            <pre><code [highlight]="sizeVolumn" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+          </div>
+          <div class="col-md-4 pb-5">
+            <h6>Conectar contenedor a una red</h6>
+            <pre><code [highlight]="connectToNetwork" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+          </div>
+          <div class="col-md-4 pb-5">
+            <h6>Inspeccionar network creada</h6>
+            <pre><code [highlight]="checkNetwork" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+          </div>
         </div>
-
         <div class="row">
+          <div class="col-md-6 pb-5">
+            <h6>Correr contenedor con variables de entorno específicas y en puertos específicos (ejemplo)</h6>
+            <p>Obs. Para hacer el salto de linea se utiliza ` en Windows y \ en MacOS o Linux</p>
+            <pre><code [highlight]="fullDockerContainer" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+          </div>
+        </div>
+        <!-- <div class="row">
           <h1>Deployment</h1>
           <h4>Gratis</h4>
           <div class="col-md-6 pb-5">
@@ -359,41 +356,42 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- end section docker -->
 
     <!-- start section html&css -->
-    <section id="html&css" class="p-5 bg-dark text-light">
+    <section id="venv" class="p-5 bg-dark text-light">
       <div class="container">
         <div class="title-section d-flex justify-content-end">
-          <img src="assets/imgs/imgDevNotes/iconTags.png" class="img-fluid" alt="" style="width: 60px;">
-          <h1 class="text-center">HTML y CSS</h1>
+          <img src="assets/imgs/imgDevNotes/iconSimulation.png" class="img-fluid" alt="" style="width: 60px;">
+          <h1 class="text-center">Entorno Virtual</h1>
         </div>
         <!-- <h1 class="text-center"><code class="w-50">&lt;&gt;</code>Vue js<code>&lt;&gt;</code></h1> -->
         <div class="row">
+          <div class="d-flex content-justify-start">
+            <h2>Python</h2>
+            <img src="assets/imgs/imgDevNotes/iconPython.png" class="img-fluid" alt="" style="width: 60px;">
+          </div>
+          <p>Se utilizara el nombre venv para el entorno virtual y se creara en la hubicación donde me encuentro en la consola</p>
           <div class="col-md-4 pb-5">
-            <h6>Nuevo proyecto</h6>
-            <pre><code [highlight]="newProjectVuejs" language="html" [lineNumbers]="true"> </code></pre>
+            <h6>Crear nuevo entorno virtual con python 3</h6>
+            <pre><code [highlight]="newVirtualEnviroment" language="html" [lineNumbers]="true"> </code></pre>
           </div>
           <div class="col-md-4 pb-5">
-            <h6>FormKit</h6>
-            <pre><code [highlight]="formKit" language="html" [lineNumbers]="true"> </code></pre>
+            <h6>Activar entorno virtual</h6>
+            <pre><code [highlight]="activateVirtualEnviroment" language="html" [lineNumbers]="true"> </code></pre>
           </div>
           <div class="col-md-4 pb-5">
-            <h6>Tailwindcss para forms</h6>
-            <pre><code [highlight]="tailwindforms" language="html" [lineNumbers]="true"> </code></pre>
+            <h6>Listar instalaciones hechas en el entorno</h6>
+            <pre><code [highlight]="listVirtualEnviroment" language="html" [lineNumbers]="true"> </code></pre>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 pb-5">
-            <h6>Firebase</h6>
-            <pre><code [highlight]="firebase" language="html" [lineNumbers]="true"> </code></pre>
-          </div>
-          <div class="col-md-4 pb-5">
-            <h6>Nombre único</h6>
-            <pre><code [highlight]="randomName" language="html" [lineNumbers]="true"> </code></pre>
+            <h6>Crear el archivo requirements.txt</h6>
+            <pre><code [highlight]="createRequirementsFile" language="html" [lineNumbers]="true"> </code></pre>
           </div>
         </div>
       </div>
@@ -418,7 +416,14 @@
 
     </div>
 
-
+    <footer class="footer py-3 bg-dark">
+      <div class="container">
+          <p class="small mb-0 text-light">
+              &copy;
+              Created By <a href="https://davidolmos-portfolio.netlify.app/"><span class="text-danger">Juan David Ruiz Olmos</span></a>
+          </p>
+      </div>
+    </footer>
     <!-- Scripts -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
 

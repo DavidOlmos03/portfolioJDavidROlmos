@@ -62,9 +62,35 @@ export class DevNotesComponent {
   `
     newModuleLaravel = `php artisan make:model model_name`
     laravelFreeze = `composer require laravel/breeze --dev`
-  // Python
+
+    // Python
+  newProjectFlask = `flask –app nameFile –debug run`
+
   // Docker
-  // HTML/CSS
+  createNetwork = `docker network create name_network`
+  dockerComposeUp = `docker compose -f .\docker\docker-compose.dev.yml up --build`
+  dockerComposeDown = `docker compose -f .\docker\docker-compose.dev.yml down`
+
+  sizeVolumn = `docker run –rm -v nameVolume:/mnt alpine sh “du -sh /mnt”`
+  checkNetwork = `docker network connect red_name container_id`
+  connectToNetwork = `docker network inspect world-app`
+
+  fullDockerContainer = `  docker container run
+  -dp 3306:3306
+  --name world-db
+  --env MARIADB_USER=example-user
+  --env MARIADB_PASSWORD=user-password
+  --env MARIADB_ROOT_PASSWORD=root-secret-password
+  --env MARIADB_DATABASE=world-db
+  --volume world-db:/var/lib/mysql
+  mariadb:jammy`
+
+  // Entorno virtual
+  newVirtualEnviroment = `py -3 -m venv .venv`
+  activateVirtualEnviroment = `.venv\Scripts\activate`
+  listVirtualEnviroment = `pip list`
+  createRequirementsFile = `pip freeze > requirements.txt`
+
   ngOnInit(){
     this.code = "body: {color: red;}"
     this.codehtml = "!DOCTYPE html\n"+
