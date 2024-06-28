@@ -49,17 +49,19 @@ export class DevNotesComponent {
   cd project_name
   npm install
   npm run dev `
-
   formKit = `  npm i @formkit/vue
   npm i @formkit/themes`
-
   tailwindforms = `npm i -D @tailwindcss/forms`
-
   firebase = `npm install firebase vuefire`
-
   randomName = `npm i uid`
 
   // PHP
+    //  Laravel
+    newProjectLaravel = `  composer create-project laravel/laravel project_name "10.*"
+  php artisan serve
+  `
+    newModuleLaravel = `php artisan make:model model_name`
+    laravelFreeze = `composer require laravel/breeze --dev`
   // Python
   // Docker
   // HTML/CSS

@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
     <!-- <link rel="stylesheet" href="style.css" > -->
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -16,7 +16,7 @@
                 hljs.highlightElement(block);
             });
         });
-    </script>
+    </script> -->
 
     <title>Frontend Bootcamp</title>
   </head>
@@ -201,50 +201,67 @@
             <img src="assets/imgs/imgDevNotes/iconLaravel.png" class="img-fluid" alt="" style="width: 60px;">
           </div>
           <div class="row">
-            <div class="col-md-4 pb-5">
+            <div class="col-md-4">
               <h6>Nuevo proyecto</h6>
-              <pre><code [highlight]="newProjectAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+              <pre><code [highlight]="newProjectLaravel" language="" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+              <p>Obs. la versión es opcional  <br>
+                Los proyectos se almacenan en:  C:\xampp\php\www</p>
             </div>
-            <div class="col-md-4 pb-5">
-              <h6>Nuevo módulo</h6>
-              <pre><code [highlight]="newModuleAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+            <div class="col-md-4">
+              <h6>Nuevo modelo</h6>
+              <pre><code [highlight]="newModuleLaravel" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
             </div>
-            <div class="col-md-4 pb-5">
+            <div class="col-md-4">
               <h6>Nuevo componente</h6>
               <pre><code [highlight]="newComponentAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
             </div>
+            <p>En routes/web.php estan las rutas con sus respectivos nombres, las cuales apuntan a una vista o a un controlador.</p>
           </div>
           <div class="row">
-            <h1>Errores</h1>
-            <h6>Error de firma</h6>
-            <p>ng : No se puede cargar el archivo C:\Users\juand\AppData\Roaming\npm\ng.ps1.
-              El archivo C:\Users\juand\AppData\Roaming\npm\ng.ps1 no está firmado
-              digitalmente. No se puede ejecutar este script en el sistema actual. Para
-              obtener más información acerca de la ejecución de scripts y la configuración
-              de la directiva de ejecución, consulta about_Execution_Policies en
-              https:/go.microsoft.com/fwlink/?LinkID=135170.
-              En línea: 1 Carácter: 1</p>
-            <h6>Solución</h6>
-            <pre class="pb-5"><code [highlight]="signErrorAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+            <h1>Conceptos</h1>
+            <ul class="list-group col-md">
+              <li class="list-group-item bg-dark text-light">
+                <input type="checkbox" class="form-check-input me-1" value="" id="firstCheckboxStretched">
+                <label class="form-check-label stretched-link" for="firstCheckboxStretched">Migraciones</label>
+              </li>
+            </ul>
+            <ul  class="list-group col-md">
+              <li class="list-group-item bg-dark text-light">
+                <input type="checkbox" class="form-check-input me-1" value="" id="secondCheckboxStretched">
+                <label class="form-check-label stretched-link" for="secondCheckboxStretched">Sesiones flash</label>
+              </li>
+            </ul>
+            <ul  class="list-group col-md">
+              <li class="list-group-item bg-dark text-light">
+                <input type="checkbox" class="form-check-input me-1" value="" id="thirdCheckboxStretched">
+                <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Laravel freeze</label>
+              </li>
+              <pre><code [highlight]="laravelFreeze" language="html" [lineNumbers]="true" class="bg-dark text-light"></code></pre>
+            </ul>
+          </div>
+          <div class="row">
+            <ul  class="list-group col-md">
+              <li class="list-group-item bg-dark text-light">
+                <input type="checkbox" class="form-check-input me-1" value="" id="fourthCheckboxStretched">
+                <label class="form-check-label stretched-link" for="fourthCheckboxStretched">Blade</label>
+              </li>
+            </ul>
+            <ul  class="list-group col-md">
+              <li class="list-group-item bg-dark text-light">
+                <input type="checkbox" class="form-check-input me-1" value="" id="fifthCheckboxStretched">
+                <label class="form-check-label stretched-link" for="fifthCheckboxStretched">Artisan</label>
+              </li>
+            </ul>
           </div>
 
-          <div class="row">
-            <h1>Deployment</h1>
-            <h4>Gratis</h4>
-            <div class="col-md-6 pb-5">
-              <h6>GitHub Pages</h6>
-              <pre><code [highlight]="deployGitHubAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+          <div class="row pt-5">
+            <div class="d-flex justify-content-start">
+              <h2>Curso básico</h2>
+              <img src="assets/imgs/imgDevNotes/iconYoutube.png" class="img-fluid" alt="" style="width: 50px;">
             </div>
-            <div class="col-md-6 pb-5">
-              <h6>Netlify</h6>
-              <pre><code [highlight]="deployNetlifyAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
-              <p>Sirve para todo proyecto con <span><b>node</b></span></p>
-              <div class="card pt-2 w-50 mx-auto">
-                <img src="assets/imgs/imgDevNotes/distFile.png" class="card-img-top mx-auto"  alt="distFile">
-                <div class="card-body">
-                  <p class="card-text text-center">Se crea el archivo dist, este archivo se sube a Netlify</p>
-                </div>
-              </div>
+            <div class="col-12 col-md-6">
+              <h6>Videos en español (23 videos)</h6>
+              <iframe src="https://www.youtube.com/embed/AE5U8zjkU2s" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -403,7 +420,7 @@
 
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
 
 </body>
 </html>
