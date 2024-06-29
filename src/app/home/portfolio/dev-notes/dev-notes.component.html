@@ -53,6 +53,9 @@
                 <ul class="navbar-nav">
                     <a href="dev-notes#venv" class="nav-link ms-auto">Entorno Virtual</a>
                 </ul>
+                <ul class="navbar-nav">
+                    <a href="dev-notes#cheat-sheet" class="nav-link ms-auto">Guías</a>
+                </ul>
             </div>
         </div>
     </nav>
@@ -107,6 +110,15 @@
             <img src="assets/imgs/imgDevNotes/angular.svg" class="img-fluid" alt="" style="width: 60px;">
 
           </div>
+
+          <button
+          class="btn btn-primary btn-rounded"
+          onclick="location.href='assets/docs/angular-cheat-sheet.pdf'"
+          download>
+          <span><img src="assets/imgs/imgDevNotes/iconPdf.png" alt="pdfDownload"></span>
+            Guía Atajos
+          </button>
+
           <div class="row">
             <div class="col-md-4 pb-5">
               <h6>Nuevo proyecto</h6>
@@ -121,7 +133,7 @@
               <pre><code [highlight]="newComponentAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
             </div>
           </div>
-          <div class="row">
+          <div class="row pb-5">
             <h1>Errores</h1>
             <h6>Error de firma</h6>
             <p>ng : No se puede cargar el archivo C:\Users\juand\AppData\Roaming\npm\ng.ps1.
@@ -132,7 +144,7 @@
               https:/go.microsoft.com/fwlink/?LinkID=135170.
               En línea: 1 Carácter: 1</p>
             <h6>Solución</h6>
-            <pre class="pb-5"><code [highlight]="signErrorAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+            <pre><code [highlight]="signErrorAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
           </div>
 
           <div class="row">
@@ -305,6 +317,13 @@
           <img src="assets/imgs/imgDevNotes/iconDocker.png" class="img-fluid" alt="" style="width: 60px;">
 
         </div>
+        <button
+          class="btn btn-primary btn-rounded"
+          onclick="location.href='assets/docs/docker-cheat-sheet.pdf'"
+          download>
+          <span><img src="assets/imgs/imgDevNotes/iconPdf.png" alt="pdfDownload"></span>
+            Guía Atajos
+          </button>
         <div class="row">
           <div class="col-md-4 pb-5">
             <h6>Crear Network</h6>
@@ -399,20 +418,62 @@
       </div>
     </section>
     <!-- end section -->
+    <section id="cheat-sheet" class="p-5">
+      <div class="container">
+              <!-- <h1>Ejemplo de uso de <code>&lt;pre&gt;&lt;code&gt;</code> en HTML con Highlight.js</h1> -->
+               <h1>Otras guías utiles</h1>
+               <div class="row pt-5">
+                  <div class="col-md">
+                    <div class="d-flex content-justify-start pb-2">
+                      <h2>GitHub</h2>
+                      <img src="assets/imgs/imgDevNotes/iconGithub.png" class="img-fluid" alt="" style="width: 40px;">
+                    </div>
+                    <button
+                      class="btn btn-primary btn-rounded"
+                      onclick="location.href='assets/docs/github-cheat-sheet.pdf'"
+                      download>
+                      <span><img src="assets/imgs/imgDevNotes/iconPdf2.png" alt="pdfDownload"></span>
+                        Guia Atajos
+                    </button>
+                  </div>
+                  <div class="col-md pt-4">
+                    <div class="d-flex content-justify-start pb-2">
+                      <h2>HTML</h2>
+                      <img src="assets/imgs/imgDevNotes/iconTags.png" class="img-fluid" alt="" style="width: 40px;">
+                    </div>
+                    <button
+                      class="btn btn-primary btn-rounded"
+                      onclick="location.href='assets/docs/html-tags-chart.pdf'"
+                      download>
+                      <span><img src="assets/imgs/imgDevNotes/iconPdf2.png" alt="pdfDownload"></span>
+                        Guia Atajos
+                    </button>
+                  </div>
+                  <div class="col-md pt-4">
+                    <div class="d-flex content-justify-start pb-2">
+                      <h2>MySQL</h2>
+                      <img src="assets/imgs/imgDevNotes/iconMysql.png" class="img-fluid" alt="" style="width: 40px;">
+                    </div>
+                    <button
+                      class="btn btn-primary btn-rounded"
+                      onclick="location.href='assets/docs/MySQL-Commands-Cheat-Sheet-by-PhoenixNAP.pdf'"
+                      download>
+                      <span><img src="assets/imgs/imgDevNotes/iconPdf2.png" alt="pdfDownload"></span>
+                        Guia Atajos
+                    </button>
+                  </div>
+               </div>
 
-    <div class="container">
-            <!-- <h1>Ejemplo de uso de <code>&lt;pre&gt;&lt;code&gt;</code> en HTML con Highlight.js</h1> -->
 
-
-
-            <!-- <pre>
-              <code [highlight]="codeForHighlight"
-                    language="ts"
-                    [lineNumbers]="true"
-                    >
-                  </code>
-            </pre> -->
-    </div>
+              <!-- <pre>
+                <code [highlight]="codeForHighlight"
+                      language="ts"
+                      [lineNumbers]="true"
+                      >
+                    </code>
+              </pre> -->
+      </div>
+    </section>
 
     <div class="container">
 
