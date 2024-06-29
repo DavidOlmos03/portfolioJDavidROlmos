@@ -65,7 +65,11 @@ export class DevNotesComponent {
 
     // Python
   newProjectFlask = `flask –app nameFile –debug run`
-
+  orderList = `  from collections import deque
+  tareas.sort()
+  cola = deque()
+  for tarea in tareas:
+      cola.append(tarea[1])`
   // Docker
   createNetwork = `docker network create name_network`
   dockerComposeUp = `docker compose -f .\docker\docker-compose.dev.yml up --build`
