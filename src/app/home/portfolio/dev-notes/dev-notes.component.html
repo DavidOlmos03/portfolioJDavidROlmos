@@ -283,6 +283,12 @@
               <h6>Videos en español (23 videos)</h6>
               <iframe src="https://www.youtube.com/embed/AE5U8zjkU2s" allowfullscreen></iframe>
             </div>
+            <div class="col-12 col-md-6">
+              <h6>OBSERVACIONES</h6>
+              <ul>
+                <li>Las imágenes solo se pueden trabajar mediante solicitudes POST, con solicitudes como PATCH o PUT no va a funcionar.</li>
+              </ul>
+            </div>
           </div>
         </div>
     </section>
@@ -301,17 +307,49 @@
           <img src="assets/imgs/imgDevNotes/iconFlask.png" class="img-fluid" alt="" style="width: 60px;">
          </div>
         <div class="row">
-          <div class="col-12 col-md-6 pb-5 pe-5">
+          <div class="col-12 col-md-6 pb-5">
             <h6>Iniciar proyecto en modo debug</h6>
             <pre><code [highlight]="newProjectFlask" language="html" [lineNumbers]="true"> </code></pre>
           </div>
-          <div class="col-12 col-md-6 pb-5 pe-5">
+          <div class="col-12 col-md-6 pb-5">
+            <h6>Videos en español</h6>
+            <iframe src="https://www.youtube.com/embed/W-SfC_V7P6o" allowfullscreen></iframe>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-12 col-md-4 pb-5">
             <h6>Ordenar lista</h6>
             <pre><code [highlight]="orderList" language="python" [lineNumbers]="true"> </code></pre>
           </div>
-          <div class="col-12 col-md-6">
-            <h6>Videos en español</h6>
-            <iframe src="https://www.youtube.com/embed/W-SfC_V7P6o" allowfullscreen></iframe>
+          <div class="col-12 col-md-4 pb-5">
+            <h6>Trabajo con colas en python</h6>
+            <pre><code [highlight]="dequeExample" language="python" [lineNumbers]="true"> </code></pre>
+          </div>
+          <div class="col-12 col-md-4 pb-5">
+            <h6>Trabajo con format en python (Opción 1)</h6>
+            <pre><code [highlight]="formatExample" language="python" [lineNumbers]="true"> </code></pre>
+            <p><b>Resp. </b>Un texto '10' y un número 'otro texto'  </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 pb-5">
+            <h6>Ejemplo de args y kwargs</h6>
+            <pre><code [highlight]="argsWord" language="python" [lineNumbers]="true"> </code></pre>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <h6>Documentación oficial de python</h6>
+            <p><a href="https://docs.python.org/es/3/tutorial/inputoutput.html">Docs</a></p>
+          </div>
+          <div class="col-md">
+            <h6>Ejemplos gitHub de curso en Udemy</h6>
+            <p><a href="https://github.com/DavidOlmos03/cursoPythonHectorC">GitHub</a></p>
+          </div>
+          <div class="col-md">
+            <h6>Hektorprofe</h6>
+            <p><a href="https://docs.hektorprofe.net/python/entradas-y-salidas/salida-por-pantalla/ ">HektorProfe</a></p>
           </div>
         </div>
       </div>
@@ -446,7 +484,7 @@
                         Guia Atajos
                     </button>
                   </div>
-                  <div class="col-md pt-4">
+                  <div class="col-md">
                     <div class="d-flex content-justify-start pb-2">
                       <h2>HTML</h2>
                       <img src="assets/imgs/imgDevNotes/iconTags.png" class="img-fluid" alt="" style="width: 40px;">
@@ -459,7 +497,7 @@
                         Guia Atajos
                     </button>
                   </div>
-                  <div class="col-md pt-4">
+                  <div class="col-md">
                     <div class="d-flex content-justify-start pb-2">
                       <h2>MySQL</h2>
                       <img src="assets/imgs/imgDevNotes/iconMysql.png" class="img-fluid" alt="" style="width: 40px;">
