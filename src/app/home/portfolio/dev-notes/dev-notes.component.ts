@@ -68,7 +68,7 @@ export class DevNotesComponent {
     laravelFreeze = `composer require laravel/breeze --dev`
 
     // Python
-  newProjectFlask = `flask –app nameFile –debug run`
+  newProjectFlask = `flask --app nameFile --debug run`
   orderList = `  from collections import deque
   tareas.sort()
   cola = deque()

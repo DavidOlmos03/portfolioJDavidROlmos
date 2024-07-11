@@ -9,6 +9,7 @@
     <div class="container">
       <h1 class="mb-5"><span class="text-danger">{{'general.my'|translate}} </span>{{'home.portfolio'|translate}}</h1>
       <div class="portfolio">
+        <!-- star filters/navbar of portfolio -->
         <div class="filters">
           <a (click)="selectedSection = 'new';" [class.active]="selectedSection === 'new'">
             {{'portfolio.new'|translate}}
@@ -24,10 +25,11 @@
           </a>
 
         </div>
+        <!-- finish  filters/navbar -->
         <div class="portfolio-container">
           <div class="row">
             <!-- start portfolio item -->
-            <div class="col-12 col-md-6 col-lg-3 mb-2" id="new udemy" *ngIf="['udemy'].includes(selectedSection)">
+            <div  id="mongoDB" class="col-12 col-md-6 col-lg-3 mb-2" *ngIf="['udemy'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-dark">
                 <div class="portfolio-item px-1">
                   <img src="assets/imgs/courseMongodb.jpg" class="img-fluid"
@@ -57,7 +59,7 @@
             </div>
             <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-12 col-md-6 col-lg-3 mb-2" *ngIf="['udemy', 'web'].includes(selectedSection)">
+            <div id="JavaScript" class="col-12 col-md-6 col-lg-3 mb-2" *ngIf="['udemy', 'web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-dark">
                 <div class="portfolio-item px-1">
                   <img src="assets/imgs/course-1.png" class="img-fluid"
@@ -105,7 +107,7 @@
             </div>
            <!-- end portfolio item -->
            <!-- start portfolio item -->
-            <div class="col-12 col-md-6 col-lg-3 mb-2 web" *ngIf="['web'].includes(selectedSection)">
+            <div id="MundoStem" class="col-12 col-md-6 col-lg-3 mb-2 web" *ngIf="['web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-light">
                 <div id="mundoStem" class="portfolio-item px-1">
                   <img src="assets/imgs/mundoSteam.png" class="img-fluid"
@@ -153,7 +155,7 @@
             </div>
             <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-12 col-md-6 col-lg-3 mb-2 web" *ngIf="['web'].includes(selectedSection)">
+            <div id="WebSiteEchez" class="col-12 col-md-6 col-lg-3 mb-2 web" *ngIf="['web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-dark">
                 <div  id="webSiteEchez" class="portfolio-item px-1">
                   <img src="assets/imgs/webSiteEchez.png" class="img-fluid"
@@ -197,7 +199,7 @@
             </div>
             <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-12 col-md-6 col-lg-3 mb-2 udemy" *ngIf="['udemy'].includes(selectedSection)">
+            <div id="sqlserver" class="col-12 col-md-6 col-lg-3 mb-2 udemy" *ngIf="['udemy'].includes(selectedSection)">
               <div class="portfolio-item px-1">
                 <img src="assets/imgs/courseSQLServer.jpg" class="img-fluid"
                   alt="courseSQLServer">
@@ -213,7 +215,7 @@
             </div>
             <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-12 col-md-6 col-lg-3 mb-2 udemy" *ngIf="['udemy'].includes(selectedSection)">
+            <div id="postgresql" class="col-12 col-md-6 col-lg-3 mb-2 udemy" *ngIf="['udemy'].includes(selectedSection)">
               <div class="portfolio-item px-1">
                 <img src="assets/imgs/coursePostgreSQL.png" class="img-fluid"
                   alt="coursePostgreSQL">
@@ -231,7 +233,7 @@
             </div>
             <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-12 col-md-6 col-lg-3 mb-2 coursera" *ngIf="['coursera'].includes(selectedSection)">
+            <div id="sql" class="col-12 col-md-6 col-lg-3 mb-2 coursera" *ngIf="['coursera'].includes(selectedSection)">
               <div class="portfolio-item px-1">
                 <img src="assets/imgs/courseSQL.jpg" class="img-fluid"
                   alt="courseSQL">
@@ -248,7 +250,7 @@
             </div>
             <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-12 col-md-6 col-lg-3 mb-2 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
+            <div id="Vuejs" class="col-12 col-md-6 col-lg-3 mb-2 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-dark">
                 <div class="portfolio-item px-1">
                   <img src="assets/imgs/vuejs-course.jpg" class="img-fluid"
@@ -295,7 +297,7 @@
             </div>
             <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-12 col-md-6 col-lg-3 mb-2 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
+            <div id="streaming-netflix" class="col-12 col-md-6 col-lg-3 mb-2 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1">
                 <div class="portfolio-item px-1">
                   <img src="assets/imgs/laravel-angular-course.jpg" class="img-fluid"
@@ -348,7 +350,7 @@
             </div>
             <!-- end portfolio item -->
              <!-- start portfolio item -->
-            <div class="col-12 col-md-6 col-lg-3 mb-2 new web" *ngIf="['new','udemy','web'].includes(selectedSection)">
+            <div id="Dev-notes" class="col-12 col-md-6 col-lg-3 mb-2 new web" *ngIf="['new','udemy','web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-dark">
                 <div class="portfolio-item px-1">
                   <img src="assets/imgs/imgDevNotes/devNotes.png" class="img-fluid"
@@ -391,7 +393,7 @@
             </div>
             <!-- end portfolio item -->
             <!-- start portfolio item -->
-            <div class="col-12 col-md-6 col-lg-3 mb-2 new udemy" *ngIf="['new','udemy'].includes(selectedSection)">
+            <div id="Docker" class="col-12 col-md-6 col-lg-3 mb-2 new udemy" *ngIf="['new','udemy'].includes(selectedSection)">
               <div class="card shadow py-1 px-1 bg-dark">
                 <div class="portfolio-item px-1">
 
@@ -431,7 +433,7 @@
             </div>
             <!-- end portfolio item -->
              <!-- start portfolio item -->
-             <div class="col-12 col-md-6 col-lg-3 mb-2 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
+             <div id="Python" class="col-12 col-md-6 col-lg-3 mb-2 new udemy web" *ngIf="['new','udemy','web'].includes(selectedSection)">
               <div class="card shadow py-1 px-1">
                 <div class="portfolio-item px-1">
                   <img src="assets/imgs/python-course.jpg" class="img-fluid"
@@ -439,7 +441,7 @@
                   <div class="content-holder">
                     <div class="circle">
                       <circle-progress
-                      [percent]="30"
+                      [percent]="60"
                       [radius]="40"
                       [outerStrokeWidth]="10"
                       [innerStrokeWidth]="5"
@@ -471,19 +473,10 @@
             </div>
             <!-- end portfolio item -->
           </div>
-
-
-
-
-
-
         </div>
       </div>
     </div>
   </section>
-
-
-
   <!-- core  -->
   <script src="../assets/vendors/jquery/jquery-3.4.1.js"></script>
   <script src="../assets/vendors/bootstrap/bootstrap.bundle.js"></script>
