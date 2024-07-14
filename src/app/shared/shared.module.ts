@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedComponent } from './shared/shared.component';
 import { SwitchLanguagesComponent } from './switch-languages/switch-languages.component';
 /**
  * Modulos necesarios para crear la página multilenguaje
@@ -12,7 +11,6 @@ import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    SharedComponent,
     SwitchLanguagesComponent
   ],
   imports: [
@@ -26,7 +24,6 @@ import { FormsModule } from '@angular/forms';
       }
     })
   ],exports:[
-    SharedComponent,
     SwitchLanguagesComponent
   ]
 })

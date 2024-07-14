@@ -8,7 +8,8 @@ import { TranslateService } from '@ngx-translate/core';
   <h1>Home Component</h1>
   <app-switch-languages></app-switch-languages> <!-- Utiliza el selector correcto -->
 `,
-  styleUrls: ['./home.component.css',"css/johndoe.css","./vendors/themify-icons/css/themify-icons.css"]
+//
+  styleUrls: ['./home.component.css',"home/css/johndoe.css"]
 })
 export class HomeComponent {
 

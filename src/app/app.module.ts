@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { CourseJSModule } from './course-js/course-js.module';
-import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './home/home.module';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -17,9 +16,6 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
-// Importaciones para Highlightjs
-// import { HIGHLIGHT_OPTIONS, HighlightOptions } from 'ngx-highlightjs';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +25,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     HomeModule,
-    SharedModule,
     CourseJSModule,
     HttpClientModule,
     TranslateModule.forRoot({
@@ -42,15 +37,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   ],
   providers: [
     TranslateService,
-    // {
-    //   provide: HIGHLIGHT_OPTIONS,
-    //   useValue: <HighlightOptions>{
-    //     fullLibraryLoader: () => import('highlight.js'),
-    //     lineNumbersLoader: () => import('ngx-highlightjs/line-numbers'), // verifica si realmente es necesario
-    //     lineNumbers: true
-    //   }
-    // },
-
   ],
   bootstrap: [AppComponent]
 })
