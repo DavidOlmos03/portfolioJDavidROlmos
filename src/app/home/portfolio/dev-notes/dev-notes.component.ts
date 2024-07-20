@@ -92,6 +92,19 @@ export class DevNotesComponent {
 
   for kwarg in kwargs:
       print(f"{kwarg} = {kwargs[kwarg]}")`
+
+  privateAttributesMethods = `class Ejemplo:
+    __atributo_privado = "Soy un atributo inalcanzable desde fuera"
+    def __metodo_privado(self):
+        print("Soy un metodo inalcanzable desde fuera")
+    def get_atributo_publico(self):
+        return self.__atributo_privado
+    def get_metodo_publico(self):
+        return self.__metodo_privado()`
+
+  copyVariable = `import copy
+copia_variable = copy.copy(valoriable_copiar)
+`
   // Docker
   createNetwork = `docker network create name_network`
   dockerComposeUp = `docker compose -f .\docker\docker-compose.dev.yml up --build`

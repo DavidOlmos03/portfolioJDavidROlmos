@@ -278,6 +278,7 @@
             </div>
           </div>
           <div id="laravel-concepts" class="pt-5">
+            <h2>Notas curso</h2>
             <!-- start laravel-concepts-one -->
             <div id="laravel-concepts-one" class="row mt-5">
               <div class="col-md">
@@ -432,11 +433,12 @@
           <h1 class="text-center">Python</h1>
         </div>
         <!-- <h1 class="text-center"><code class="w-50">&lt;&gt;</code>Vue js<code>&lt;&gt;</code></h1> -->
-         <div class="d-flex content-justify-start">
+        <div class="d-flex content-justify-start">
           <h2>Flask</h2>
           <img src="assets/imgs/imgDevNotes/iconFlask.png" class="img-fluid" alt="" style="width: 60px;">
-         </div>
-        <div id="flask-course-youtube" class="row">
+        </div>
+        <!-- start flask-course-youtube -->
+        <div id="flask-course-youtube" class="row pb-5">
           <div class="col-12 col-md-6 pb-5">
             <h6>Iniciar proyecto en modo debug</h6>
             <pre><code [highlight]="newProjectFlask" language="html" [lineNumbers]="true"> </code></pre>
@@ -445,7 +447,8 @@
             <h6>Videos en español</h6>
             <iframe src="https://www.youtube.com/embed/W-SfC_V7P6o"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <div id="flask-concepts" class="pt-5">
+          <h2>Notas curso</h2>
+          <div id="flask-concepts">
             <!-- start flask-concepts-one -->
             <div id="flask-concepts-one" class="row mt-5">
               <div class="col-md">
@@ -494,7 +497,7 @@
             </div>
             <!-- finish flask-concepts-one -->
             <!-- start flask-concepts-two -->
-            <div id="flask-concepts-one" class="row mt-5">
+            <div id="flask-concepts-two" class="row mt-5">
               <div class="col-md">
                 <div class="row">
                   <div class="col-12 col-md-5">
@@ -539,32 +542,65 @@
             <!-- finish flask-concepts-two -->
           </div>
         </div>
+        <!-- end flask-course-youtube -->
         <hr>
-        <div class="row">
-          <div class="col-12 col-md-4 pb-5">
-            <h6>Ordenar lista</h6>
-            <pre><code [highlight]="orderList" language="python" [lineNumbers]="true"> </code></pre>
+        <!-- start python-notes-section -->
+        <div id="python-notes-section" class="row pt-5 pb-5">
+          <h2>Notas</h2>
+          <div class="row">
+            <div class="col-12 col-md-4 pb-5">
+              <h6>Ordenar lista</h6>
+              <pre><code [highlight]="orderList" language="python" [lineNumbers]="true"> </code></pre>
+            </div>
+            <div class="col-12 col-md-4 pb-5">
+              <h6>Trabajo con colas en python</h6>
+              <pre><code [highlight]="dequeExample" language="python" [lineNumbers]="true"> </code></pre>
+            </div>
+            <div class="col-12 col-md-4 pb-5">
+              <h6>Trabajo con format en python (Opción 1)</h6>
+              <pre><code [highlight]="formatExample" language="python" [lineNumbers]="true"> </code></pre>
+              <p><b>Resp. </b>Un texto '10' y un número 'otro texto'  </p>
+            </div>
           </div>
-          <div class="col-12 col-md-4 pb-5">
-            <h6>Trabajo con colas en python</h6>
-            <pre><code [highlight]="dequeExample" language="python" [lineNumbers]="true"> </code></pre>
-          </div>
-          <div class="col-12 col-md-4 pb-5">
-            <h6>Trabajo con format en python (Opción 1)</h6>
-            <pre><code [highlight]="formatExample" language="python" [lineNumbers]="true"> </code></pre>
-            <p><b>Resp. </b>Un texto '10' y un número 'otro texto'  </p>
+          <div class="row">
+            <div class="col-12 col-md-4 pb-5">
+              <h6>Ejemplo de args y kwargs</h6>
+              <pre><code [highlight]="argsWord" language="python" [lineNumbers]="true"> </code></pre>
+            </div>
+            <div class="col-12 col-md-4 pb-5">
+              <h6>Encapsulamiento de atributos y metodos</h6>
+              <p>
+                Obs. en python se utiliza el __ (doble guión bajo para establecer atributos o métodos privados)
+              </p>
+              <pre><code [highlight]="privateAttributesMethods" language="python" [lineNumbers]="true"> </code></pre>
+            </div>
+            <div class="col-12 col-md-4 pb-5">
+              <h6>clases heredadas y polimorfismos</h6>
+              <p>Se utiliza isinstance() para comprobar el tipo del objeto.</p>
+              <h6><a href="https://github.com/DavidOlmos03/cursoPythonHectorC/blob/main/Fase%203%20-%20Programacion%20Orientada%20a%20Objetos/Tema%2009%20-%20Herencia%20en%20la%20POO/Leccion%202%20-%20Clases%20heredadas%20y%20polimorfismo.ipynb">Polimorfia</a></h6>
+              <p>Propiedad de la herencia en que objetos de distintas subclases pueden respoder a una misma acción. <br>
+              En python todas las clases son a su vez subclases de la superclase Object, es decir, son polimórficas por defecto.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 col-md-6 pb-5">
-            <h6>Ejemplo de args y kwargs</h6>
-            <pre><code [highlight]="argsWord" language="python" [lineNumbers]="true"> </code></pre>
-          </div>
+        <!-- end python-notes-section -->
+        <hr>
+        <div class="row pt-5 pb-5">
+          <h2>OBSERVACIONES</h2>
+          <p>Atributos pasados por valor o por referencia:</p>
+          <ol>
+            <li>Por valor se hace una copia.</li>
+            <li>Por referencia se pasa la original -> lo que sucede dentro de una función a la cual se le pasa un parametro por referencia, altera el parámetro fuera de la función también.</li>
+            <pre class="col-12 col-md-4"><code [highlight]="copyVariable" language="python" [lineNumbers]="true"> </code></pre>
+            <p>Obs. El copy funciona para cualquier tipo de dato.</p>
+          </ol>
         </div>
-        <div class="row">
+        <hr>
+        <div class="row pt-5 pb-5">
           <div class="col-md">
             <h6>Documentación oficial de python</h6>
-            <p><a href="https://docs.python.org/es/3/tutorial/inputoutput.html">Docs</a></p>
+            <p><a href="https://docs.python.org/3.12/tutorial/index.html">Docs</a></p>
           </div>
           <div class="col-md">
             <h6>Ejemplos gitHub de curso en Udemy</h6>
