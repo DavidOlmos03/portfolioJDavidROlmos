@@ -66,7 +66,6 @@ export class DevNotesComponent {
     newModuleLaravel = `php artisan make:model path/to/newModule`
     newControllerLaravel = `php artisan make:controller path/to/newController`
     laravelFreeze = `composer require laravel/breeze --dev`
-
     // Python
   newProjectFlask = `flask --app nameFile --debug run`
   orderList = `  from collections import deque

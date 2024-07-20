@@ -206,21 +206,19 @@
             <img src="assets/imgs/imgDevNotes/iconLaravel.png" class="img-fluid" alt="" style="width: 60px;">
           </div>
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
               <h6>Nuevo proyecto</h6>
               <pre><code [highlight]="newProjectLaravel" language="" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
-              <p>Obs. la versión es opcional  <br>
-                Los proyectos se almacenan en:  C:\xampp\php\www</p>
+              <h6>Obs.</h6>
+              <ul>
+                <li>la versión es opcional</li>
+                <li>Los proyectos se almacenan en:  C:\xampp\php\www</li>
+                <li>php artisan (me retorna todos los comandos que puedo utilizar)</li>
+              </ul>
             </div>
-            <div class="col-md-4">
-              <h6>Nuevo modelo</h6>
-              <pre><code [highlight]="newModuleLaravel" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+            <div class="col-md-6">
+
             </div>
-            <div class="col-md-4">
-              <h6>Nuevo controlador</h6>
-              <pre><code [highlight]="newControllerLaravel" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
-            </div>
-            <p>En routes/web.php estan las rutas con sus respectivos nombres, las cuales apuntan a una vista o a un controlador.</p>
           </div>
           <div class="row">
             <h1>Conceptos</h1>
@@ -241,20 +239,31 @@
                 <input type="checkbox" class="form-check-input me-1" value="" id="thirdCheckboxStretched">
                 <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Laravel freeze</label>
               </li>
-              <pre><code [highlight]="laravelFreeze" language="html" [lineNumbers]="true" class="bg-dark text-light"></code></pre>
             </ul>
-          </div>
-          <div class="row">
             <ul  class="list-group col-md">
               <li class="list-group-item bg-dark text-light">
                 <input type="checkbox" class="form-check-input me-1" value="" id="fourthCheckboxStretched">
                 <label class="form-check-label stretched-link" for="fourthCheckboxStretched">Blade</label>
               </li>
             </ul>
+          </div>
+          <div class="row">
             <ul  class="list-group col-md">
               <li class="list-group-item bg-dark text-light">
                 <input type="checkbox" class="form-check-input me-1" value="" id="fifthCheckboxStretched">
                 <label class="form-check-label stretched-link" for="fifthCheckboxStretched">Artisan</label>
+              </li>
+            </ul>
+            <ul  class="list-group col-md">
+              <li class="list-group-item bg-dark text-light">
+                <input type="checkbox" class="form-check-input me-1" value="" id="sixthCheckboxStretched">
+                <label class="form-check-label stretched-link" for="sixthCheckboxStretched">Namespace</label>
+              </li>
+            </ul>
+            <ul  class="list-group col-md">
+              <li class="list-group-item bg-dark text-light">
+                <input type="checkbox" class="form-check-input me-1" value="" id="seventhCheckboxStretched">
+                <label class="form-check-label stretched-link" for="seventhCheckboxStretched">Composer</label>
               </li>
             </ul>
           </div>
@@ -265,7 +274,7 @@
             </div>
             <div class="col-12 col-md-6">
               <h6>Videos en español (23 videos)</h6>
-              <iframe src="https://www.youtube.com/embed/AE5U8zjkU2s" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/AE5U8zjkU2s"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
           <div id="laravel-concepts" class="pt-5">
@@ -283,10 +292,39 @@
                   </div>
                   <div class="col-12 col-md-7">
                     <div class="tab-content" id="nav-tabContent">
-                      <div class="tab-pane fade show active" id="list-laravel-one" role="tabpanel" aria-labelledby="list-one-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit id totam eos, minus, officiis harum odio nesciunt provident aspernatur et corporis reprehenderit ipsum maiores explicabo tenetur ea aperiam tempora.</div>
-                      <div class="tab-pane fade" id="list-laravel-two" role="tabpanel" aria-labelledby="list-two-list">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates sed voluptatum ipsum repellat accusantium doloribus ab laborum, cumque eius temporibus reprehenderit sunt velit accusamus nostrum, rerum delectus alias, molestiae adipisci!</div>
-                      <div class="tab-pane fade" id="list-laravel-three" role="tabpanel" aria-labelledby="list-three-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consectetur placeat veniam. Modi cum esse perferendis a ipsam ullam, doloribus, aliquam tempore est fugiat officiis laboriosam, facilis rerum provident odit!</div>
-                      <div class="tab-pane fade" id="list-laravel-four" role="tabpanel" aria-labelledby="list-four-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat cum praesentium illo odit obcaecati accusamus consequatur sint molestiae sit! Pariatur quod ducimus consequuntur eveniet, laboriosam ex reiciendis rerum odio quos?</div>
+                      <div class="tab-pane fade show active" id="list-laravel-one" role="tabpanel" aria-labelledby="list-one-list">
+                        <a href="https://laravel.com/docs/11.x">Documentación oficial</a>
+                        <p>Se puede realizar de diferentes maneras la configuración para utilizar Laravel:
+                        </p>
+                        <ul>
+                          <li>Laravel Sail (Con docker)</li>
+                          <li>Laravel Homestead (Similar a una maquina virtual)</li>
+                          <li>Laravel Valet (Para MacOS)</li>
+                          <li>Xampp y Composer</li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane fade" id="list-laravel-two" role="tabpanel" aria-labelledby="list-two-list">
+                        <p>project_name->database->migration</p>
+                        <p>Nos permite crear el esquema y las tablas de la base de datos, se reconoce por el Schema::create()... <b>De esta forma se crean automaticamente en la base de datos sin necesidad de crearlas a mano.</b>
+                          <br>
+                          Obs. Nombre de tablas en plural y nombres de modelos en singular
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="list-laravel-three" role="tabpanel" aria-labelledby="list-three-list">
+                        <h6>Nuevo modelo</h6>
+                        <pre><code [highlight]="newModuleLaravel" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+                        <p>
+                          project_name->app->model
+                          Nos permiten interactuar con la base de datos, esto nos permite escribir $query <br>
+                          $fillable contiene los campos que se podan ingresar a la base de datos
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="list-laravel-four" role="tabpanel" aria-labelledby="list-four-list">
+                        <h6><a href="https://laravel.com/docs/11.x/eloquent-relationships">Documentación relaciones</a></h6>
+                        <p>No es necesario llamar el namespace del modelo a utilizar en otro modelo, pues estando en el mismo directorio esto no es necesario.</p>
+                        <p>Para una tabla pivote no es necesario crear un modelo, solo se crea la migración, cuando creo las relaciones inversas en dos modelos Laravel entiende
+                          que se utiliza una tabla pivote y la busca.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -303,8 +341,20 @@
                   </div>
                   <div class="col-12 col-md-7">
                     <div class="tab-content" id="nav-tabContent-two">
-                      <div class="tab-pane fade show active" id="list-laravel-five" role="tabpanel" aria-labelledby="list-five-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ab odit ipsa! Ad a iusto dicta illum facilis, fuga dolor aut consequatur! Provident, et odio temporibus beatae unde quidem dignissimos.</div>
-                      <div class="tab-pane fade" id="list-laravel-six" role="tabpanel" aria-labelledby="list-six-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ab odit ipsa! Ad a iusto dicta illum facilis, fuga dolor aut consequatur! Provident, et odio temporibus beatae unde quidem dignissimos.</div>
+                      <div class="tab-pane fade show active" id="list-laravel-five" role="tabpanel" aria-labelledby="list-five-list">
+                        <h6><a href="https://laravel.com/docs/11.x/starter-kits">Documentación Laravel breeze</a></h6>
+                        <pre><code [highlight]="laravelFreeze" language="html" [lineNumbers]="true" class="bg-dark text-light"></code></pre>
+                        <p>Se utiliza este paquete para crear un sistema de autenticación completo, se selecciona el motor de plantillas blade de Laravel, su frontend esta creado con
+                          Tailwind CSS.
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="list-laravel-six" role="tabpanel" aria-labelledby="list-six-list">
+                        <p>En routes/web.php estan las rutas con sus respectivos nombres, las cuales apuntan a una vista o a un controlador. <br>
+                        En la ruta llamo al controlador y dentro de este creo una función que me retorna la vista, estas vistas se pueden crear con blade.
+                        </p>
+                        <h6>Nuevo controlador</h6>
+                        <pre><code [highlight]="newControllerLaravel" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+                      </div>
                       <div class="tab-pane fade" id="list-laravel-seven" role="tabpanel" aria-labelledby="list-seven-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ab odit ipsa! Ad a iusto dicta illum facilis, fuga dolor aut consequatur! Provident, et odio temporibus beatae unde quidem dignissimos.0</div>
                       <div class="tab-pane fade" id="list-laravel-eight" role="tabpanel" aria-labelledby="list-eight-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ab odit ipsa! Ad a iusto dicta illum facilis, fuga dolor aut consequatur! Provident, et odio temporibus beatae unde quidem dignissimos.1</div>
                     </div>
@@ -393,7 +443,7 @@
           </div>
           <div class="col-12 col-md-6 pb-5">
             <h6>Videos en español</h6>
-            <iframe src="https://www.youtube.com/embed/W-SfC_V7P6o" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/W-SfC_V7P6o"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div id="flask-concepts" class="pt-5">
             <!-- start flask-concepts-one -->
@@ -402,15 +452,18 @@
                 <div class="row">
                   <div class="col-12 col-md-5">
                     <div class="list-group" id="list-tab" role="tablist">
-                      <a class="list-group-item list-group-item-action active" id="list-one-list" data-bs-toggle="list" href="#list-flask-one" role="tab" aria-controls="list-home">#2 Entornos de desarrollo para flask</a>
-                      <a class="list-group-item list-group-item-action" id="list-two-list" data-bs-toggle="list" href="#list-flask-two" role="tab" aria-controls="list-home">#5 Migraciones en flask</a>
-                      <a class="list-group-item list-group-item-action" id="list-three-list" data-bs-toggle="list" href="#list-flask-three" role="tab" aria-controls="list-home">#6 Modelos</a>
-                      <a class="list-group-item list-group-item-action" id="list-four-list" data-bs-toggle="list" href="#list-flask-four" role="tab" aria-controls="list-home">#7 Relaciones entre modelos</a>
+                      <a class="list-group-item list-group-item-action active" id="list-one-list" data-bs-toggle="list" href="#list-flask-one" role="tab" aria-controls="list-home">Depurador de Flask</a>
+                      <a class="list-group-item list-group-item-action" id="list-two-list" data-bs-toggle="list" href="#list-flask-two" role="tab" aria-controls="list-home">Rutas y vistas</a>
+                      <a class="list-group-item list-group-item-action" id="list-three-list" data-bs-toggle="list" href="#list-flask-three" role="tab" aria-controls="list-home">Variables en Rutas</a>
+                      <a class="list-group-item list-group-item-action" id="list-four-list" data-bs-toggle="list" href="#list-flask-four" role="tab" aria-controls="list-home">Escape en HTML</a>
                     </div>
                   </div>
                   <div class="col-12 col-md-7">
                     <div class="tab-content" id="nav-tabContent">
-                      <div class="tab-pane fade show active" id="list-flask-one" role="tabpanel" aria-labelledby="list-one-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit id totam eos, minus, officiis harum odio nesciunt provident aspernatur et corporis reprehenderit ipsum maiores explicabo tenetur ea aperiam tempora.</div>
+                      <div class="tab-pane fade show active" id="list-flask-one" role="tabpanel" aria-labelledby="list-one-list">
+                        <h6>Iniciar proyecto en modo debug</h6>
+                        <pre><code [highlight]="newProjectFlask" language="html" [lineNumbers]="true"> </code></pre>
+                      </div>
                       <div class="tab-pane fade" id="list-flask-two" role="tabpanel" aria-labelledby="list-two-list">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates sed voluptatum ipsum repellat accusantium doloribus ab laborum, cumque eius temporibus reprehenderit sunt velit accusamus nostrum, rerum delectus alias, molestiae adipisci!</div>
                       <div class="tab-pane fade" id="list-flask-three" role="tabpanel" aria-labelledby="list-three-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consectetur placeat veniam. Modi cum esse perferendis a ipsam ullam, doloribus, aliquam tempore est fugiat officiis laboriosam, facilis rerum provident odit!</div>
                       <div class="tab-pane fade" id="list-flask-four" role="tabpanel" aria-labelledby="list-four-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat cum praesentium illo odit obcaecati accusamus consequatur sint molestiae sit! Pariatur quod ducimus consequuntur eveniet, laboriosam ex reiciendis rerum odio quos?</div>
@@ -422,10 +475,10 @@
                 <div class="row">
                   <div class="col-12 col-md-5">
                     <div class="list-group" id="list-tab-two" role="tablist">
-                        <a class="list-group-item list-group-item-action active" id="list-five-list" data-bs-toggle="list" href="#list-flask-five" role="tab" aria-controls="list-home">#8 Autenticación en flask</a>
-                        <a class="list-group-item list-group-item-action" id="list-six-list" data-bs-toggle="list" href="#list-flask-six" role="tab" aria-controls="list-home">#9 Rutas, controladores y vistas</a>
-                        <a class="list-group-item list-group-item-action" id="list-seven-list" data-bs-toggle="list" href="#list-flask-seven" role="tab" aria-controls="list-home">#10 Listar registros</a>
-                        <a class="list-group-item list-group-item-action" id="list-eight-list" data-bs-toggle="list" href="#list-flask-eight" role="tab" aria-controls="list-home">#11 Crear registros</a>
+                        <a class="list-group-item list-group-item-action active" id="list-five-list" data-bs-toggle="list" href="#list-flask-five" role="tab" aria-controls="list-home">Plantillas con Jinja y HTML</a>
+                        <a class="list-group-item list-group-item-action" id="list-six-list" data-bs-toggle="list" href="#list-flask-six" role="tab" aria-controls="list-home">Creación de plantillas</a>
+                        <a class="list-group-item list-group-item-action" id="list-seven-list" data-bs-toggle="list" href="#list-flask-seven" role="tab" aria-controls="list-home">Uso de variables y bucles</a>
+                        <a class="list-group-item list-group-item-action" id="list-eight-list" data-bs-toggle="list" href="#list-flask-eight" role="tab" aria-controls="list-home">Herencia de plantillas</a>
                     </div>
                   </div>
                   <div class="col-12 col-md-7">
@@ -446,10 +499,10 @@
                 <div class="row">
                   <div class="col-12 col-md-5">
                     <div class="list-group" id="list-tab" role="tablist">
-                      <a class="list-group-item list-group-item-action active" id="list-nine-list" data-bs-toggle="list" href="#list-flask-nine" role="tab" aria-controls="list-home">#12 Formulario para editar registro</a>
-                      <a class="list-group-item list-group-item-action" id="list-ten-list" data-bs-toggle="list" href="#list-flask-ten" role="tab" aria-controls="list-home">#13 Actualizar registro</a>
-                      <a class="list-group-item list-group-item-action" id="list-eleven-list" data-bs-toggle="list" href="#list-flask-eleven" role="tab" aria-controls="list-home">#14 Mostrar registros</a>
-                      <a class="list-group-item list-group-item-action" id="list-twelve-list" data-bs-toggle="list" href="#list-flask-twelve" role="tab" aria-controls="list-home">#15 Eliminar registros</a>
+                      <a class="list-group-item list-group-item-action active" id="list-nine-list" data-bs-toggle="list" href="#list-flask-nine" role="tab" aria-controls="list-home">Uso de filtros y funciones</a>
+                      <a class="list-group-item list-group-item-action" id="list-ten-list" data-bs-toggle="list" href="#list-flask-ten" role="tab" aria-controls="list-home">Enviar datos a las pantallas</a>
+                      <a class="list-group-item list-group-item-action" id="list-eleven-list" data-bs-toggle="list" href="#list-flask-eleven" role="tab" aria-controls="list-home">Enlaces y rutas</a>
+                      <a class="list-group-item list-group-item-action" id="list-twelve-list" data-bs-toggle="list" href="#list-flask-twelve" role="tab" aria-controls="list-home">Archivos estáticos</a>
                     </div>
                   </div>
                   <div class="col-12 col-md-7">
@@ -466,10 +519,10 @@
                 <div class="row">
                   <div class="col-12 col-md-5">
                     <div class="list-group" id="list-tab" role="tablist">
-                      <a class="list-group-item list-group-item-action active" id="list-nine-list" data-bs-toggle="list" href="#list-flask-thirteen" role="tab" aria-controls="list-home">#16 Sesiones Flash</a>
-                      <a class="list-group-item list-group-item-action" id="list-ten-list" data-bs-toggle="list" href="#list-flask-fourteen" role="tab" aria-controls="list-home">#17 Personalizar mens. error</a>
-                      <a class="list-group-item list-group-item-action" id="list-eleven-list" data-bs-toggle="list" href="#list-flask-fifteen" role="tab" aria-controls="list-home">#18 Tabla pivote y relación muchos a muchos</a>
-                      <a class="list-group-item list-group-item-action" id="list-twelve-list" data-bs-toggle="list" href="#list-flask-sixteen" role="tab" aria-controls="list-home">#19 Consultar tabla pivote</a>
+                      <a class="list-group-item list-group-item-action active" id="list-nine-list" data-bs-toggle="list" href="#list-flask-thirteen" role="tab" aria-controls="list-home">Manejo de formulario</a>
+                      <a class="list-group-item list-group-item-action" id="list-ten-list" data-bs-toggle="list" href="#list-flask-fourteen" role="tab" aria-controls="list-home">Crear Formulario</a>
+                      <a class="list-group-item list-group-item-action" id="list-eleven-list" data-bs-toggle="list" href="#list-flask-fifteen" role="tab" aria-controls="list-home">Validación de datos</a>
+                      <a class="list-group-item list-group-item-action" id="list-twelve-list" data-bs-toggle="list" href="#list-flask-sixteen" role="tab" aria-controls="list-home">Formulario y validacion de datos con WTForm</a>
                     </div>
                   </div>
                   <div class="col-12 col-md-7">
