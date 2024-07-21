@@ -3,6 +3,9 @@ body::before{
   content: '';
   height: 70px;
 }
+a{
+  text-decoration: none;
+}
 
 /* .highlight {
   background-color: #f1f1f1;

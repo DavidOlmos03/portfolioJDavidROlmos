@@ -104,7 +104,7 @@
             Guía Atajos
           </button>
 
-          <div class="row">
+          <div id="notes-section" class="row">
             <div class="col-md-4 pb-5">
               <h6>Nuevo proyecto</h6>
               <pre><code [highlight]="newProjectAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
@@ -124,7 +124,266 @@
               <pre><code [highlight]="newComponentAngularWithoutSpect" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
             </div>
           </div>
-          <div class="row pb-5">
+          <div id="notes-angular-course">
+            <h2><a href="https://angular.dev/tutorials/learn-angular/1-components-in-angular">Curso de Angular</a></h2>
+            <h3>Notas curso</h3>
+            <!-- start angular-concepts-one -->
+            <div id="angular-concepts-one" class="row mt-5">
+              <div class="col-md">
+                <div class="row">
+                  <div class="col-12 col-md-5">
+                    <div class="list-group" id="list-tab" role="tablist">
+                      <a class="bg-dark text-light list-group-item list-group-item-action active" id="list-one-list" data-bs-toggle="list" href="#list-angular-one" role="tab" aria-controls="list-home">Anatomia de un componente</a>
+                      <a class="bg-dark text-light list-group-item list-group-item-action" id="list-two-list" data-bs-toggle="list" href="#list-angular-two" role="tab" aria-controls="list-home">Actualizando componente</a>
+                      <a class="bg-dark text-light list-group-item list-group-item-action" id="list-three-list" data-bs-toggle="list" href="#list-angular-three" role="tab" aria-controls="list-home">Composición de componentes</a>
+                      <a class="bg-dark text-light list-group-item list-group-item-action" id="list-four-list" data-bs-toggle="list" href="#list-angular-four" role="tab" aria-controls="list-home">Control de flujo en componentes - @if</a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-7">
+                    <div class="tab-content" id="nav-tabContent">
+                      <div class="tab-pane fade show active" id="list-angular-one" role="tabpanel" aria-labelledby="list-one-list">
+                        <a href="https://laravel.com/docs/11.x">Documentación oficial</a>
+                        <p>Se puede realizar de diferentes maneras la configuración para utilizar Laravel:
+                        </p>
+                        <ul>
+                          <li>Laravel Sail (Con docker)</li>
+                          <li>Laravel Homestead (Similar a una maquina virtual)</li>
+                          <li>Laravel Valet (Para MacOS)</li>
+                          <li>Xampp y Composer</li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane fade" id="list-angular-two" role="tabpanel" aria-labelledby="list-two-list">
+                        <p>project_name->database->migration</p>
+                        <p>Nos permite crear el esquema y las tablas de la base de datos, se reconoce por el Schema::create()... <b>De esta forma se crean automaticamente en la base de datos sin necesidad de crearlas a mano.</b>
+                          <br>
+                          Obs. Nombre de tablas en plural y nombres de modelos en singular
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="list-angular-three" role="tabpanel" aria-labelledby="list-three-list">
+                        <h6>Nuevo modelo</h6>
+                        <pre><code [highlight]="newModuleLaravel" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+                        <p>
+                          project_name->app->model
+                          Nos permiten interactuar con la base de datos, esto nos permite escribir $query <br>
+                          $fillable contiene los campos que se podan ingresar a la base de datos
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="list-angular-four" role="tabpanel" aria-labelledby="list-four-list">
+                        <h6><a href="https://laravel.com/docs/11.x/eloquent-relationships">Documentación relaciones</a></h6>
+                        <p>No es necesario llamar el namespace del modelo a utilizar en otro modelo, pues estando en el mismo directorio esto no es necesario.</p>
+                        <p>Para una tabla pivote no es necesario crear un modelo, solo se crea la migración, cuando creo las relaciones inversas en dos modelos Laravel entiende
+                          que se utiliza una tabla pivote y la busca.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="row">
+                  <div class="col-12 col-md-5">
+                    <div class="list-group" id="list-tab-two" role="tablist">
+                        <a class="bg-dark text-light list-group-item list-group-item-action active" id="list-five-list" data-bs-toggle="list" href="#list-angular-five" role="tab" aria-controls="list-home">Control de flujo - @for</a>
+                        <a class="bg-dark text-light list-group-item list-group-item-action" id="list-six-list" data-bs-toggle="list" href="#list-angular-six" role="tab" aria-controls="list-home">Vinculación de propiedad</a>
+                        <a class="bg-dark text-light list-group-item list-group-item-action" id="list-seven-list" data-bs-toggle="list" href="#list-angular-seven" role="tab" aria-controls="list-home">Manejo de eventos</a>
+                        <a class="bg-dark text-light list-group-item list-group-item-action" id="list-eight-list" data-bs-toggle="list" href="#list-angular-eight" role="tab" aria-controls="list-home">@Input</a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-7">
+                    <div class="tab-content" id="nav-tabContent-two">
+                      <div class="tab-pane fade show active" id="list-angular-five" role="tabpanel" aria-labelledby="list-five-list">
+                        <h6><a href="https://laravel.com/docs/11.x/starter-kits">Documentación Laravel breeze</a></h6>
+                        <pre><code [highlight]="laravelFreeze" language="html" [lineNumbers]="true" class="bg-dark text-light"></code></pre>
+                        <p>Se utiliza este paquete para crear un sistema de autenticación completo, se selecciona el motor de plantillas blade de Laravel, su frontend esta creado con
+                          Tailwind CSS.
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="list-angular-six" role="tabpanel" aria-labelledby="list-six-list">
+                        <p>En routes/web.php estan las rutas con sus respectivos nombres, las cuales apuntan a una vista o a un controlador. <br>
+                        En la ruta llamo al controlador y dentro de este creo una función que me retorna la vista, estas vistas se pueden crear con blade.
+                        </p>
+                        <h6>Nuevo controlador</h6>
+                        <pre><code [highlight]="newControllerLaravel" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+                      </div>
+                      <div class="tab-pane fade" id="list-angular-seven" role="tabpanel" aria-labelledby="list-seven-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ab odit ipsa! Ad a iusto dicta illum facilis, fuga dolor aut consequatur! Provident, et odio temporibus beatae unde quidem dignissimos.0</div>
+                      <div class="tab-pane fade" id="list-angular-eight" role="tabpanel" aria-labelledby="list-eight-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ab odit ipsa! Ad a iusto dicta illum facilis, fuga dolor aut consequatur! Provident, et odio temporibus beatae unde quidem dignissimos.1</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- finish angular-concepts-one -->
+            <!-- start angular-concepts-two -->
+            <div id="angular-concepts-two" class="row mt-5">
+              <div class="col-md">
+                <div class="row">
+                  <div class="col-12 col-md-5">
+                    <div class="list-group" id="list-tab" role="tablist">
+                      <a class="bg-dark text-light list-group-item list-group-item-action active" id="list-one-list" data-bs-toggle="list" href="#list-angular-nine" role="tab" aria-controls="list-home">@Output</a>
+                      <a class="bg-dark text-light list-group-item list-group-item-action" id="list-two-list" data-bs-toggle="list" href="#list-angular-ten" role="tab" aria-controls="list-home">Vistas aplazables</a>
+                      <a class="bg-dark text-light list-group-item list-group-item-action" id="list-three-list" data-bs-toggle="list" href="#list-angular-eleven" role="tab" aria-controls="list-home">Optimizando imagenes</a>
+                      <a class="bg-dark text-light list-group-item list-group-item-action" id="list-four-list" data-bs-toggle="list" href="#list-angular-twelve" role="tab" aria-controls="list-home">Manejo de rutas (3 secciones)</a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-7">
+                    <div class="tab-content" id="nav-tabContent">
+                      <div class="tab-pane fade show active" id="list-angular-nine" role="tabpanel" aria-labelledby="list-one-list">
+                        <a href="https://laravel.com/docs/11.x">Documentación oficial</a>
+                        <p>Se puede realizar de diferentes maneras la configuración para utilizar Laravel:
+                        </p>
+                        <ul>
+                          <li>Laravel Sail (Con docker)</li>
+                          <li>Laravel Homestead (Similar a una maquina virtual)</li>
+                          <li>Laravel Valet (Para MacOS)</li>
+                          <li>Xampp y Composer</li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane fade" id="list-angular-ten" role="tabpanel" aria-labelledby="list-two-list">
+                        <p>project_name->database->migration</p>
+                        <p>Nos permite crear el esquema y las tablas de la base de datos, se reconoce por el Schema::create()... <b>De esta forma se crean automaticamente en la base de datos sin necesidad de crearlas a mano.</b>
+                          <br>
+                          Obs. Nombre de tablas en plural y nombres de modelos en singular
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="list-angular-eleven" role="tabpanel" aria-labelledby="list-three-list">
+                        <h6>Nuevo modelo</h6>
+                        <pre><code [highlight]="newModuleLaravel" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+                        <p>
+                          project_name->app->model
+                          Nos permiten interactuar con la base de datos, esto nos permite escribir $query <br>
+                          $fillable contiene los campos que se podan ingresar a la base de datos
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="list-angular-twelve" role="tabpanel" aria-labelledby="list-four-list">
+                        <h6><a href="https://laravel.com/docs/11.x/eloquent-relationships">Documentación relaciones</a></h6>
+                        <p>No es necesario llamar el namespace del modelo a utilizar en otro modelo, pues estando en el mismo directorio esto no es necesario.</p>
+                        <p>Para una tabla pivote no es necesario crear un modelo, solo se crea la migración, cuando creo las relaciones inversas en dos modelos Laravel entiende
+                          que se utiliza una tabla pivote y la busca.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="row">
+                  <div class="col-12 col-md-5">
+                    <div class="list-group" id="list-tab-two" role="tablist">
+                        <a class="bg-dark text-light list-group-item list-group-item-action active" id="list-five-list" data-bs-toggle="list" href="#list-angular-thirteen" role="tab" aria-controls="list-home">Control de flujo - @for</a>
+                        <a class="bg-dark text-light list-group-item list-group-item-action" id="list-six-list" data-bs-toggle="list" href="#list-angular-fourteen" role="tab" aria-controls="list-home">Vinculación de propiedad</a>
+                        <a class="bg-dark text-light list-group-item list-group-item-action" id="list-seven-list" data-bs-toggle="list" href="#list-angular-fifteen" role="tab" aria-controls="list-home">Manejo de eventos</a>
+                        <a class="bg-dark text-light list-group-item list-group-item-action" id="list-eight-list" data-bs-toggle="list" href="#list-angular-sixteen" role="tab" aria-controls="list-home">@Input</a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-7">
+                    <div class="tab-content" id="nav-tabContent-two">
+                      <div class="tab-pane fade show active" id="list-angular-thirteen" role="tabpanel" aria-labelledby="list-five-list">
+                        <h6><a href="https://laravel.com/docs/11.x/starter-kits">Documentación Laravel breeze</a></h6>
+                        <pre><code [highlight]="laravelFreeze" language="html" [lineNumbers]="true" class="bg-dark text-light"></code></pre>
+                        <p>Se utiliza este paquete para crear un sistema de autenticación completo, se selecciona el motor de plantillas blade de Laravel, su frontend esta creado con
+                          Tailwind CSS.
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="list-angular-fourteen" role="tabpanel" aria-labelledby="list-six-list">
+                        <p>En routes/web.php estan las rutas con sus respectivos nombres, las cuales apuntan a una vista o a un controlador. <br>
+                        En la ruta llamo al controlador y dentro de este creo una función que me retorna la vista, estas vistas se pueden crear con blade.
+                        </p>
+                        <h6>Nuevo controlador</h6>
+                        <pre><code [highlight]="newControllerLaravel" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+                      </div>
+                      <div class="tab-pane fade" id="list-angular-fifteen" role="tabpanel" aria-labelledby="list-seven-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ab odit ipsa! Ad a iusto dicta illum facilis, fuga dolor aut consequatur! Provident, et odio temporibus beatae unde quidem dignissimos.0</div>
+                      <div class="tab-pane fade" id="list-angular-sixteen" role="tabpanel" aria-labelledby="list-eight-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ab odit ipsa! Ad a iusto dicta illum facilis, fuga dolor aut consequatur! Provident, et odio temporibus beatae unde quidem dignissimos.1</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- finish angular-concepts-two -->
+            <!-- start angular-concepts-three -->
+            <div id="angular-concepts-three" class="row mt-5">
+              <div class="col-md">
+                <div class="row">
+                  <div class="col-12 col-md-5">
+                    <div class="list-group" id="list-tab" role="tablist">
+                      <a class="bg-dark text-light list-group-item list-group-item-action active" id="list-one-list" data-bs-toggle="list" href="#list-angular-seventeen" role="tab" aria-controls="list-home">Formularios (4 secciones)</a>
+                      <a class="bg-dark text-light list-group-item list-group-item-action" id="list-two-list" data-bs-toggle="list" href="#list-angular-eighteen" role="tab" aria-controls="list-home">Inyección de dependencias (3 secciones)</a>
+                      <a class="bg-dark text-light list-group-item list-group-item-action" id="list-three-list" data-bs-toggle="list" href="#list-angular-nineteen" role="tab" aria-controls="list-home">Pipes (3 secciones)</a>
+                      <a class="bg-dark text-light list-group-item list-group-item-action" id="list-four-list" data-bs-toggle="list" href="#list-angular-twenty" role="tab" aria-controls="list-home">Siguientes pasos</a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-7">
+                    <div class="tab-content" id="nav-tabContent">
+                      <div class="tab-pane fade show active" id="list-angular-seventeen" role="tabpanel" aria-labelledby="list-one-list">
+                        <a href="https://laravel.com/docs/11.x">Documentación oficial</a>
+                        <p>Se puede realizar de diferentes maneras la configuración para utilizar Laravel:
+                        </p>
+                        <ul>
+                          <li>Laravel Sail (Con docker)</li>
+                          <li>Laravel Homestead (Similar a una maquina virtual)</li>
+                          <li>Laravel Valet (Para MacOS)</li>
+                          <li>Xampp y Composer</li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane fade" id="list-angular-eighteen" role="tabpanel" aria-labelledby="list-two-list">
+                        <p>project_name->database->migration</p>
+                        <p>Nos permite crear el esquema y las tablas de la base de datos, se reconoce por el Schema::create()... <b>De esta forma se crean automaticamente en la base de datos sin necesidad de crearlas a mano.</b>
+                          <br>
+                          Obs. Nombre de tablas en plural y nombres de modelos en singular
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="list-angular-nineteen" role="tabpanel" aria-labelledby="list-three-list">
+                        <h6>Nuevo modelo</h6>
+                        <pre><code [highlight]="newModuleLaravel" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+                        <p>
+                          project_name->app->model
+                          Nos permiten interactuar con la base de datos, esto nos permite escribir $query <br>
+                          $fillable contiene los campos que se podan ingresar a la base de datos
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="list-angular-twenty" role="tabpanel" aria-labelledby="list-four-list">
+                        <h6><a href="https://laravel.com/docs/11.x/eloquent-relationships">Documentación relaciones</a></h6>
+                        <p>No es necesario llamar el namespace del modelo a utilizar en otro modelo, pues estando en el mismo directorio esto no es necesario.</p>
+                        <p>Para una tabla pivote no es necesario crear un modelo, solo se crea la migración, cuando creo las relaciones inversas en dos modelos Laravel entiende
+                          que se utiliza una tabla pivote y la busca.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="row">
+                  <div class="col-12 col-md-5">
+                    <div class="list-group" id="list-tab-two" role="tablist">
+                        <a class="bg-dark text-light list-group-item list-group-item-action active" id="list-five-list" data-bs-toggle="list" href="#list-angular-twenty-one" role="tab" aria-controls="list-home">Control de flujo - @for</a>
+                        <a class="bg-dark text-light list-group-item list-group-item-action" id="list-six-list" data-bs-toggle="list" href="#list-angular-twenty-two" role="tab" aria-controls="list-home">Vinculación de propiedad</a>
+                        <a class="bg-dark text-light list-group-item list-group-item-action" id="list-seven-list" data-bs-toggle="list" href="#list-angular-twenty-three" role="tab" aria-controls="list-home">Manejo de eventos</a>
+                        <a class="bg-dark text-light list-group-item list-group-item-action" id="list-eight-list" data-bs-toggle="list" href="#list-angular-twenty-four" role="tab" aria-controls="list-home">@Input</a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-7">
+                    <div class="tab-content" id="nav-tabContent-two">
+                      <div class="tab-pane fade show active" id="list-angular-twenty-one" role="tabpanel" aria-labelledby="list-five-list">
+                        <h6><a href="https://laravel.com/docs/11.x/starter-kits">Documentación Laravel breeze</a></h6>
+                        <pre><code [highlight]="laravelFreeze" language="html" [lineNumbers]="true" class="bg-dark text-light"></code></pre>
+                        <p>Se utiliza este paquete para crear un sistema de autenticación completo, se selecciona el motor de plantillas blade de Laravel, su frontend esta creado con
+                          Tailwind CSS.
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="list-angular-twenty-two" role="tabpanel" aria-labelledby="list-six-list">
+                        <p>En routes/web.php estan las rutas con sus respectivos nombres, las cuales apuntan a una vista o a un controlador. <br>
+                        En la ruta llamo al controlador y dentro de este creo una función que me retorna la vista, estas vistas se pueden crear con blade.
+                        </p>
+                        <h6>Nuevo controlador</h6>
+                        <pre><code [highlight]="newControllerLaravel" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+                      </div>
+                      <div class="tab-pane fade" id="list-angular-twenty-three" role="tabpanel" aria-labelledby="list-seven-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ab odit ipsa! Ad a iusto dicta illum facilis, fuga dolor aut consequatur! Provident, et odio temporibus beatae unde quidem dignissimos.0</div>
+                      <div class="tab-pane fade" id="list-angular-twenty-four" role="tabpanel" aria-labelledby="list-eight-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ab odit ipsa! Ad a iusto dicta illum facilis, fuga dolor aut consequatur! Provident, et odio temporibus beatae unde quidem dignissimos.1</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- finish angular-concepts-three -->
+          </div>
+          <div id="errores-section" class="row pb-5">
             <h1>Errores</h1>
             <h6>Error de firma</h6>
             <p>ng : No se puede cargar el archivo C:\Users\juand\AppData\Roaming\npm\ng.ps1.
@@ -747,6 +1006,7 @@
                     <div class="d-flex content-justify-start pb-2">
                       <h2>HTML</h2>
                       <img src="assets/imgs/imgDevNotes/iconTags.png" class="img-fluid" alt="" style="width: 40px;">
+                      <h6><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">css</a></h6>
                     </div>
                     <button
                       class="btn btn-primary btn-rounded"
