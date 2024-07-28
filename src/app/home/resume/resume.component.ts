@@ -12,6 +12,8 @@ export class ResumeComponent implements OnInit {
   constructor(private themeService: ThemeService) {}
 
   ngOnInit(): void {
+    // this.themeSelected = 'dark'
+    // console.log(this.themeSelected)
     this.themeService.themeSelected$.subscribe(theme => {
       this.themeSelected = theme;
     });
