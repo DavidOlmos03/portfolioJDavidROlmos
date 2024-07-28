@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-md">
+    <mat-slide-toggle (ngModelChange)="onChange($event)" [(ngModel)]="isDarkThemeActive"></mat-slide-toggle>
+  </div>
+  <div class="col-md">
+    <b class="text-dark">{{themeSelected}}</b>
+  </div>
+</div>
+

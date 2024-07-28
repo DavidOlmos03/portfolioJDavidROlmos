@@ -3,6 +3,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { VuejsModalComponent } from './vuejs-modal/vuejs-modal.component';
 import { WebSiteEchezModalComponent } from './web-site-echez-modal/web-site-echez-modal.component';
 import { StreamingNetflixModalComponent } from './streaming-netflix-modal/streaming-netflix-modal.component';
+import { ThemeService } from 'src/app/services/theme.service';
 
 
 @Component({
@@ -11,12 +12,20 @@ import { StreamingNetflixModalComponent } from './streaming-netflix-modal/stream
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent {
+  themeSelected:any = ''
   selectedSection:string = "new";
   //description:string="Hola desde el padre"
   constructor(
-    public modalService:NgbModal
+    public modalService:NgbModal,
+    private themeService: ThemeService
   ){
 
+  }
+
+  ngOnInit(): void {
+    this.themeService.themeSelected$.subscribe(theme => {
+      this.themeSelected = theme;
+    });
   }
 
   mostrarModal(modalName:any){

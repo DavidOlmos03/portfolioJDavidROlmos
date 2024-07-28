@@ -16,6 +16,10 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
+// Modulo para el switch del tema claro/oscuro
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +37,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
         useFactory:HttLoaderFactory,
         deps:[HttpClient]
       }
-    })
+    }),
+    MatSlideToggleModule
   ],
   providers: [
     TranslateService,

@@ -8,10 +8,14 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { SwitchThemeComponent } from './switch-theme/switch-theme.component';
+// Modulo para el switch del tema claro/oscuro
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
-    SwitchLanguagesComponent
+    SwitchLanguagesComponent,
+    SwitchThemeComponent
   ],
   imports: [
     CommonModule,
@@ -22,9 +26,11 @@ import { FormsModule } from '@angular/forms';
         useFactory:HttLoaderFactory,
         deps:[HttpClient]
       }
-    })
+    }),
+    MatSlideToggleModule
   ],exports:[
-    SwitchLanguagesComponent
+    SwitchLanguagesComponent,
+    SwitchThemeComponent
   ]
 })
 export class SharedModule { }

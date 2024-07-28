@@ -5,16 +5,16 @@
     <div class="portfolio">
       <!-- star filters/navbar of portfolio -->
       <div class="filters">
-        <a (click)="selectedSection = 'new';" [class.active]="selectedSection === 'new'">
+        <a (click)="selectedSection = 'new';" class="fw-bold text-decoration-none" [class.active]="selectedSection === 'new'" [ngClass]="{'text-light': themeSelected=='dark','text-dark': themeSelected=='light'}">
           {{'portfolio.new'|translate}}
         </a>
-        <a (click)="selectedSection = 'udemy';" [class.active]="selectedSection === 'udemy'">
+        <a (click)="selectedSection = 'udemy';" class="fw-bold text-decoration-none" [class.active]="selectedSection === 'udemy'" [ngClass]="{'text-light': themeSelected=='dark','text-dark': themeSelected=='light'}">
           Udemy
         </a>
-        <a (click)="selectedSection = 'coursera'" [class.active]="selectedSection === 'coursera'">
+        <a (click)="selectedSection = 'coursera'" class="fw-bold text-decoration-none" [class.active]="selectedSection === 'coursera'" [ngClass]="{'text-light': themeSelected=='dark','text-dark': themeSelected=='light'}">
           Coursera
         </a>
-        <a (click)="selectedSection = 'web'" data-filter=".web" [class.active]="selectedSection === 'web'">
+        <a (click)="selectedSection = 'web'" class="fw-bold text-decoration-none" data-filter=".web" [class.active]="selectedSection === 'web'" [ngClass]="{'text-light': themeSelected=='dark','text-dark': themeSelected=='light'}">
           Web
         </a>
 

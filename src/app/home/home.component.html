@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="assets/imgs/iconJ.png">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="mat-app-background">
 
     <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i
             class="ti-shift-left-alt"></i> Components</a>
@@ -51,10 +51,11 @@
                 <a href="#portfolio" class="nav-link">{{'home.portfolio'|translate}}</a>
               </li>
               <li class="nav-item">
-                <a href="#blog" class="nav-link">{{'home.blog'|translate}}</a>
+                <a href="#contact" class="nav-link">{{'home.contact'|translate}}</a>
               </li>
               <li class="nav-item last-item">
-                <a href="#contact" class="nav-link">{{'home.contact'|translate}}</a>
+                <app-switch-theme></app-switch-theme>
+                <!-- <a href="#blog" class="nav-link">{{'home.blog'|translate}}</a> -->
               </li>
             </ul>
           </div>

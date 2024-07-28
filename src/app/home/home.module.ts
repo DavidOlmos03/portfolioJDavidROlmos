@@ -27,6 +27,8 @@ import { DevNotesComponent } from './portfolio/dev-notes/dev-notes.component';
 import { HIGHLIGHT_OPTIONS, HighlightOptions } from 'ngx-highlightjs';
 import { HighlightModule } from 'ngx-highlightjs';
 
+
+
 @NgModule({
   declarations: [
     HomeComponent,
