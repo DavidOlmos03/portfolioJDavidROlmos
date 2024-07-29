@@ -19,7 +19,7 @@
       <app-header></app-header>
     </header>
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+    <nav class="navbar sticky-top navbar-expand-lg" [ngClass]="{'navbar-light bg-light': themeSelected == 'light', 'navbar-dark bg-dark': themeSelected == 'dark'}" data-spy="affix" data-offset-top="510">
 
         <div class="navbar-menu container">
           <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse"
