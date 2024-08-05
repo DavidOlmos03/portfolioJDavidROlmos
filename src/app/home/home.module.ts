@@ -8,6 +8,7 @@ import { CourseJSModule } from '../course-js/course-js.module';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { RouterModule, Router } from '@angular/router';
 
 import { SharedModule } from '../shared/shared.module';
 import { AboutComponent } from './about/about.component';
@@ -28,6 +29,9 @@ import { HIGHLIGHT_OPTIONS, HighlightOptions } from 'ngx-highlightjs';
 import { HighlightModule } from 'ngx-highlightjs';
 
 
+// Importaciones para trabajar con el formulario
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -44,11 +48,13 @@ import { HighlightModule } from 'ngx-highlightjs';
 
   ],
   imports: [
+    RouterModule,
     CommonModule,
     CourseJSModule,
     SharedModule,
     HttpClientModule,
     HighlightModule,
+    ReactiveFormsModule,
     // Traduction
     TranslateModule.forRoot({
       loader:{

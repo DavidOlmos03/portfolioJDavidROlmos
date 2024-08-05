@@ -5,33 +5,84 @@
 
         <div class="col-lg-8">
             <div class="contact-form-card">
-                <h4 class="contact-title">Send a message <b style="color: brown;">(Under construction...)</b></h4>
-                <form action="">
-                    <div class="form-group">
-                        <input class="form-control" type="text" placeholder="Name *" required>
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" type="email" placeholder="Email *" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" id=" placeholder=" Messag="*"  rows="7"
-                            required></textarea>
-                    </div>
-                    <div class="form-group ">
-                        <button type="submit" class="form-control btn btn-primary">Send Message</button>
-                    </div>
+                <h4 class="contact-title">{{'contact.sendMessage'|translate}}</h4>
+                <form *ngIf="!isContactFormSubmitted"
+                  name="contact"
+                  [formGroup]="contactForm"
+                  method="POST"
+                  (ngSubmit)="onSubmit($event)"
+                  netlify>
+                  <input type="hidden" name="form-name" value="contact" />
+
+                  <div class="form-group mb-3">
+                      <label for="name" hidden></label>
+                      <input class="form-control" id="name" type="text" formControlName="name" placeholder="Name *" required>
+                  </div>
+                  <div class="form-group mb-3">
+                      <label for="email" hidden></label>
+                      <input class="form-control" id="email" type="email" formControlName="email" placeholder="Email *" required>
+                  </div>
+                  <div class="form-group mb-2">
+                      <label for="body" hidden></label>
+                      <textarea class="form-control" id="body" type="text" formControlName="body" placeholder="Message *"  rows="7"
+                          required></textarea>
+                  </div>
+                  <div class="form-group">
+                      <button type="submit" [disabled]="!contactForm.valid" class="form-control btn btn-danger">Send Message</button>
+                  </div>
                 </form>
+                <div *ngIf="isContactFormSubmitted">
+                  <!-- <h1 class="bg-success rounded border border-2 text-center">Mensaje enviado, gracias por ponerte en contacto!</h1> -->
+                  <div class="alert alert-success d-flex align-items-center" role="alert">
+                    <img src="assets/imgs/icons8-success.gif" alt="imgSuccess" class="rounded-circle">
+                    <div class="ps-2">
+                      {{'contact.emailSent'|translate}}
+                    </div>
+                  </div>
+                </div>
+                <!-- <form
+                *ngIf="!isContactFormSubmitted"
+                name="contact"
+                [formGroup]="contactForm"
+                method="POST"
+                (ngSubmit)="onSubmit($event)"
+                netlify>
+                This input field is very important to add, at least when we submit the form, making sure Netlify can receive the submission
+                <input type="hidden" name="form-name" value="contact" />
+                <label for="name">Name</label>
+                <div *ngIf="name && name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                  <small *ngIf="name.errors?.['required']">Name is required</small>
+                </div>
+                <input id="name" type="text" formControlName="name" required />
+
+                <label for="email">Email</label>
+                <div
+                  *ngIf="email && email.invalid && (email.dirty || email.touched)"
+                  class="alert alert-danger">
+                  <small *ngIf="email.errors?.['required']">Email is required</small>
+                  <small *ngIf="email.errors?.['email']">Enter a valid email address</small>
+                </div>
+                <input id="email" type="email" formControlName="email" required />
+
+                <label for="body">Message</label>
+                <div *ngIf="body && body.invalid && (body.dirty || body.touched)" class="alert alert-danger">
+                  <small *ngIf="body.errors?.['required']">Message is required</small>
+                </div>
+                <textarea id="body" type="text" rows="4" cols="50" formControlName="body" required></textarea>
+                <button type="submit" [disabled]="!contactForm.valid">Send message</button>
+              </form> -->
             </div>
         </div>
-        <div class="col-lg-4">
-            <div class="contact-info-card">
+        <div class="col-lg-4 pt-5">
+            <div class="contact-info-card ps-5">
                 <h4 class="contact-title">{{'contact.getInTouch'|translate}}</h4>
                 <div class="row mb-2">
                     <div class="col-1 pt-1 mr-1">
                         <i class="ti ti-mobile icon-md"></i>
                     </div>
                     <div class="col-10 ">
-                        <h6 class="d-inline">{{'contact.phone'|translate}}: <br> <span class="text-muted">+ (57) 3183695731 </span>
+                     <!-- class="text-muted" -->
+                        <h6 class="d-inline">{{'contact.phone'|translate}}: <br> <span>+ (57) 3183695731 </span>
                         </h6>
                     </div>
                 </div>
@@ -40,7 +91,7 @@
                         <i class="ti ti-map-alt icon-md"></i>
                     </div>
                     <div class="col-10">
-                        <h6 class="d-inline">{{'contact.address'|translate}}:<br> <span class="text-muted">Medellín Colombia</span></h6>
+                        <h6 class="d-inline">{{'contact.address'|translate}}:<br> <span>Medellín Colombia</span></h6>
                     </div>
                 </div>
                 <div class="row mb-2">
@@ -48,18 +99,17 @@
                         <i class="ti ti-envelope icon-md"></i>
                     </div>
                     <div class="col-10">
-                        <h6 class="d-inline">{{'contact.email'|translate}}:<br> <span
-                                class="text-muted">juanda_201001@hotmail.com</span></h6>
+                        <h6 class="d-inline">{{'contact.email'|translate}}:<br> <span>juanda_201001@hotmail.com</span></h6>
                     </div>
                 </div>
                 <ul class="social-icons pt-4">
-                    <li class="social-item"><a class="social-link" [ngClass]="{'text-light': themeSelected == 'dark', 'text-dark': themeSelected == 'light'}"
+                    <li class="social-item"><a class="social-link text-decoration-none" [ngClass]="{'text-light': themeSelected == 'dark', 'text-dark': themeSelected == 'light'}"
                             href="https://www.facebook.com/david.olmos.90226"><i class="ti ti-facebook"
                                 aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" [ngClass]="{'text-light': themeSelected == 'dark', 'text-dark': themeSelected == 'light'}"
+                    <li class="social-item"><a class="social-link text-decoration-none" [ngClass]="{'text-light': themeSelected == 'dark', 'text-dark': themeSelected == 'light'}"
                             href="https://www.linkedin.com/in/juan-david-ruiz-olmos-27ab22260/"><i class="ti ti-linkedin"
                                 aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" [ngClass]="{'text-light': themeSelected == 'dark', 'text-dark': themeSelected == 'light'}"
+                    <li class="social-item"><a class="social-link text-decoration-none" [ngClass]="{'text-light': themeSelected == 'dark', 'text-dark': themeSelected == 'light'}"
                             href="https://github.com/DavidOlmos03"><i class="ti ti-github"
                                 aria-hidden="true"></i></a></li>
                 </ul>

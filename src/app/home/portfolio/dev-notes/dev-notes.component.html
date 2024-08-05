@@ -10,7 +10,7 @@
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
             <a href="https://mundostem.netlify.app/" class="navbar-brand">MS</a>
-            <a href="dev-notes" class="navbar-brand">DevNotes</a>
+            <a [routerLink]="['/dev-notes']" class="navbar-brand">DevNotes</a>
             <button
             class="navbar-toggler"
             type="button"
@@ -57,9 +57,8 @@
                       <!-- This website is for sharing my notes about different technologies that I have learned on my journey in software development. It is only a small section of my portfolio.
                        -->
                       </p>
-                      <button class="btn btn-primary btn-lg" onclick="location.href=''">
+                      <button class="btn btn-primary btn-lg" [routerLink]="['']">
                         Dale un vistazo!!
-                        <!-- Check it out!! -->
                       </button>
                 </div>
                 <img class="img-fluid w-25 d-none d-sm-block" src="assets/imgs/imgDevNotes/code-notes-logo.png" alt="">

@@ -2,8 +2,8 @@
   <div class="col-md">
     <mat-slide-toggle (ngModelChange)="onChange($event)" [(ngModel)]="isDarkThemeActive"></mat-slide-toggle>
   </div>
-  <div class="col-md">
-    <b [ngClass]="{'text-dark': themeSelected == 'light', 'text-light': themeSelected == 'dark'}">{{themeSelected}}</b>
+  <div class="col-md fs-6">
+    <b>{{themeSelected ? themeSelected : 'light'}}</b>
   </div>
 </div>
 

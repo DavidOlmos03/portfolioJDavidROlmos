@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 // Importaciones para Highlightjs
 // import { HIGHLIGHT_OPTIONS, HighlightOptions } from 'ngx-highlightjs';
 // import { HighlightModule } from 'ngx-highlightjs';
@@ -25,9 +25,12 @@ import { Component } from '@angular/core';
 
   // ],
 })
-export class DevNotesComponent {
+export class DevNotesComponent implements OnInit {
   code: string = "";
   codehtml:string = ""
+
+  constructor(private router: Router) { }
+
   codeForHighlight = `export class SuperUser {
     name: string;
 
@@ -130,17 +133,33 @@ copia_variable = copy.copy(valoriable_copiar)
   listVirtualEnviroment = `pip list`
   createRequirementsFile = `pip freeze > requirements.txt`
 
-  ngOnInit(){
-    this.code = "body: {color: red;}"
-    this.codehtml = "!DOCTYPE html\n"+
-                "<html>\n"+
-                  "<body><h2>Hola Mundo</h2></body>\n"+
-                "</html>"
+  ngOnInit(): void{
+    // this.code = "body: {color: red;}"
+    // this.codehtml = "!DOCTYPE html\n"+
+    //             "<html>\n"+
+    //               "<body><h2>Hola Mundo</h2></body>\n"+
+    //             "</html>"
 
-                // body;
-                //     h1;¡Bienvenido!/h1;
-                //     p;Este es un párrafo en mi página web./p;
-                // /body;
-                // /html;"
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        const url = this.router.url;
+        const hashIndex = url.indexOf('#');
+        if (hashIndex === -1) {
+          // No hash, scroll to top
+          window.scrollTo(0, 0);
+        } else {
+          // Hash present, scroll to the element with that ID
+          const hash = url.substring(hashIndex + 1);
+          this.scrollToElement(hash);
+        }
+      }
+    });
+  }
+
+  private scrollToElement(id: string): void {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 }

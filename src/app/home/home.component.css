@@ -29,3 +29,97 @@
 }
 
 
+.sticky-top {
+ position: -webkit-sticky;
+ position: sticky;
+ top: 0;
+ z-index: 1020; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.footer{
+ background-color: #00023874;
+}
+
+/* De jonhdoe */
+
+
+.navbar .brand {
+ text-align: center;
+}
+
+.navbar .brand .brand-img {
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ -webkit-transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+ -weblit-transform: translate(-50%, -50%);
+ border: 10px solid white;
+ -webkit-transition: .5s !important;
+ transition: .5s !important;
+ -weblit-transition: .5s !important;
+ z-index: 2;
+ box-shadow: 0 5px 1px rgba(128, 128, 128, 0.13);
+ width: 170px;
+ border-radius: 50%;
+}
+
+.navbar .brand .brand-txt {
+ position: relative;
+ bottom: -20px;
+ opacity: 0;
+ -webkit-transition: 1s;
+ transition: 1s;
+ -weblit-transition: 1s;
+ z-index: 1;
+}
+
+.navbar .brand .brand-txt .brand-subtitle {
+ font-size: 13px;
+ color: #888;
+}
+
+@media (max-width: 991.98px) {
+ .navbar .brand {
+   display: none;
+ }
+}
+
+.navbar.affix .brand-txt {
+ bottom: 0;
+ opacity: 1;
+}
+
+.navbar.affix .brand-img {
+ top: -10px;
+ opacity: 0;
+}
+
+
+
+ /* PROBLEM FONT WEIGHT HERE */
+
+ @media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

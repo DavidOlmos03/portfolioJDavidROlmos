@@ -1,18 +1,24 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>David Olmos portfolio</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
-  <link rel="shortcut icon" href="assets/imgs/iconJ.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <base href="/"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is the David Olmos portfolio">
+    <meta name="author" content="DavidOlmos">
+    <title>David Olmos portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/@icon/themify-icons/themify-icons.css">
+    <link rel="shortcut icon" href="assets/imgs/iconJ.png">
 </head>
 <body class="mat-typography">
   <app-root></app-root>
+   <!-- Hidden form used for Netlify Forms to pick it up -->
+   <form name="contact" method="POST" netlify hidden>
+    <input type="hidden" name="form-name" value="contact" />
+    <input type="hidden" id="name" name="name" />
+    <input type="hidden" id="email" name="email" />
+    <textarea type="hidden" id="body" name="body"></textarea>
+  </form>
 </body>
   <script src="assets/courseJS/project_day3/script.js"></script>
 </html>

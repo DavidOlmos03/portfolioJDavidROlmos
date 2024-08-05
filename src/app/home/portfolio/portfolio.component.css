@@ -286,6 +286,27 @@ a:hover{
   cursor: default;
 }
 
+.card .icon-express{
+  background-color: rgb(254, 191, 0);
+  width: 100px;
+  height: 33px;
+}
+
+.card .icon-express:hover{
+  background-color: rgb(255, 239, 91);
+  cursor: default;
+}
+.card .icon-nodejs{
+  background-color: rgb(1, 102, 18);
+  width: 100px;
+  height: 33px;
+}
+
+.card .icon-nodejs:hover{
+  background-color: rgb(21, 155, 43);
+  cursor: default;
+}
+
 @media (max-width: 767.98px) {
   .title, .subtitle{
     font-size: small;

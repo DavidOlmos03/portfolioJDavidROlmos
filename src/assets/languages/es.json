@@ -74,9 +74,11 @@
     "devNotesDescription":"Este es un proyecto para compartir notas y código"
   },
   "contact":{
-    "getInTouch":"Ponte en contacto",
+    "getInTouch":"Contacto",
     "email":"correo",
     "phone":"Teléfono",
-    "address":"Dirección"
+    "address":"Dirección",
+    "sendMessage":"Enviar un mensaje",
+    "emailSent":"Mensaje enviado, gracias por contactar conmigo!"
   }
 }

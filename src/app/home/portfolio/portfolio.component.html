@@ -71,7 +71,7 @@
                       </a>
                       </span>
                       {{'portfolio.text2'|translate}} {{'portfolio.or'|translate}}
-                      <a href="course-js" class="font-weight-bold"> {{'portfolio.checkit'|translate}}</a>
+                      <a [routerLink]="['/course-js']" class="font-weight-bold"> {{'portfolio.checkit'|translate}}</a>
                     </p>
                   </div>
                 </div>
@@ -285,6 +285,21 @@
                         <p class="fw-bold text-light"><span><img src="assets/icons/firebase-icon.png" alt="firebase" fw-bold></span>firebase</p>
                       </div>
                     </div>
+                    <div class="col-4 col-md-6">
+                      <div class="text-center pt-1 d-inline-block icon-express shadow">
+                        <p class="fw-bold text-light"><span><img src="assets/icons/express-icon.png" alt="express" fw-bold style="width: 20px; height:20px"></span>ExpressJs</p>
+                      </div>
+                    </div>
+                    <div class="col-4 col-md-6">
+                      <div class="text-center pt-1 d-inline-block icon-nodejs shadow">
+                        <p class="fw-bold text-light"><span><img src="assets/icons/nodejs-icon.png" alt="nodejs" fw-bold style="width: 30px; height:30px"></span>Nodejs</p>
+                      </div>
+                    </div>
+                    <div class="col-4 col-md-6">
+                      <div class="text-center pt-1 d-inline-block icon-mongodb shadow">
+                        <p class="fw-bold text-light"><span><img src="assets/icons/mongodb-icon.png" alt="mongodb" style="padding-bottom: 1px; width: 18px; height: 18px;"></span>mongoDB</p>
+                      </div>
+                    </div>
                   </div>
               </div>
             </div>
@@ -353,7 +368,7 @@
                   <div class="text-holder">
                     <h6 class="title">DevNotes</h6>
                     <p class="subtitle">{{'portfolio.devNotesDescription'|translate}}</p>
-                    <span><a id="checkit" href="dev-notes" class="font-weight-bold text-dark"> {{'portfolio.checkit'|translate}}</a></span>
+                    <span><a id="checkit" [routerLink]="['/dev-notes']" class="font-weight-bold text-dark"> {{'portfolio.checkit'|translate}}</a></span>
                     <!--Click for download certificate-->
                   </div>
                 </div>

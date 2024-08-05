@@ -75,9 +75,11 @@
     "devNotesDescription":"This is a project for share notes and code"
   },
   "contact":{
-    "getInTouch":"Get in touch",
+    "getInTouch":"Contact",
     "email":"Email",
     "phone":"Phone",
-    "address":"Address"
+    "address":"Address",
+    "sendMessage":"Send a message",
+    "emailSent":"Message sent, thanks for contacting me!"
   }
 }

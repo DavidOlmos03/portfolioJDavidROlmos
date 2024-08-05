@@ -4,12 +4,12 @@ import { ThemeService } from '../services/theme.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  template:  `
-  <h1>Home Component</h1>
-  <app-switch-languages></app-switch-languages> <!-- Utiliza el selector correcto -->
-`,
+//   template:  `
+//   <h1>Home Component</h1>
+//   <app-switch-languages></app-switch-languages> <!-- Utiliza el selector correcto -->
+// `,
 //
-  styleUrls: ['./home.component.css',"home/css/johndoe.css"]
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
   isDarkThemeActive:any;
