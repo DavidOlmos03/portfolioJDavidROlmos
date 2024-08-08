@@ -31,12 +31,21 @@ export class PortfolioComponent {
   mostrarModal(modalName:any){
 
     if(modalName=='VuejsModal'){
-      const modalRef = this.modalService.open(VuejsModalComponent,{centered:true,size:'md'})
+      const modalRef = this.modalService.open(
+        VuejsModalComponent,
+        {centered:true,size:'md'}
+      )
       //modalRef.componentInstance.description = this.description;
     }else if(modalName=='WebSiteEchezModal'){
-      this.modalService.open(WebSiteEchezModalComponent,{centered:true,size:'md'})
+      this.modalService.open(
+        WebSiteEchezModalComponent,
+        {centered:true,size:'lg'}
+      )
     }else if(modalName=='StreamingNetflixModal'){
-      this.modalService.open(StreamingNetflixModalComponent,{centered:true,size:'md'})
+      this.modalService.open(
+        StreamingNetflixModalComponent,
+        {centered:true,size:'lg'}
+      )
     }
 
   }
