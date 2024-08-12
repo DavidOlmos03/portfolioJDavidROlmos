@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CoursejsComponent } from './course-js/coursejs/coursejs.component';
 import { HomeComponent } from './home/home.component';
 import { HomeModule } from './home/home.module';
-import { DevNotesComponent } from './home/portfolio/dev-notes/dev-notes.component';
+// import { DevNotesComponent } from './home/portfolio/dev-notes/dev-notes.component';
 
 const routes: Routes = [
   {
@@ -11,13 +11,13 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'dev-notes',
+    loadChildren: ()=> import('./home/portfolio/dev-notes/dev-notes.module').then(m=>m.DevNotesModule)
+  },
+  {
     path: 'course-js',
     component: CoursejsComponent
   },
-  {
-    path: 'dev-notes',
-    component: DevNotesComponent
-  }
 
 ];
 

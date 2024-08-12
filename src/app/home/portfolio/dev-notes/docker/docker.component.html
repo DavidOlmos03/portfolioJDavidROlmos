@@ -1,0 +1,73 @@
+ <!-- start section docker -->
+ <section id="docker" class="p-5">
+  <div class="container">
+    <div class="title-section d-flex justify-content-end pb-5">
+      <h1 class="text-center flex">Docker</h1>
+
+      <img src="assets/imgs/imgDevNotes/iconDocker.png" class="img-fluid" alt="" style="width: 60px;">
+
+    </div>
+    <button
+      class="btn btn-primary btn-rounded"
+      onclick="location.href='assets/docs/docker-cheat-sheet.pdf'"
+      download>
+      <span><img src="assets/imgs/imgDevNotes/iconPdf.png" alt="pdfDownload"></span>
+        Guía Atajos
+      </button>
+    <div class="row">
+      <div class="col-md-4 pb-5">
+        <h6>Crear Network</h6>
+        <pre><code [highlight]="createNetwork" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+      </div>
+      <div class="col-md-4 pb-5">
+        <h6>Subir compose</h6>
+        <pre><code [highlight]="dockerComposeUp" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+      </div>
+      <div class="col-md-4 pb-5">
+        <h6>Bajar compose</h6>
+        <pre><code [highlight]="dockerComposeDown" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 pb-5">
+        <h6>Ver el tamaño de un volumen</h6>
+        <pre><code [highlight]="sizeVolumn" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+      </div>
+      <div class="col-md-4 pb-5">
+        <h6>Conectar contenedor a una red</h6>
+        <pre><code [highlight]="connectToNetwork" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+      </div>
+      <div class="col-md-4 pb-5">
+        <h6>Inspeccionar network creada</h6>
+        <pre><code [highlight]="checkNetwork" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 pb-5">
+        <h6>Correr contenedor con variables de entorno específicas y en puertos específicos (ejemplo)</h6>
+        <p>Obs. Para hacer el salto de linea se utiliza ` en Windows y \ en MacOS o Linux</p>
+        <pre><code [highlight]="fullDockerContainer" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+      </div>
+    </div>
+    <!-- <div class="row">
+      <h1>Deployment</h1>
+      <h4>Gratis</h4>
+      <div class="col-md-6 pb-5">
+        <h6>GitHub Pages</h6>
+        <pre><code [highlight]="deployGitHubAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+      </div>
+      <div class="col-md-6 pb-5">
+        <h6>Netlify</h6>
+        <pre><code [highlight]="deployNetlifyAngular" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+        <p>Sirve para todo proyecto con <span><b>node</b></span></p>
+        <div class="card pt-2 w-50 mx-auto">
+          <img src="assets/imgs/imgDevNotes/distFile.png" class="card-img-top mx-auto"  alt="distFile">
+          <div class="card-body">
+            <p class="card-text text-center">Se crea el archivo dist, este archivo se sube a Netlify</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>
+<!-- end section docker -->

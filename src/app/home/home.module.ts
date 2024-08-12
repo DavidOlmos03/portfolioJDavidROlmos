@@ -22,7 +22,7 @@ import { StreamingNetflixModalComponent } from './portfolio/streaming-netflix-mo
 
 // Import ng-circle-progress
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { DevNotesComponent } from './portfolio/dev-notes/dev-notes.component';
+// import { DevNotesComponent } from './portfolio/dev-notes/dev-notes.component';
 
 // Importaciones para Highlightjs
 import { HIGHLIGHT_OPTIONS, HighlightOptions } from 'ngx-highlightjs';
@@ -44,7 +44,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     VuejsModalComponent,
     WebSiteEchezModalComponent,
     StreamingNetflixModalComponent,
-    DevNotesComponent
+    // DevNotesComponent
 
   ],
   imports: [

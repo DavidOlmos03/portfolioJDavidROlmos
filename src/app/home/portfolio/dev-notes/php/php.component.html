@@ -1,0 +1,226 @@
+   <!-- start section PHP -->
+   <section id="php" class="p-5">
+    <div class="container">
+      <div class="title-section d-flex justify-content-end pb-5">
+        <h1 class="text-center flex">Laravel</h1>
+        <img src="assets/imgs/imgDevNotes/iconLaravel.png" class="img-fluid" alt="" style="width: 60px;">
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h6>Nuevo proyecto</h6>
+          <pre><code [highlight]="newProjectLaravel" language="" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+          <h6>Obs.</h6>
+          <ul>
+            <li>la versión es opcional</li>
+            <li>Los proyectos se almacenan en:  C:\xampp\php\www</li>
+            <li>php artisan (me retorna todos los comandos que puedo utilizar)</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+      <div class="row">
+        <h1>Conceptos</h1>
+        <ul class="list-group col-md">
+          <li class="list-group-item bg-dark text-light">
+            <input type="checkbox" class="form-check-input me-1" value="" id="firstCheckboxStretched">
+            <label class="form-check-label stretched-link" for="firstCheckboxStretched">Migraciones</label>
+          </li>
+        </ul>
+        <ul  class="list-group col-md">
+          <li class="list-group-item bg-dark text-light">
+            <input type="checkbox" class="form-check-input me-1" value="" id="secondCheckboxStretched">
+            <label class="form-check-label stretched-link" for="secondCheckboxStretched">Sesiones flash</label>
+          </li>
+        </ul>
+        <ul  class="list-group col-md">
+          <li class="list-group-item bg-dark text-light">
+            <input type="checkbox" class="form-check-input me-1" value="" id="thirdCheckboxStretched">
+            <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Laravel freeze</label>
+          </li>
+        </ul>
+        <ul  class="list-group col-md">
+          <li class="list-group-item bg-dark text-light">
+            <input type="checkbox" class="form-check-input me-1" value="" id="fourthCheckboxStretched">
+            <label class="form-check-label stretched-link" for="fourthCheckboxStretched">Blade</label>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <ul  class="list-group col-md">
+          <li class="list-group-item bg-dark text-light">
+            <input type="checkbox" class="form-check-input me-1" value="" id="fifthCheckboxStretched">
+            <label class="form-check-label stretched-link" for="fifthCheckboxStretched">Artisan</label>
+          </li>
+        </ul>
+        <ul  class="list-group col-md">
+          <li class="list-group-item bg-dark text-light">
+            <input type="checkbox" class="form-check-input me-1" value="" id="sixthCheckboxStretched">
+            <label class="form-check-label stretched-link" for="sixthCheckboxStretched">Namespace</label>
+          </li>
+        </ul>
+        <ul  class="list-group col-md">
+          <li class="list-group-item bg-dark text-light">
+            <input type="checkbox" class="form-check-input me-1" value="" id="seventhCheckboxStretched">
+            <label class="form-check-label stretched-link" for="seventhCheckboxStretched">Composer</label>
+          </li>
+        </ul>
+      </div>
+      <div class="row pt-5">
+        <div class="d-flex justify-content-start">
+          <h2>Curso básico</h2>
+          <img src="assets/imgs/imgDevNotes/iconYoutube.png" class="img-fluid" alt="" style="width: 50px;">
+        </div>
+        <div class="col-12 col-md-6">
+          <h6>Videos en español (23 videos)</h6>
+          <iframe src="https://www.youtube.com/embed/AE5U8zjkU2s"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div id="laravel-concepts" class="pt-5">
+        <h2>Notas curso</h2>
+        <!-- start laravel-concepts-one -->
+        <div id="laravel-concepts-one" class="row mt-5">
+          <div class="col-md">
+            <div class="row">
+              <div class="col-12 col-md-5">
+                <div class="list-group" id="list-tab" role="tablist">
+                  <a class="bg-dark text-light list-group-item list-group-item-action active" id="list-one-list" data-bs-toggle="list" href="#list-laravel-one" role="tab" aria-controls="list-home">#2 Entornos de desarrollo para laravel</a>
+                  <a class="bg-dark text-light list-group-item list-group-item-action" id="list-two-list" data-bs-toggle="list" href="#list-laravel-two" role="tab" aria-controls="list-home">#5 Migraciones en Laravel</a>
+                  <a class="bg-dark text-light list-group-item list-group-item-action" id="list-three-list" data-bs-toggle="list" href="#list-laravel-three" role="tab" aria-controls="list-home">#6 Modelos</a>
+                  <a class="bg-dark text-light list-group-item list-group-item-action" id="list-four-list" data-bs-toggle="list" href="#list-laravel-four" role="tab" aria-controls="list-home">#7 Relaciones entre modelos</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-7">
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="list-laravel-one" role="tabpanel" aria-labelledby="list-one-list">
+                    <a href="https://laravel.com/docs/11.x">Documentación oficial</a>
+                    <p>Se puede realizar de diferentes maneras la configuración para utilizar Laravel:
+                    </p>
+                    <ul>
+                      <li>Laravel Sail (Con docker)</li>
+                      <li>Laravel Homestead (Similar a una maquina virtual)</li>
+                      <li>Laravel Valet (Para MacOS)</li>
+                      <li>Xampp y Composer</li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="list-laravel-two" role="tabpanel" aria-labelledby="list-two-list">
+                    <p>project_name->database->migration</p>
+                    <p>Nos permite crear el esquema y las tablas de la base de datos, se reconoce por el Schema::create()... <b>De esta forma se crean automaticamente en la base de datos sin necesidad de crearlas a mano.</b>
+                      <br>
+                      Obs. Nombre de tablas en plural y nombres de modelos en singular
+                    </p>
+                  </div>
+                  <div class="tab-pane fade" id="list-laravel-three" role="tabpanel" aria-labelledby="list-three-list">
+                    <h6>Nuevo modelo</h6>
+                    <pre><code [highlight]="newModuleLaravel" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+                    <p>
+                      project_name->app->model
+                      Nos permiten interactuar con la base de datos, esto nos permite escribir $query <br>
+                      $fillable contiene los campos que se podan ingresar a la base de datos
+                    </p>
+                  </div>
+                  <div class="tab-pane fade" id="list-laravel-four" role="tabpanel" aria-labelledby="list-four-list">
+                    <h6><a href="https://laravel.com/docs/11.x/eloquent-relationships">Documentación relaciones</a></h6>
+                    <p>No es necesario llamar el namespace del modelo a utilizar en otro modelo, pues estando en el mismo directorio esto no es necesario.</p>
+                    <p>Para una tabla pivote no es necesario crear un modelo, solo se crea la migración, cuando creo las relaciones inversas en dos modelos Laravel entiende
+                      que se utiliza una tabla pivote y la busca.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="row">
+              <div class="col-12 col-md-5">
+                <div class="list-group" id="list-tab-two" role="tablist">
+                    <a class="bg-dark text-light list-group-item list-group-item-action active" id="list-five-list" data-bs-toggle="list" href="#list-laravel-five" role="tab" aria-controls="list-home">#8 Autenticación en Laravel</a>
+                    <a class="bg-dark text-light list-group-item list-group-item-action" id="list-six-list" data-bs-toggle="list" href="#list-laravel-six" role="tab" aria-controls="list-home">#9 Rutas, controladores y vistas</a>
+                    <a class="bg-dark text-light list-group-item list-group-item-action" id="list-seven-list" data-bs-toggle="list" href="#list-laravel-seven" role="tab" aria-controls="list-home">#10 Listar registros</a>
+                    <a class="bg-dark text-light list-group-item list-group-item-action" id="list-eight-list" data-bs-toggle="list" href="#list-laravel-eight" role="tab" aria-controls="list-home">#11 Crear registros</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-7">
+                <div class="tab-content" id="nav-tabContent-two">
+                  <div class="tab-pane fade show active" id="list-laravel-five" role="tabpanel" aria-labelledby="list-five-list">
+                    <h6><a href="https://laravel.com/docs/11.x/starter-kits">Documentación Laravel breeze</a></h6>
+                    <pre><code [highlight]="laravelFreeze" language="html" [lineNumbers]="true" class="bg-dark text-light"></code></pre>
+                    <p>Se utiliza este paquete para crear un sistema de autenticación completo, se selecciona el motor de plantillas blade de Laravel, su frontend esta creado con
+                      Tailwind CSS.
+                    </p>
+                  </div>
+                  <div class="tab-pane fade" id="list-laravel-six" role="tabpanel" aria-labelledby="list-six-list">
+                    <p>En routes/web.php estan las rutas con sus respectivos nombres, las cuales apuntan a una vista o a un controlador. <br>
+                    En la ruta llamo al controlador y dentro de este creo una función que me retorna la vista, estas vistas se pueden crear con blade.
+                    </p>
+                    <h6>Nuevo controlador</h6>
+                    <pre><code [highlight]="newControllerLaravel" language="html" [lineNumbers]="true" class="bg-dark text-light"> </code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="list-laravel-seven" role="tabpanel" aria-labelledby="list-seven-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ab odit ipsa! Ad a iusto dicta illum facilis, fuga dolor aut consequatur! Provident, et odio temporibus beatae unde quidem dignissimos.0</div>
+                  <div class="tab-pane fade" id="list-laravel-eight" role="tabpanel" aria-labelledby="list-eight-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ab odit ipsa! Ad a iusto dicta illum facilis, fuga dolor aut consequatur! Provident, et odio temporibus beatae unde quidem dignissimos.1</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- finish laravel-concepts-one -->
+        <!-- start laravel-concepts-two -->
+        <div id="laravel-concepts-one" class="row mt-5">
+          <div class="col-md">
+            <div class="row">
+              <div class="col-12 col-md-5">
+                <div class="list-group" id="list-tab" role="tablist">
+                  <a class="bg-dark text-light list-group-item list-group-item-action active" id="list-nine-list" data-bs-toggle="list" href="#list-laravel-nine" role="tab" aria-controls="list-home">#12 Formulario para editar registro</a>
+                  <a class="bg-dark text-light list-group-item list-group-item-action" id="list-ten-list" data-bs-toggle="list" href="#list-laravel-ten" role="tab" aria-controls="list-home">#13 Actualizar registro</a>
+                  <a class="bg-dark text-light list-group-item list-group-item-action" id="list-eleven-list" data-bs-toggle="list" href="#list-laravel-eleven" role="tab" aria-controls="list-home">#14 Mostrar registros</a>
+                  <a class="bg-dark text-light list-group-item list-group-item-action" id="list-twelve-list" data-bs-toggle="list" href="#list-laravel-twelve" role="tab" aria-controls="list-home">#15 Eliminar registros</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-7">
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="list-laravel-nine" role="tabpanel" aria-labelledby="list-nine-list">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel ab rem enim necessitatibus voluptatibus eligendi illum amet consectetur iste repellendus quae sint, nisi doloremque voluptatem laborum accusamus eos adipisci animi.</div>
+                  <div class="tab-pane fade" id="list-laravel-ten" role="tabpanel" aria-labelledby="list-ten-list">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel ab rem enim necessitatibus voluptatibus eligendi illum amet consectetur iste repellendus quae sint, nisi doloremque voluptatem laborum accusamus eos adipisci animi.</div>
+                  <div class="tab-pane fade" id="list-laravel-eleven" role="tabpanel" aria-labelledby="list-eleven-list">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel ab rem enim necessitatibus voluptatibus eligendi illum amet consectetur iste repellendus quae sint, nisi doloremque voluptatem laborum accusamus eos adipisci animi.</div>
+                  <div class="tab-pane fade" id="list-laravel-twelve" role="tabpanel" aria-labelledby="list-twelve-list">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel ab rem enim necessitatibus voluptatibus eligendi illum amet consectetur iste repellendus quae sint, nisi doloremque voluptatem laborum accusamus eos adipisci animi.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="row">
+              <div class="col-12 col-md-5">
+                <div class="list-group" id="list-tab" role="tablist">
+                  <a class="bg-dark text-light list-group-item list-group-item-action active" id="list-nine-list" data-bs-toggle="list" href="#list-laravel-thirteen" role="tab" aria-controls="list-home">#16 Sesiones Flash</a>
+                  <a class="bg-dark text-light list-group-item list-group-item-action" id="list-ten-list" data-bs-toggle="list" href="#list-laravel-fourteen" role="tab" aria-controls="list-home">#17 Personalizar mens. error</a>
+                  <a class="bg-dark text-light list-group-item list-group-item-action" id="list-eleven-list" data-bs-toggle="list" href="#list-laravel-fifteen" role="tab" aria-controls="list-home">#18 Tabla pivote y relación muchos a muchos</a>
+                  <a class="bg-dark text-light list-group-item list-group-item-action" id="list-twelve-list" data-bs-toggle="list" href="#list-laravel-sixteen" role="tab" aria-controls="list-home">#19 Consultar tabla pivote</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-7">
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="list-laravel-thirteen" role="tabpanel" aria-labelledby="list-thirteen-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sunt, distinctio, iste cumque minus, accusamus magnam velit corporis vero quia corrupti deserunt quam possimus tempore deleniti architecto reiciendis unde nihil.</div>
+                  <div class="tab-pane fade" id="list-laravel-fourteen" role="tabpanel" aria-labelledby="list-fourteen-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sunt, distinctio, iste cumque minus, accusamus magnam velit corporis vero quia corrupti deserunt quam possimus tempore deleniti architecto reiciendis unde nihil.</div>
+                  <div class="tab-pane fade" id="list-laravel-fifteen" role="tabpanel" aria-labelledby="list-fifteen-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sunt, distinctio, iste cumque minus, accusamus magnam velit corporis vero quia corrupti deserunt quam possimus tempore deleniti architecto reiciendis unde nihil.</div>
+                  <div class="tab-pane fade" id="list-laravel-sixteen" role="tabpanel" aria-labelledby="list-sixteen-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sunt, distinctio, iste cumque minus, accusamus magnam velit corporis vero quia corrupti deserunt quam possimus tempore deleniti architecto reiciendis unde nihil.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- finish laravel-concepts-two -->
+        <ul>
+          <li>Documentacion: <a href="https://laravel.com/docs/11.x">aquí</a></li>
+          <li>#20 Autorización en Laravel</li>
+          <li>#21 Filtrar registros</li>
+          <li>#22 Autorización adiconal</li>
+        </ul>
+        <div class="col-12 col-md-6">
+          <h6>OBSERVACIONES</h6>
+          <ul>
+            <li>Las imágenes solo se pueden trabajar mediante solicitudes POST, con solicitudes como PATCH o PUT no va a funcionar.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- end section -->
