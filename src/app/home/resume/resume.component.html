@@ -4,35 +4,7 @@
   <div class="container">
     <h2 class="mb-5"><span class="text-danger">{{'resume.my'|translate}}</span> {{'home.resume'|translate}}</h2>
     <div class="row">
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card" [ngClass]="{'bg-dark text-light': themeSelected == 'light','bg-light text-dark': themeSelected == 'dark'}">
-          <div class="card-header">
-            <div class="mt-2">
-              <h4>{{'general.experience'|translate}}</h4>
-              <span class="line"></span>
-            </div>
-          </div>
-          <div class="card-body">
-            <h6 class="title text-danger">2021 - {{'resume.present'|translate}}</h6>
-            <P>{{'resume.experience.development'|translate}}</P>
-            <P class="subtitle">{{'resume.experience.text1'|translate}}
-            </P>
-            <hr>
-            <h6 class="title text-danger">2023 - {{'resume.present'|translate}}</h6>
-            <P>{{'resume.experience.frontend'|translate}}</P>
-            <P class="subtitle">{{'resume.experience.text2'|translate}}
-            </P>
-            <hr>
-            <h6 class="title text-danger">2022 - {{'resume.present'|translate}}</h6>
-            <P>{{'resume.experience.backend'|translate}}</P>
-            <P class="subtitle">
-              {{'resume.experience.text3'|translate}}
-            </P>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-12 col-md-6">
         <div class="card" [ngClass]="{'bg-dark text-light': themeSelected == 'dark','bg-light text-dark': themeSelected == 'light'}">
           <div class="card-header">
             <div class="pull-left">
@@ -84,7 +56,8 @@
             </div>
           </div>
         </div>
-        <br>
+      </div>
+      <div class="col-12 col-md-6 pt-md-0 pt-2">
         <div class="card" [ngClass]="{'bg-dark text-light': themeSelected == 'dark','bg-light text-dark': themeSelected == 'light'}">
           <div class="card-header">
             <div class="pull-left">
@@ -114,8 +87,37 @@
           </div>
         </div>
       </div>
-
-      <div class="col-lg-4">
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="card" [ngClass]="{'bg-dark text-light': themeSelected == 'light','bg-light text-dark': themeSelected == 'dark'}">
+          <div class="card-header">
+            <div class="mt-2">
+              <h4>{{'general.experience'|translate}}</h4>
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h6 class="title text-danger">2021 - {{'resume.present'|translate}}</h6>
+            <P>{{'resume.experience.development'|translate}}</P>
+            <P class="subtitle">{{'resume.experience.text1'|translate}}
+            </P>
+            <hr>
+            <h6 class="title text-danger">2023 - {{'resume.present'|translate}}</h6>
+            <P>{{'resume.experience.frontend'|translate}}</P>
+            <P class="subtitle">{{'resume.experience.text2'|translate}}
+            </P>
+            <hr>
+            <h6 class="title text-danger">2022 - {{'resume.present'|translate}}</h6>
+            <P>{{'resume.experience.backend'|translate}}</P>
+            <P class="subtitle">
+              {{'resume.experience.text3'|translate}}
+            </P>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 pt-md-0 pt-2">
         <div class="card" [ngClass]="{'bg-dark text-light': themeSelected == 'light','bg-light text-dark': themeSelected == 'dark'}">
           <div class="card-header">
             <div class="mt-2">
@@ -148,5 +150,6 @@
         </div>
       </div>
     </div>
+
   </div>
 </section>

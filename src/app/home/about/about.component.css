@@ -8,11 +8,18 @@
 .about-card:last-child {
   border-right: none;
 }
-.about-section {
+/* .about-section {
   border-bottom: 1px solid #dee2e6;
-}
+} */
 .div-about{
   display: none;
+}
+
+.social-icons li:hover{
+  transform: scale(1.05);
+  border-bottom:  5px solid rgb(0, 92, 213);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 @media only screen and (max-width:700px){
@@ -20,5 +27,8 @@
     display: block;
     width: 80%;
     margin: auto;
+  }
+  .about-card {
+    border-right: none;
   }
 }

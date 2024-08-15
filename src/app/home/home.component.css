@@ -11,6 +11,26 @@
   color: #fff;
 }
 
+.content-wrapper {
+  min-height: calc(100vh - 150px); /* Altura mínima, ajustando por el tamaño del header y footer */
+  padding: 20px; /* Ajuste del padding según sea necesario */
+  padding-top: 5rem;
+}
+
+router-outlet {
+  display: block; /* Asegura que el router-outlet se comporte como un bloque */
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Altura completa */
+}
+.nav-item {
+  border-bottom: none; /* Por defecto no tiene borde */
+  color: rgb(200, 200, 200); /* Color de texto por defecto */
+  transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+.nav-link.active {
+  border-bottom: 5px solid rgb(213, 21, 0);
+}
 
 
 @media (max-width: 767.98px) {

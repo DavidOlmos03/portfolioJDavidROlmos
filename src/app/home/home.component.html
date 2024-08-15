@@ -1,24 +1,11 @@
-<!-- <!DOCTYPE html>
-<html lang="en"> -->
 
-<!-- <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="This is the David Olmos portfolio">
-    <meta name="author" content="DavidOlmos">
-    <title>David Olmos portfolio</title>
-    <link rel="stylesheet" href="https://unpkg.com/@icon/themify-icons/themify-icons.css">
-    <link rel="shortcut icon" href="assets/imgs/iconJ.png">
-</head> -->
 <div data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="mat-app-background">
-    <!-- <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i
-            class="ti-shift-left-alt"></i> Components</a> -->
+
     <header class="header">
       <app-header></app-header>
     </header>
 
     <nav class="navbar sticky-top navbar-expand-lg" [ngClass]="{'navbar-light bg-light': themeSelected == 'light', 'navbar-dark bg-dark': themeSelected == 'dark'}" data-spy="affix" data-offset-top="510">
-
         <div class="container d-flex justify-content-end">
           <button class="navbar-toggler me-0" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -27,20 +14,20 @@
           </button>
           <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+              <!-- <li class="nav-item mx-2">
+                <a routerLink="" class="nav-link">{{'home.home'|translate}}</a>
+              </li> -->
               <li class="nav-item mx-2">
-                <a href="#home" class="nav-link">{{'home.home'|translate}}</a>
+                <a routerLinkActive="active" routerLink="/about" class="nav-link">{{'home.about'|translate}}</a>
               </li>
               <li class="nav-item mx-2">
-                <a href="#about" class="nav-link">{{'home.about'|translate}}</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a href="#resume" class="nav-link">{{'home.resume'|translate}}</a>
+                <a routerLinkActive="active" routerLink="/resume" class="nav-link">{{'home.resume'|translate}}</a>
               </li>
               <li class="nav-item  mx-2">
-               <a href="#portfolio" class="nav-link">{{'home.portfolio'|translate}}</a>
+               <a routerLinkActive="active" routerLink="/portfolio" class="nav-link">{{'home.portfolio'|translate}}</a>
              </li>
              <li class="nav-item  mx-2">
-               <a href="#contact" class="nav-link">{{'home.contact'|translate}}</a>
+               <a routerLinkActive="active" routerLink="/contact" class="nav-link">{{'home.contact'|translate}}</a>
              </li>
             </ul>
             <!-- <ul class="navbar-nav ml-auto">
@@ -65,32 +52,10 @@
         </div>
     </nav>
 
-    <!--
-      Sección para el about
-    -->
-    <div class="mt-5">
-        <app-about></app-about>
-    </div>
-    <!--
-      Sección para el resume
-    -->
-    <div class="mt-5">
-      <app-resume> </app-resume>
-    </div>
-    <!--
-      Sección para el portfolio
-    -->
-    <div class="mt-5">
-      <app-portfolio></app-portfolio>
+    <div class="content-wrapper">
+      <router-outlet></router-outlet>
     </div>
 
-
-    <!-- End of portfolio section -->
-
-    <!-- Sección para contacto -->
-    <div class="mt-5">
-      <app-contact></app-contact>
-    </div>
     <footer class="footer py-3 mt-5">
         <div class="container">
             <p class="small mb-0 text-light">
@@ -100,7 +65,7 @@
             </p>
         </div>
     </footer>
+
 </div>
 
-<!-- </html> -->
 

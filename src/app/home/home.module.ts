@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { CourseJSModule } from '../course-js/course-js.module';
+import { HomeRoutingModule } from './home-routing.module';
+
 /**
  * Modulos necesarios para crear la página multilenguaje
  */
@@ -49,6 +51,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     RouterModule,
+    HomeRoutingModule,
     CommonModule,
     CourseJSModule,
     SharedModule,
@@ -90,5 +93,5 @@ import { ReactiveFormsModule } from '@angular/forms';
 export class HomeModule { }
 
 export function HttLoaderFactory(http: HttpClient){
-  return new TranslateHttpLoader(http,'src/assets/languages','.json');
+  return new TranslateHttpLoader(http,'./assets/languages/','.json');
 }
