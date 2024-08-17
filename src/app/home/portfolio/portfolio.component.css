@@ -1,3 +1,8 @@
+h3, h2, h1{
+  border-left: 2px solid rgb(213, 21, 0);
+  padding-left: 1rem;
+}
+
 .filters a{
   cursor: pointer;
 }

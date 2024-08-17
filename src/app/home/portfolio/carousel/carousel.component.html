@@ -1,0 +1,78 @@
+<tui-carousel
+    [draggable]="true"
+    [itemsCount]="itemsCount"
+    [(index)]="index"
+>
+    <ng-container *ngFor="let item of items; let i = index">
+      <div
+      *tuiItem
+      class="item"
+      [class.item_active]="i === index + 1"
+      >
+        <div
+        tuiCardLarge
+        tuiSurface="elevated"
+        class="p-3"
+        >
+        <header  tuiHeader>
+            <h2
+            tuiTitle
+            class="text-center"
+            >{{item.title}}</h2>
+        </header>
+        <section class="m-auto w-100">
+          <div class="image-container">
+            <img src="assets/imgs/{{item.Image}}" alt="">
+            <div class="overlay">
+              <a
+                *ngIf="item.linkGit"
+                class="btn btn-danger" href="{{item.linkGit}}">
+                <tui-icon
+                  icon="@tui.github"
+                  ref="gitHub"
+                ></tui-icon>
+              </a>
+              <button
+                *ngIf="item.btnModal"
+                class="btn btn-danger ms-2"
+                (click)="mostrarModal(item.btnModal)"
+                >
+                <tui-icon
+                  icon="@tui.eye"
+                  ref="watchPoject"
+                ></tui-icon>
+              </button>
+              <button
+                class="btn btn-danger ms-2"
+                *ngIf="!item.btnModal">
+                <tui-icon
+                  icon="@tui.eye"
+                  ref="watchPoject"
+                ></tui-icon>
+              </button>
+              <a class="btn btn-danger ms-2" href="">
+                <tui-icon
+                  icon="@tui.shield-check"
+                  ref="certificate"
+                ></tui-icon>
+              </a>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <h6
+            class="pt-1"
+          >{{item.subtitle}}</h6>
+          <a href="https://co.indeed.com/">Hola</a>
+        </footer>
+      </div>
+      </div>
+    </ng-container>
+</tui-carousel>
+<tui-pagination
+  size="s"
+  class="tui-space_top-4"
+  [index]="rounded"
+  [length]="items.length / itemsCount"
+  (indexChange)="onIndex($event)"
+  />

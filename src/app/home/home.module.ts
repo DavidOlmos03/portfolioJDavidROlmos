@@ -33,6 +33,8 @@ import { HighlightModule } from 'ngx-highlightjs';
 
 // Importaciones para trabajar con el formulario
 import { ReactiveFormsModule } from '@angular/forms';
+import { CarouselComponent } from './portfolio/carousel/carousel.component';
+
 
 
 @NgModule({
@@ -76,7 +78,9 @@ import { ReactiveFormsModule } from '@angular/forms';
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
       animationDuration: 300,
-    })
+    }),
+    CarouselComponent
+
   ],
   providers: [
     {

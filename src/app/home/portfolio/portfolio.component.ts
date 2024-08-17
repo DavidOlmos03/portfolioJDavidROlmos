@@ -5,7 +5,6 @@ import { WebSiteEchezModalComponent } from './web-site-echez-modal/web-site-eche
 import { StreamingNetflixModalComponent } from './streaming-netflix-modal/streaming-netflix-modal.component';
 import { ThemeService } from 'src/app/services/theme.service';
 
-
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
