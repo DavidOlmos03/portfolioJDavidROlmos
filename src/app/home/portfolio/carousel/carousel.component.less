@@ -4,7 +4,7 @@
     .transition(~'box-shadow, transform');
     display: block;
     width: 20rem;
-    height: 20rem;
+    height: 22rem;
     margin: 2rem auto;
     border: 1px solid var(--tui-border-normal);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -23,7 +23,7 @@ img{
 }
 
 ::ng-deep .t-wrapper {
-  height: 25rem !important;
+  height: 27rem !important;
 }
 
 section {
@@ -105,10 +105,16 @@ section img {
     width: 3rem;
     height: 100%;
   }
+  ::ng-deep .t-wrapper {
+    height: 19rem !important;
+  }
 }
 
 @media (max-width: 768px) {
   .item {
     width: calc(100% - 2rem); // Mostrar 1 elemento
+  }
+  ::ng-deep .t-wrapper {
+    height: 19rem !important;
   }
 }

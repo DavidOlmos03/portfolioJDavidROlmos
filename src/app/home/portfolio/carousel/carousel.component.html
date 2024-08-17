@@ -1,11 +1,15 @@
+
+<!-- [duration]="duration" -->
 <tui-carousel
     [draggable]="true"
     [itemsCount]="itemsCount"
     [(index)]="index"
+
 >
     <ng-container *ngFor="let item of items; let i = index">
       <div
       *tuiItem
+      draggable="false"
       class="item"
       [class.item_active]="i === index + 1"
       >
@@ -14,16 +18,20 @@
         tuiSurface="elevated"
         class="p-3"
         >
-        <header  tuiHeader>
-            <h2
+        <header
+        tuiHeader>
+            <p
             tuiTitle
-            class="text-center"
-            >{{item.title}}</h2>
+            class="text-center fs-5"
+            >{{item.title}}</p>
         </header>
         <section class="m-auto w-100">
           <div class="image-container">
             <img src="assets/imgs/{{item.Image}}" alt="">
             <div class="overlay">
+              <!--
+                Boton de gitHub
+              -->
               <a
                 *ngIf="item.linkGit"
                 class="btn btn-danger" href="{{item.linkGit}}">
@@ -32,6 +40,9 @@
                   ref="gitHub"
                 ></tui-icon>
               </a>
+              <!--
+                Boton de ventana Modal
+              -->
               <button
                 *ngIf="item.btnModal"
                 class="btn btn-danger ms-2"
@@ -42,37 +53,85 @@
                   ref="watchPoject"
                 ></tui-icon>
               </button>
-              <button
+              <a
                 class="btn btn-danger ms-2"
-                *ngIf="!item.btnModal">
+                *ngIf="!item.btnModal && item.btnPage"
+                href="{{item.btnPage}}"
+                >
                 <tui-icon
                   icon="@tui.eye"
                   ref="watchPoject"
                 ></tui-icon>
-              </button>
-              <a class="btn btn-danger ms-2" href="">
+              </a>
+              <!--
+                Boton descarga certificado
+              -->
+              <a
+              class="btn btn-danger ms-2"
+              href="{{item.btnCertificate}}"
+              *ngIf="item.btnCertificate"
+              download>
                 <tui-icon
                   icon="@tui.shield-check"
                   ref="certificate"
+
                 ></tui-icon>
               </a>
             </div>
           </div>
         </section>
-        <footer>
+        <footer *ngIf="item.icons" class="d-none d-md-none d-lg-block">
           <h6
             class="pt-1"
           >{{item.subtitle}}</h6>
-          <a href="https://co.indeed.com/">Hola</a>
+            <!-- <div
+              class="text-center pt-1 d-inline-block shadow"
+              [ngClass]="{
+                'icon-html5': icon.key == 'html5',
+              }">
+              <p class="fw-bold text-light"><span><img
+
+
+                alt="icon"
+                style="padding-bottom: 1px; width: 18px; height: 18px;"></span>{{icon.key}}</p>
+            </div> -->
+            <div class="col-6 col-md-12">
+              <div class="text-center px-2 mt-1 me-1 d-inline-block shadow"
+              *ngFor="let icon of item.icons | keyvalue"
+              [ngClass]="{
+                'icon-html': icon.key == 'html5',
+                'icon-css': icon.key == 'css',
+                'icon-bootstrap': icon.key == 'bootstrap',
+                'icon-angular': icon.key == 'angular',
+                'icon-laravel': icon.key == 'laravel',
+                'icon-php': icon.key == 'php',
+                'icon-vuejs': icon.key == 'vuejs',
+                'icon-tailwind': icon.key == 'tailwind',
+                'icon-firebase': icon.key == 'firebase',
+                'icon-expressjs': icon.key == 'expressjs',
+                'icon-nodejs': icon.key == 'nodejs',
+                'icon-mongodb': icon.key == 'mongodb',
+                'icon-python': icon.key == 'python',
+                'icon-docker': icon.key == 'docker',
+                'icon-js': icon.key == 'javascript',
+                'icon-ts': icon.key == 'typescript',
+              }"
+              >
+                <p class="fw-bold text-light mb-0"><span><i class="ti icon-md"
+                  [ngClass]="{'ti-html5': icon.key == 'html5'}"
+                  ></i></span>{{icon.value}}</p>
+              </div>
+            </div>
+
         </footer>
       </div>
       </div>
     </ng-container>
 </tui-carousel>
-<tui-pagination
+<!-- <tui-pagination
   size="s"
   class="tui-space_top-4"
   [index]="rounded"
   [length]="items.length / itemsCount"
   (indexChange)="onIndex($event)"
-  />
+  /> -->
