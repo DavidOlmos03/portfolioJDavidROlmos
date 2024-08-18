@@ -22,6 +22,9 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 // Modulo para aplicar animaciones
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// Modulo para utilizar con primeng
+// import { TimelineModule } from 'primeng/timeline';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +44,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         deps:[HttpClient]
       }
     }),
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    // TimelineModule
   ],
   providers: [
     TranslateService

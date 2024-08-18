@@ -38,8 +38,8 @@ import { CarouselComponent } from './portfolio/carousel/carousel.component';
 // Modulo para aplicar animaciones
 import { provideAnimations } from '@angular/platform-browser/animations'
 
-// Modulo para el timeline de resume
-// import { TimelineModule } from 'primeng/timeline';
+
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -82,8 +82,7 @@ import { provideAnimations } from '@angular/platform-browser/animations'
       innerStrokeColor: "#C7E596",
       animationDuration: 300,
     }),
-    CarouselComponent
-
+    CarouselComponent,
   ],
   providers: [
     {

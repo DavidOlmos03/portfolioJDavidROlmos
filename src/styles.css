@@ -1,5 +1,7 @@
 /* styles.css */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+/* @import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css"; */
 
 body, p, h1, h2, h3, h4, h5, h6, a{
   font-family: monospace;
