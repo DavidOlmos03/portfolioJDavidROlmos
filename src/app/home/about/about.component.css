@@ -4,7 +4,7 @@ h3, h2, h1{
 }
 .about-card {
   padding: 60px;
-  border-right: 1px solid #dee2e6;
+  /* border-right: 1px solid #dee2e6; */
 }
 
 .about-card:last-child {
@@ -25,6 +25,10 @@ h3, h2, h1{
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+img{
+  max-width: 25rem;
+  max-height: 25rem;
+}
 @media only screen and (max-width:700px){
   .div-about{
     display: block;

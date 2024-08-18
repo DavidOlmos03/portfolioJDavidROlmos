@@ -35,8 +35,11 @@ import { HighlightModule } from 'ngx-highlightjs';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CarouselComponent } from './portfolio/carousel/carousel.component';
 
+// Modulo para aplicar animaciones
+import { provideAnimations } from '@angular/platform-browser/animations'
 
-
+// Modulo para el timeline de resume
+// import { TimelineModule } from 'primeng/timeline';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -91,7 +94,7 @@ import { CarouselComponent } from './portfolio/carousel/carousel.component';
         lineNumbers: true
       }
     },
-
+    // provideAnimations()
   ],
 })
 export class HomeModule { }

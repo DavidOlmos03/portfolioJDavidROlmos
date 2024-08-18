@@ -19,6 +19,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 // Modulo para el switch del tema claro/oscuro
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
+// Modulo para aplicar animaciones
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HomeModule,
     CourseJSModule,
@@ -41,7 +44,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     MatSlideToggleModule
   ],
   providers: [
-    TranslateService,
+    TranslateService
   ],
   bootstrap: [AppComponent]
 })
