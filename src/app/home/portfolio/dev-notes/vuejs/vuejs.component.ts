@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-vuejs',
   templateUrl: './vuejs.component.html',
-  styleUrls: ['./vuejs.component.css']
+  styleUrls: ['./vuejs.component.css','../dev-notes.component.css']
 })
 export class VuejsComponent {
    // Vuejs

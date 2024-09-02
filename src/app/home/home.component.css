@@ -12,7 +12,8 @@
 }
 
 .content-wrapper {
-  min-height: calc(100vh - 150px); /* Altura mínima, ajustando por el tamaño del header y footer */
+  min-height: calc(100vh - 150px);
+  /* Altura mínima, ajustando por el tamaño del header y footer */
   padding: 20px; /* Ajuste del padding según sea necesario */
   padding-top: 5rem;
 }

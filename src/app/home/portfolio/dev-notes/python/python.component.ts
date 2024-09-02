@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-python',
   templateUrl: './python.component.html',
-  styleUrls: ['./python.component.css']
+  styleUrls: ['./python.component.css','../dev-notes.component.css']
 })
 export class PythonComponent {
     // Python

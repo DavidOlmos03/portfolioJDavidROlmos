@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-entorno-virtual',
   templateUrl: './entorno-virtual.component.html',
-  styleUrls: ['./entorno-virtual.component.css']
+  styleUrls: ['./entorno-virtual.component.css','../dev-notes.component.css']
 })
 export class EntornoVirtualComponent {
   // Entorno virtual

@@ -1,12 +1,20 @@
 
 <!-- [duration]="duration" -->
+<div class="filters">
+  <a (click)="selectedSection = 'web';" class="fw-bold text-decoration-none" [class.active]="selectedSection === 'web'">
+    <h6>Web development</h6>
+  </a>
+  <a (click)="selectedSection = 'data_science';" class="fw-bold text-decoration-none" [class.active]="selectedSection === 'data_science'">
+    <h6>Data Science</h6>
+  </a>
+</div>
 <tui-carousel
     [draggable]="true"
     [itemsCount]="itemsCount"
     [(index)]="index"
 
 >
-    <ng-container *ngFor="let item of items; let i = index">
+    <ng-container *ngFor="let item of (selectedSection === 'web' ? items : items_data_science); let i = index">
       <div
       *tuiItem
       draggable="false"
@@ -27,7 +35,7 @@
         </header>
         <section class="m-auto w-100">
           <div class="image-container">
-            <img src="assets/imgs/{{item.Image}}" alt="">
+            <img src="assets/imgs/{{item.Image}}" alt="" class="animate__animated animate__zoomIn">
             <div class="overlay">
               <!--
                 Boton de gitHub
@@ -132,6 +140,6 @@
   size="s"
   class="tui-space_top-4"
   [index]="rounded"
-  [length]="items.length / itemsCount"
+  [length]="(selectedSection === 'web' ? items.length / itemsCount : items_data_science.length / itemsCount)"
   (indexChange)="onIndex($event)"
   />

@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-angular-c',
   templateUrl: './angular-c.component.html',
-  styleUrls: ['./angular-c.component.css']
+  styleUrls: ['./angular-c.component.css','../dev-notes.component.css']
 })
 export class AngularCComponent {
 

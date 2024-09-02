@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-docker',
   templateUrl: './docker.component.html',
-  styleUrls: ['./docker.component.css']
+  styleUrls: ['./docker.component.css','../dev-notes.component.css']
 })
 export class DockerComponent {
   // Docker

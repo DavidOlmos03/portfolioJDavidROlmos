@@ -6,7 +6,7 @@ import {TuiCarousel, TuiPagination} from '@taiga-ui/kit';
 import { StreamingNetflixModalComponent } from '../streaming-netflix-modal/streaming-netflix-modal.component';
 import { VuejsModalComponent } from '../vuejs-modal/vuejs-modal.component';
 import { WebSiteEchezModalComponent } from '../web-site-echez-modal/web-site-echez-modal.component';
-
+import { ThemeService } from 'src/app/services/theme.service';
 
 
 @Component({
@@ -26,6 +26,9 @@ import { WebSiteEchezModalComponent } from '../web-site-echez-modal/web-site-ech
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CarouselComponent implements OnInit{
+    isDarkThemeActive:any;
+    themeSelected:any = ''
+    selectedSection:string = "web";
     // private index = 0;
     protected index = 0;
     // protected duration = isPlatformBrowser(inject(PLATFORM_ID)) ? 4_000 : 0;
@@ -34,12 +37,27 @@ export class CarouselComponent implements OnInit{
 
     constructor(
       public modalService:NgbModal,
+      private themeService: ThemeService
+
     ){ }
 
     // Revisa el cambio en el tamaño de la ventana
     ngOnInit(): void {
       this.setItemsCount(window.innerWidth);
       // console.log(this.items)
+       // Leer el valor de themeSelected del localStorage
+    const themeSelected = localStorage.getItem('theme-selected');
+    // console.log(themeSelected)
+    if (themeSelected !== null) {
+      if (themeSelected === 'dark') {
+        this.isDarkThemeActive = 'dark';
+      } else {
+        this.isDarkThemeActive = 'light';
+      }
+    }
+    this.themeService.themeSelected$.subscribe(theme => {
+      this.themeSelected = theme;
+    });
     }
 
     @HostListener('window:resize', ['$event'])
@@ -176,6 +194,23 @@ export class CarouselComponent implements OnInit{
             php:'PHP'
           }
         },
+    ];
+
+    protected readonly items_data_science = [
+      {
+        title: 'AWS', Image: 'aws_introduction.png', subtitle: 'Tecnologías',
+        btnCertificate: 'assets/docs/certificados/diploma-aws-fundamentos.pdf',
+      },
+
+      {
+        title: 'Machine Learning', Image: 'ML_introduction.png', subtitle: 'Tecnologías',
+        btnCertificate: 'assets/docs/certificados/diploma-machine-learning.pdf',
+      },
+
+      {
+        title: 'IA - Data & Machine Learning', Image: 'IA_Data_ML_introduction.png', subtitle: 'Tecnologías',
+        btnCertificate: 'assets/docs/certificados/diploma-ia-data-ml.pdf',
+      },
     ];
 
     protected get rounded(): number {
